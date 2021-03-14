@@ -27,6 +27,20 @@ Create asimple program and share it on Gitlab. Add changes via creating a merge 
 
 3. We create a program "MyProgram":
 
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step4.jpg)
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step5.jpg)
 
+4. We create Git Repository:
 
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step7.jpg)
+
+5. We mark files to add in GitHub:
+
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step8.jpg)
+
+6. We add commit:
+
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step9.jpg)
+
+7. We share project in GitHub:
+
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step10.jpg)
