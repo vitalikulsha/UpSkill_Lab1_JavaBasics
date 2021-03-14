@@ -14,3 +14,7 @@ Create asimple program and share it on Gitlab. Add changes via creating a merge 
     * Create a pull/merge request from grammar_check to master branch. Merge
     * Pull master branch in local repo and assure program is changed properly
 4. Show or send your tutor confirming screenshots
+## Solution
+1. We create a new project and call it "UpSkill_Lab1_JavaBasics":
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step1.jpg)
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step2.jpg)
