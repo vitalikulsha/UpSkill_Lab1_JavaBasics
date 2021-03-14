@@ -55,3 +55,14 @@ Create asimple program and share it on Gitlab. Add changes via creating a merge 
 ![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step13.jpg)
 ![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step14.jpg)
 ![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step15.jpg)
+
+10. We edit programm in branch "feature_politeness":
+
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step16.jpg)
+
+11. We add commit and be push:
+
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step17.jpg)
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step18.jpg)
+
+12. 
