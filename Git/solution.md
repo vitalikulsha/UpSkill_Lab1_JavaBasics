@@ -21,3 +21,5 @@ Create asimple program and share it on Gitlab. Add changes via creating a merge 
 2. We create a new module and call it "Git":
 ![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step3.jpg)
 ![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step4.jpg)
+3. We create a program "MyProgram":
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step5.jpg)
