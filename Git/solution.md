@@ -44,3 +44,14 @@ Create asimple program and share it on Gitlab. Add changes via creating a merge 
 7. We share project in GitHub:
 
 ![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step10.jpg)
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step11.jpg)
+
+8. We check project in GitHub:
+
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step12.jpg)
+
+9. We add new branch "feature_politeness" in master branch:
+
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step13.jpg)
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step14.jpg)
+![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step15.jpg)
