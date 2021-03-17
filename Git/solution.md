@@ -1,55 +1,39 @@
-Module "Git"
-=============
+# Module "Git"
 
-Description
------------
+## Description
 
 Create asimple program and share it on Gitlab. Add changes via creating a merge request.
 
-Steps
------
+## Steps
 
-#. Write a simple Java program that reads a name from the standard input and prints "Hello, name".
-#. Init:
+1. Write a simple Java program that reads a name from the standard input and prints "Hello, name".
+2. Init:
     * Init git repo.
     * Commit initial files.
     * Share on Gitlab.
-#. Merge a feature:
+3. Merge a feature:
     * Create and checkout feature_politeness branch
     * Change program to print Nice to meet you. in addition to original output
     * Commit
     * Create a pull/merge request from grammar_check to master branch. Merge
     * Pull master branch in local repo and assure program is changed properly
-#. Show or send your tutor confirming screenshots.
+4. Show or send your tutor confirming screenshots.
 
-Solution
------------
-#. We create a new project and call it "UpSkill_Lab1_JavaBasics":
+## Solution
+1. We create a new project and call it "UpSkill_Lab1_JavaBasics":
 
-.. figure:: img/step1.jpg
-       :scale: 300 %
-       :align: left
-       :alt: 
-.. figure:: img/step2.jpg
-       :scale: 300 %
-       :align: left
-       :alt: 
+<a>
+   <img src="img/step1.jpg" align="left" width="800">
+   <img src="img/step2.jpg" align="left" width="800">
+</a>
 
 2. We create a new module and call it "Git":
 
-.. image:: img/step3.jpg
-   :height: 100px
-   :width: 200px
-   :scale: 100%
-   :alt: alternate text
-   :align: left
-
-
-<h2>
+<p>
    2. We create a new module and call it "Git":
-   <img src="img/step3.jpg" align="left" width="800">
-   <img src="img/step4.jpg" align="left" width="800">
-</h2>
+   <img src="img/step3.jpg" align="left" width="1000">
+   <img src="img/step4.jpg" align="left" width="1000">
+</p>
 
 
 3. We create a program "MyProgram":
