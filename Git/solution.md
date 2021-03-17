@@ -48,45 +48,52 @@ Create asimple program and share it on Gitlab. Add changes via creating a merge 
 </h2>
 
 #### 7. We share project in GitHub:
-
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step10.jpg)
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step11.jpg)
+<h2>
+   <img src="img/step10.jpg" width="800">
+   <img src="img/step11.jpg"  width="800">
+</h2>
 
 #### 8. We check project in GitHub:
-
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step12.jpg)
+<h2>
+   <img src="img/step12.jpg" width="800">
+</h2>
 
 #### 9. We add new branch "feature_politeness" in master branch:
-
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step13.jpg)
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step14.jpg)
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step15.jpg)
+<h2>
+   <img src="img/step13.jpg" width="800">
+   <img src="img/step14.jpg"  width="800">
+   <img src="img/step15.jpg"  width="800">
+</h2>
 
 #### 10. We edit programm in branch "feature_politeness":
-
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step16.jpg)
+<h2>
+   <img src="img/step16.jpg" width="800">
+</h2>
 
 #### 11. We add commit and be push:
-
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step17.jpg)
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step18.jpg)
+<h2>
+   <img src="img/step17.jpg" width="800">
+   <img src="img/step18.jpg"  width="800">
+</h2>
 
 #### 12. We create pull request:
-
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step19.jpg)
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step20.jpg)
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step21.jpg)
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step22.jpg)
+<h2>
+   <img src="img/step19.jpg" width="800">
+   <img src="img/step20.jpg"  width="800">
+   <img src="img/step21.jpg"  width="800">
+   <img src="img/step22.jpg"  width="800">
+</h2>
 
 #### 13. We Go to the main branch:
-
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step23.jpg)
+<h2>
+   <img src="img/step23.jpg" width="800">
+</h2>
 
 #### 14. We merge branch "feature_politeness" in master branch:
-
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step23.jpg)
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step24.jpg)
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step25.jpg)
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step26.jpg)
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step27.jpg)
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step28.jpg)
+<h2>
+   <img src="img/step24.jpg" width="800">
+   <img src="img/step25.jpg"  width="800">
+   <img src="img/step26.jpg"  width="800">
+   <img src="img/step27.jpg"  width="800">
+   <img src="img/step28.jpg"  width="800">
+</h2>
