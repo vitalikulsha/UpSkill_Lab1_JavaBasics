@@ -21,26 +21,23 @@ Create asimple program and share it on Gitlab. Add changes via creating a merge 
 
 ## Solution
 1. We create a new project and call it "UpSkill_Lab1_JavaBasics":
+- - - 
 
 <h2>
    <img src="img/step1.jpg" align="left" width="800">
    <img src="img/step2.jpg" align="left" width="800">
 </h2>
 
-
-<h4>
-   <h4>2. We create a new module and call it "Git":</h4>
+2. We create a new module and call it "Git":
+- - - 
+<h2>
    <img src="img/step3.jpg" align="left" width="800">
    <img src="img/step4.jpg" align="left" width="800">
-   </h4>
-
-<p>
-   <img src="img/step3.jpg" align="left" width="800">
-   <img src="img/step4.jpg" align="left" width="800">
-</p>
+</h2>
 
 
-<br> 3. We create a program "MyProgram":</br>
+3. We create a program "MyProgram":
+- - - 
 
 ![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step5.jpg)
 
