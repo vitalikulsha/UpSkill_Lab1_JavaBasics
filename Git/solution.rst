@@ -37,6 +37,14 @@ Solution
 
 2. We create a new module and call it "Git":
 
+.. image:: img/step3.jpg
+   :height: 100px
+   :width: 200px
+   :scale: 100%
+   :alt: alternate text
+   :align: left
+
+
 <h2>
    2. We create a new module and call it "Git":
    <img src="img/step3.jpg" align="left" width="800">
