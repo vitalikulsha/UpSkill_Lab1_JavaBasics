@@ -27,9 +27,9 @@ Create asimple program and share it on Gitlab. Add changes via creating a merge 
    <img src="img/step2.jpg" align="left" width="800">
 </a>
 
-<br>
+<h4>
 2. We create a new module and call it "Git":
-<br>
+</h4>
 <p>
      <img src="img/step3.jpg" align="left" width="1000">
    <img src="img/step4.jpg" align="left" width="1000">
