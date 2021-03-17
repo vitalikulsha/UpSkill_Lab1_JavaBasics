@@ -28,9 +28,11 @@ Create asimple program and share it on Gitlab. Add changes via creating a merge 
 </h2>
 
 
-<h4 2. We create a new module and call it "Git":>
+<h4>
+   <2. We create a new module and call it "Git":>
    <img src="img/step3.jpg" align="left" width="800">
-   <img src="img/step4.jpg" align="left" width="800"></h4>
+   <img src="img/step4.jpg" align="left" width="800">
+   </h4>
 
 <p>
    <img src="img/step3.jpg" align="left" width="800">
