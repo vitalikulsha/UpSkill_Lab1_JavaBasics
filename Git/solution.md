@@ -20,15 +20,14 @@ Create asimple program and share it on Gitlab. Add changes via creating a merge 
 4. Show or send your tutor confirming screenshots.
 
 ## Solution
-1. We create a new project and call it "UpSkill_Lab1_JavaBasics":
-- - - 
+#### 1. We create a new project and call it "UpSkill_Lab1_JavaBasics":
 
 <h2>
    <img src="img/step1.jpg" align="left" width="800">
    <img src="img/step2.jpg" align="left" width="800">
 </h2>
 
-2. We create a new module and call it "Git":
+#### 2. We create a new module and call it "Git":
 - - - 
 <h2>
    <img src="img/step3.jpg" align="left" width="800">
@@ -36,8 +35,7 @@ Create asimple program and share it on Gitlab. Add changes via creating a merge 
 </h2>
 
 
-3. We create a program "MyProgram":
-- - - 
+#### 3. We create a program "MyProgram":
 
 ![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step5.jpg)
 
