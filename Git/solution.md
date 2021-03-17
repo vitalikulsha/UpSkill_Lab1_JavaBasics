@@ -20,16 +20,17 @@ Create asimple program and share it on Gitlab. Add changes via creating a merge 
    <img src="img/step1.jpg" width="800">
    <img src="img/step2.jpg"  width="800">
 </h2>
+
 #### 2. We create a new module and call it "Git":
 <h2>
    <img src="img/step3.jpg" width="800">
    <img src="img/step4.jpg" width="800">
 </h2>
 
-
 #### 3. We create a program "MyProgram":
-
-![](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Git/img/step5.jpg)
+<h2>
+   <img src="img/ste5.jpg" width="800">
+</h2>
 
 #### 4. We create Git Repository:
 
