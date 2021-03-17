@@ -1,7 +1,14 @@
-# Module "Git"
-## Description
+Module "Git"
+=============
+
+Description
+-----------
+
 Create asimple program and share it on Gitlab. Add changes via creating a merge request.
-## Steps
+
+Steps
+-----
+
 1. Write a simple Java program that reads a name from the standard input and prints "Hello, name".
 2. Init
     * Init git repo.
@@ -14,8 +21,19 @@ Create asimple program and share it on Gitlab. Add changes via creating a merge 
     * Create a pull/merge request from grammar_check to master branch. Merge
     * Pull master branch in local repo and assure program is changed properly
 4. Show or send your tutor confirming screenshots
-## Solution
+
+Solution
+-----------
 1. We create a new project and call it "UpSkill_Lab1_JavaBasics":
+
+.. figure:: img/step1.jpg
+       :scale: 300 %
+       :align: center
+       :alt: Альтернативный текст
+
+       Подпись изображения
+
+       Легенда изображения.
 
 <h2>
    <img src="img/step1.jpg" align="left" width="800">
@@ -26,6 +44,7 @@ Create asimple program and share it on Gitlab. Add changes via creating a merge 
 2. We create a new module and call it "Git":
 
 <h2>
+   2. We create a new module and call it "Git":
    <img src="img/step3.jpg" align="left" width="800">
    <img src="img/step4.jpg" align="left" width="800">
 </h2>
