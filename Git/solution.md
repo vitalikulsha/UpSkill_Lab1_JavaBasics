@@ -1,6 +1,6 @@
 # Module "Git"
 ## Description
-Create asimple program and share it on Gitlab. Add changes via creating a merge request.
+Create a simple program and share it on Gitlab. Add changes via creating a merge request.
 ## Steps
 1. Write a simple Java program that reads a name from the standard input and prints "Hello, name".
 2. Init:
