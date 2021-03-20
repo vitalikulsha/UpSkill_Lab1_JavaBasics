@@ -2,11 +2,12 @@ public class SuffixApplication {
     public static void main(String[] args) {
         Suffix suffix = new Suffix();
         suffix.setProperties();
-        System.out.println("suffix = " + suffix.suffix +
-                "\ndirectory = " + suffix.directory +
-                "\nfileHelp = " + suffix.fileHelp +
-                "\nfileSetting = " + suffix.fileSetting +
-                "\nfileInfo = " + suffix.fileInfo);
+        System.out.println("suffix = " + suffix.getSuffix() +
+                "\ndirectory = " + suffix.getDirectory() +
+                "\nfileHelp = " + suffix.getFileHelp() +
+                "\nfileSetting = " + suffix.getFileSetting() +
+                "\nfileInfo = " + suffix.getFileInfo());
         suffix.checkFileIsExist();
+        suffix.renameFile();
     }
 }
