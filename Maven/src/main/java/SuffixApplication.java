@@ -3,7 +3,8 @@ public class SuffixApplication {
         Suffix suffix = new Suffix();
         suffix.setProperties();
         System.out.println("suffix = " + suffix.suffix +
-                "\nfileHelp = " + suffix.fileHelp + "" +
+                "\ndirectory = " + suffix.directory +
+                "\nfileHelp = " + suffix.fileHelp +
                 "\nfileSetting = " + suffix.fileSetting +
                 "\nfileInfo = " + suffix.fileInfo);
         suffix.checkFileIsExist();
