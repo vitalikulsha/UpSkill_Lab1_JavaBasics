@@ -2,18 +2,13 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.*;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
+import java.util.*;
 
 public class SuffixService {
     private static final String PATH_TO_PROPERTIES = "src/main/resources/config.properties";
     private String suffix;
     private Path directory;
-    //    private Path[] fileList;
-    private Path fileHelp;
-    private Path fileSetting;
-    private Path fileInfo;
+    private Path[] filesList;
     private Map<Path, String> filesMap = new HashMap();
 
     public void setProperties() {
@@ -24,13 +19,11 @@ public class SuffixService {
             properties.load(inputStream);
             suffix = properties.getProperty("suffix");
             directory = Paths.get(properties.getProperty("directory"));
-            fileHelp = Paths.get(properties.getProperty("fileHelp"));
-            fileSetting = Paths.get(properties.getProperty("fileSetting"));
-            fileInfo = Paths.get(properties.getProperty("fileInfo"));
-//            String[] strArr = properties.getProperty("fileList").split(";");
-//            for (int i = 0; i < strArr.length; i++) {
-//               fileList[i] = Paths.get(strArr[i]);
-//           }
+            String[] strArr = properties.getProperty("filesList").split(";");
+            filesList = new Path[strArr.length];
+            for (int i = 0; i < strArr.length; i++) {
+                filesList[i] = Paths.get(strArr[i]);
+            }
         } catch (FileNotFoundException e) {
             System.out.println("File \"config.properties\" not found.");
             e.printStackTrace();
@@ -40,13 +33,12 @@ public class SuffixService {
     }
 
     public void renameFile() {
-        Path[] fileList = new Path[]{fileHelp, fileSetting, fileInfo};
-        for (int i = 0; i < fileList.length; i++) {
-            Path originalName = Path.of(directory + "\\" + fileList[i]);
+        for (int i = 0; i < filesList.length; i++) {
+            Path originalName = Path.of(directory + "\\" + filesList[i]);
             if (Files.exists(originalName)) {
-                String[] strArr = String.valueOf(fileList[i]).split("\\.");
+                String[] strArr = String.valueOf(filesList[i]).split("\\.");
                 String newNameFile = strArr[0] + suffix + "." + strArr[1];
-                filesMap.put(fileList[i], newNameFile);
+                filesMap.put(filesList[i], newNameFile);
                 Path newName = Path.of(directory + "\\" + newNameFile);
                 try {
                     Files.move(originalName, newName);
@@ -55,8 +47,8 @@ public class SuffixService {
                     e.printStackTrace();
                 }
             } else {
-                filesMap.put(fileList[i], "File not exist.");
-                System.out.println("File \"" + fileList[i] + "\" not exist.");
+                filesMap.put(filesList[i], "File not exist.");
+                System.out.println("File \"" + filesList[i] + "\" not exist.");
             }
         }
     }
