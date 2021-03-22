@@ -18,7 +18,7 @@ public class QuadraticEquation {
         double discriminant = (numberB * numberB) - (4 * numberA * numberC);
         if (discriminant > 0 && numberA != 0) {
             rootsEquation = new double[2];
-            double result = Math.sqrt(Math.pow(numberB, 2) - (4 * numberA * numberC));
+            double result = Math.sqrt((numberB * numberB) - (4 * numberA * numberC));
             rootsEquation[0] = (-numberB + result) / (2 * numberA);
             rootsEquation[1] = (-numberB - result) / (2 * numberA);
         } else if (discriminant == 0 && numberA != 0) {

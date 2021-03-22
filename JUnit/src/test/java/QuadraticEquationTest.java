@@ -19,4 +19,28 @@ public class QuadraticEquationTest {
         quadraticEquation.setNumberC(1);
         Assert.assertNull(quadraticEquation.calculate());
     }
+
+    @Test
+    public void calculate_discriminantNegative() {
+        quadraticEquation.setNumberA(5);
+        quadraticEquation.setNumberB(1);
+        quadraticEquation.setNumberC(1);
+        Assert.assertNull(quadraticEquation.calculate());
+    }
+
+    @Test
+    public void calculate_discriminantZero() {
+        quadraticEquation.setNumberA(2);
+        quadraticEquation.setNumberB(4);
+        quadraticEquation.setNumberC(2);
+        Assert.assertArrayEquals(new double[]{-1}, quadraticEquation.calculate(), 0);
+    }
+
+    @Test
+    public void calculate_discriminantPositive() {
+        quadraticEquation.setNumberA(2);
+        quadraticEquation.setNumberB(4);
+        quadraticEquation.setNumberC(0);
+        Assert.assertArrayEquals(new double[]{0, -2}, quadraticEquation.calculate(), 0);
+    }
 }
