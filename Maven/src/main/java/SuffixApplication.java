@@ -22,9 +22,7 @@ Configure maven project to build a runnable jar containing application and its d
 Show the mentor your results.
      */
     public static void main(String[] args) {
-        SuffixService suffixService = new SuffixService();
-        suffixService.setProperties();
-        suffixService.renameFile();
-        suffixService.printResult();
+        Config config = FileUtil.initProps();
+        FileUtil.printResult(config);
     }
 }
