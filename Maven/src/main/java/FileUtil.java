@@ -17,11 +17,11 @@ public class FileUtil {
             config.setSuffix(properties.getProperty("suffix"));
             config.setDirectory(Paths.get(properties.getProperty("directory")));
             String[] filenamesArray = properties.getProperty("filesList").split(";");
-            List<Path> filesList = new ArrayList<>();
+            List<Path> filePathsList = new ArrayList<>();
             for (String filename : filenamesArray) {
-                filesList.add(Paths.get(filename));
+                filePathsList.add(Paths.get(filename));
             }
-            config.setFilesList(filesList);
+            config.setFilesList(filePathsList);
         } catch (FileNotFoundException e) {
             System.out.println("File \"config.properties\" not found.");
             e.printStackTrace();
@@ -36,8 +36,8 @@ public class FileUtil {
         for (int i = 0; i < config.getFilesList().size(); i++) {
             Path originalName = Path.of(config.getDirectory() + "\\" + config.getFilesList().get(i));
             if (Files.exists(originalName)) {
-                String[] strArr = String.valueOf(config.getFilesList().get(i)).split("\\.");
-                String newNameFile = strArr[0] + config.getSuffix() + "." + strArr[1];
+                String[] filenamesList = String.valueOf(config.getFilesList().get(i)).split("\\.");
+                String newNameFile = filenamesList[0] + config.getSuffix() + "." + filenamesList[1];
                 filesMap.put(config.getFilesList().get(i), newNameFile);
                 Path newName = Path.of(config.getDirectory() + "\\" + newNameFile);
                 try {
