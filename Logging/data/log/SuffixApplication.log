@@ -1,0 +1,29 @@
+2021-03-28 10:05:27 INFO  [main]: Method initProps() running.
+2021-03-28 10:12:46 INFO  [main]: Method initProps() running.
+2021-03-28 10:12:46 INFO  [main]: Config file loading
+2021-03-28 10:12:46 INFO  [main]: Config file reading
+2021-03-28 10:27:28 INFO  [main]: Method initProps() running.
+2021-03-28 10:27:28 INFO  [main]: Config file reading
+2021-03-28 10:27:28 INFO  [main]: File data\help.txt renamed to file data\help_new.txt
+2021-03-28 10:27:28 INFO  [main]: File "setting.txt" not exist.
+2021-03-28 10:27:28 INFO  [main]: File data\info.txt renamed to file data\info_new.txt
+2021-03-28 10:31:43 INFO  [main]: Method initProps() running.
+2021-03-28 10:31:43 INFO  [main]: Config file reading
+2021-03-28 10:31:43 INFO  [main]: File "help.txt" renamed to file help_new.txt
+2021-03-28 10:31:43 INFO  [main]: File "setting.txt" not exist.
+2021-03-28 10:31:43 INFO  [main]: File "info.txt" renamed to file info_new.txt
+2021-03-28 10:49:08 DEBUG [main]: The application has started.
+2021-03-28 10:49:08 INFO  [main]: Method initProps() running.
+2021-03-28 10:49:08 INFO  [main]: Config file reading
+2021-03-28 10:49:08 INFO  [main]: File "help.txt" not exist.
+2021-03-28 10:49:08 INFO  [main]: File "setting.txt" not exist.
+2021-03-28 10:49:08 INFO  [main]: File "info.txt" not exist.
+2021-03-28 10:49:08 DEBUG [main]: The application has finished.
+2021-03-28 10:55:48 DEBUG [main]: The application has started.
+2021-03-28 10:55:48 DEBUG [main]: Method "initProps()" running.
+2021-03-28 10:55:48 INFO  [main]: Config file reading
+2021-03-28 10:55:48 DEBUG [main]: Method "renameFiles()" running.
+2021-03-28 10:55:48 INFO  [main]: File "help.txt" renamed to file help_new.txt
+2021-03-28 10:55:48 INFO  [main]: File "setting.txt" not exist.
+2021-03-28 10:55:48 INFO  [main]: File "info.txt" renamed to file info_new.txt
+2021-03-28 10:55:48 DEBUG [main]: The application has finished.
