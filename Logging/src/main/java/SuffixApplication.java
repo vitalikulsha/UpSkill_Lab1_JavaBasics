@@ -25,15 +25,12 @@ Steps
 2. Show the mentor your results.
  */
 
-import org.apache.log4j.Logger;
-
 public class SuffixApplication {
-    final static Logger log = Logger.getLogger(FileUtil.class);
 
     public static void main(String[] args) {
-        log.debug("The application has started.");
+        FileUtil.log.debug("The application has started.");
         Config config = FileUtil.initProps();
         FileUtil.renameFiles(config);
-        log.debug("The application has finished.");
+        FileUtil.log.debug("The application has finished.");
     }
 }
