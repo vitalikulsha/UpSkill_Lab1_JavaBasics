@@ -25,7 +25,8 @@ Use different logging level. All log entries should contain a date and time info
 #### 3. Created a [config java file](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Logging/src/main/java/Config.java) 
 #### 4. Created a [util class](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Logging/src/main/java/FileUtil.java) with variables and methods
 #### 5. Created a [class to run the application](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Logging/src/main/java/SuffixApplication.java)
-#### 6. Console output 
+#### 6. [Log file](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Logging/data/log/SuffixApplication.log)
+#### 7. Console output 
 <h2>
    <img src="img/Cansole.jpg" width="400">
 </h2>
