@@ -18,7 +18,7 @@ It is a Suffixing App - a small java application that refers to a config file an
 ## Solution
 #### 1. Created a file [pom.hml](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Maven/pom.xml) 
 #### 2. Created a [config file](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Maven/src/main/resources/config.properties) 
-#### 3. Created a [config java file](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Maven/src/main/resources/Config.java) 
+#### 3. Created a [config java file](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Maven/src/main/java/Config.java) 
 #### 4. Created a [util class](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Maven/src/main/java/FileUtil.java) with variables and methods
 #### 5. Created a [class to run the application](https://github.com/vitalikulsha/UpSkill_Lab1_JavaBasics/blob/master/Maven/src/main/java/SuffixApplication.java)
 #### 6. Console output 
