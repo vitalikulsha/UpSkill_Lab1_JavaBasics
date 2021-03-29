@@ -1,5 +1,4 @@
-public class SuffixApplication {
-    /*
+/*
 Description
 Use maven to build and control a simple Java program with dependencies.
 
@@ -20,7 +19,8 @@ Add a dependency to some library for reading and parsing JSON files. (for instan
 Write the code implementing the app specification.
 Configure maven project to build a runnable jar containing application and its dependencies.
 Show the mentor your results.
-     */
+ */
+public class SuffixApplication {
     public static void main(String[] args) {
         Config config = FileUtil.initProps();
         FileUtil.printResult(config);
