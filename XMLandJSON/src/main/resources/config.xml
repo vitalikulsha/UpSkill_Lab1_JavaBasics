@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <suffix>_new</suffix>
+    <directory>data</directory>
+    <filesList>
+        <file>help.txt</file>
+        <file>setting.txt</file>
+        <file>info.txt</file>
+    </filesList>
+</config>
