@@ -10,11 +10,11 @@ import java.util.*;
 
 
 public class FileUtil {
-    private static final String PATH_TO_PROPERTIES = "src/main/resources/config.properties";
-    final static Logger log = Logger.getLogger(FileUtil.class);
+    private final static Logger LOG = Logger.getLogger(FileUtil.class);
+    private final static String PATH_TO_PROPERTIES = "src/main/resources/config.properties";
 
     public static Config initProps() {
-        log.debug("Method \"initProps()\" running.");
+        LOG.debug("Method \"initProps()\" running.");
         Properties properties = new Properties();
         Config config = new Config();
         try (InputStream inputStream = Files.newInputStream(Paths.get(PATH_TO_PROPERTIES))) {
@@ -27,18 +27,18 @@ public class FileUtil {
                 filePathsList.add(Paths.get(filename));
             }
             config.setFilesList(filePathsList);
-            log.info("Config file reading");
+            LOG.info("Config file reading");
         } catch (FileNotFoundException e) {
-            log.error("File \"config.properties\" not found.");
-            log.error(e);
+            LOG.error("File \"config.properties\" not found.");
+            LOG.error(e);
         } catch (IOException e) {
-            log.error(e);
+            LOG.error(e);
         }
         return config;
     }
 
     public static void renameFiles(Config config) {
-        log.debug("Method \"renameFiles()\" running.");
+        LOG.debug("Method \"renameFiles()\" running.");
         for (int i = 0; i < config.getFilesList().size(); i++) {
             Path originalName = Path.of(config.getDirectory() + "\\" + config.getFilesList().get(i));
             if (Files.exists(originalName)) {
@@ -47,13 +47,13 @@ public class FileUtil {
                 Path newName = Path.of(config.getDirectory() + "\\" + newNameFile);
                 try {
                     Files.move(originalName, newName);
-                    log.info("File \"" + config.getFilesList().get(i) + "\" renamed to file " + newNameFile);
+                    LOG.info("File \"" + config.getFilesList().get(i) + "\" renamed to file \"" + newNameFile + '\"');
                 } catch (IOException e) {
-                    log.error("File \"" + originalName + "\" not renamed");
-                    log.error(e);
+                    LOG.error("File \"" + originalName + "\" not renamed");
+                    LOG.error(e);
                 }
             } else {
-                log.info("File \"" + config.getFilesList().get(i) + "\" not exist.");
+                LOG.info("File \"" + config.getFilesList().get(i) + "\" not exist.");
             }
         }
     }
