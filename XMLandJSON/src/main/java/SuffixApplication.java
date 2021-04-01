@@ -1,5 +1,7 @@
 import org.apache.log4j.Logger;
 
+import java.io.File;
+
 /*
 Description
 Get Suffixing App project from Logging topic. Specify structure of its input and output.
@@ -51,10 +53,9 @@ public class SuffixApplication {
 
     public static void main(String[] args) {
         LOG.debug("The application has started.");
-//        Config config = FileUtil.initProps();
-//        FileUtil.renameFiles(config);
         Parser parser = new Parser();
         Config config = parser.parse();
+        FileUtil.printResult(config);
         LOG.debug("The application has finished.");
     }
 }
