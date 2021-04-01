@@ -29,4 +29,13 @@ public class Config {
     public void setFilesList(List<Path> filesList) {
         this.filesList = filesList;
     }
+
+    @Override
+    public String toString() {
+        return "Config{" +
+                "suffix='" + suffix + '\'' +
+                ", directory=" + directory +
+                ", filesList=" + filesList +
+                '}';
+    }
 }

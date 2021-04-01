@@ -12,6 +12,7 @@ import java.util.*;
 public class FileUtil {
     private final static Logger LOG = Logger.getLogger(FileUtil.class);
     private final static String PATH_TO_PROPERTIES = "src/main/resources/config.properties";
+    private static Map<Path, String> filesMap;
 
     public static Config initProps() {
         Properties properties = new Properties();
@@ -26,7 +27,7 @@ public class FileUtil {
                 filePathsList.add(Paths.get(filename));
             }
             config.setFilesList(filePathsList);
-            LOG.info("Config file reading");
+            LOG.info("Config file reading: " + config.toString());
         } catch (FileNotFoundException e) {
             LOG.error("File \"config.properties\" not found.");
             LOG.error(e);
@@ -42,6 +43,7 @@ public class FileUtil {
             if (Files.exists(originalName)) {
                 String[] filenamesList = String.valueOf(config.getFilesList().get(i)).split("\\.");
                 String newNameFile = filenamesList[0] + config.getSuffix() + "." + filenamesList[1];
+                filesMap.put(config.getFilesList().get(i), newNameFile);
                 Path newName = Path.of(config.getDirectory() + "\\" + newNameFile);
                 try {
                     Files.move(originalName, newName);
@@ -53,6 +55,13 @@ public class FileUtil {
             } else {
                 LOG.info("File \"" + config.getFilesList().get(i) + "\" not exist.");
             }
+        }
+    }
+
+    public static void printResult() {
+        LOG.info("\nOriginal name --> New name\n===========================");
+        for (Map.Entry<Path, String> file : filesMap.entrySet()) {
+            LOG.info(file.getKey() + " --> " + file.getValue());
         }
     }
 }
