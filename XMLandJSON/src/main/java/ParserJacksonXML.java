@@ -1,5 +1,6 @@
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.apache.log4j.Logger;
 
@@ -9,14 +10,14 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class ParserJackson {
-    private final static Logger LOG = Logger.getLogger(ParserJackson.class);
-    protected final static String PATH_TO_CONFIG = "src/main/resources/config.xml";
+public class ParserJacksonXML {
+    private final static Logger LOG = Logger.getLogger(ParserJacksonXML.class);
+    private final static String PATH_TO_CONFIG = "src/main/resources/config.xml";
     private final static String PATH_TO_RESULT = "data/log/result.xml";
+    ObjectMapper mapper = new XmlMapper();
 
     public Config parse() {
         Config config;
-        ObjectMapper mapper = new XmlMapper();
         try (InputStream input = new FileInputStream(new File(PATH_TO_CONFIG))) {
             TypeReference<Config> typeReference = new TypeReference<Config>() {
             };
@@ -32,8 +33,7 @@ public class ParserJackson {
         return config;
     }
 
-    public void createXML(Config config) {
-        ObjectMapper mapper = new XmlMapper();
+    public void writeXML(Config config) {
         Result result = new Result();
         result.setFileConfig(getFilenameResult());
         result.setTime(getFileCreateDate());

@@ -227,3 +227,31 @@ yyyy-MM-dd HH:mm:ss Level [main]: Original name --> New name
 2021-04-02 10:57:29 INFO  [main]: File "info.txt" renamed to file "info_new.txt"
 2021-04-02 10:57:29 INFO  [main]: File config.xml created.
 2021-04-02 10:57:29 DEBUG [main]: The application has finished.
+2021-04-02 11:20:33 DEBUG [main]: The application has started.
+2021-04-02 11:20:35 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-02 11:20:35 DEBUG [main]: File "help.txt" exist.
+2021-04-02 11:20:35 INFO  [main]: File "setting.txt" not exist.
+2021-04-02 11:20:35 DEBUG [main]: File "info.txt" exist.
+2021-04-02 11:20:35 DEBUG [main]: filesExistList = [help.txt, info.txt]
+2021-04-02 11:20:35 DEBUG [main]: File "help.txt" exist.
+2021-04-02 11:20:35 INFO  [main]: File "setting.txt" not exist.
+2021-04-02 11:20:35 DEBUG [main]: File "info.txt" exist.
+2021-04-02 11:20:35 DEBUG [main]: filesExistList = [help.txt, info.txt]
+2021-04-02 11:20:35 INFO  [main]: File "help.txt" renamed to file "help_new.txt"
+2021-04-02 11:20:35 INFO  [main]: File "info.txt" renamed to file "info_new.txt"
+2021-04-02 11:20:35 INFO  [main]: File config.xml created.
+2021-04-02 11:20:35 DEBUG [main]: The application has finished.
+2021-04-02 12:49:53 DEBUG [main]: The application has started.
+2021-04-02 12:49:57 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-02 12:49:57 DEBUG [main]: File "help.txt" exist.
+2021-04-02 12:49:57 INFO  [main]: File "setting.txt" not exist.
+2021-04-02 12:49:57 DEBUG [main]: File "info.txt" exist.
+2021-04-02 12:49:57 DEBUG [main]: filesExistList = [help.txt, info.txt]
+2021-04-02 12:49:57 DEBUG [main]: File "help.txt" exist.
+2021-04-02 12:49:57 INFO  [main]: File "setting.txt" not exist.
+2021-04-02 12:49:57 DEBUG [main]: File "info.txt" exist.
+2021-04-02 12:49:57 DEBUG [main]: filesExistList = [help.txt, info.txt]
+2021-04-02 12:49:57 INFO  [main]: File "help.txt" renamed to file "help_new.txt"
+2021-04-02 12:49:57 INFO  [main]: File "info.txt" renamed to file "info_new.txt"
+2021-04-02 12:49:57 INFO  [main]: File config.xml created.
+2021-04-02 12:49:57 DEBUG [main]: The application has finished.

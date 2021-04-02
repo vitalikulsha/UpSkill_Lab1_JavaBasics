@@ -9,9 +9,9 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Parser {
-    private final static Logger LOG = Logger.getLogger(Parser.class);
-    protected final static String PATH_TO_CONFIG = "src/main/resources/config.xml";
+public class ParserDOM {
+    private final static Logger LOG = Logger.getLogger(ParserDOM.class);
+    private final static String PATH_TO_CONFIG = "src/main/resources/config.xml";
     private final static String TAG_SUFFIX = "suffix";
     private final static String TAG_DIRECTORY = "directory";
     private final static String TAG_FILE_LIST = "filesList";
