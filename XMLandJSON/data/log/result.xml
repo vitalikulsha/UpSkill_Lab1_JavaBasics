@@ -1,8 +1,11 @@
 <Result>
-    <name>config.xml</name>
-    <data>2021-04-04 09:00:00</data>
-    <filesMap>
-        <help.txt>help_new.txt</help.txt>
-        <info.txt>info_new.txt</info.txt>
-    </filesMap>
+    <fileConfig>config.xml</fileConfig>
+    <time>2021-04-02 10:57:29</time>
+    <originalFilenames>
+        <originalFilenames>[help.txt, info.txt]</originalFilenames>
+    </originalFilenames>
+    <newFilenames>
+        <newFilenames>help_new.txt</newFilenames>
+        <newFilenames>info_new.txt</newFilenames>
+    </newFilenames>
 </Result>

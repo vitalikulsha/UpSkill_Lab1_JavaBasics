@@ -21,52 +21,20 @@ import java.util.*;
 public class FileUtil {
     private final static Logger LOG = Logger.getLogger(FileUtil.class);
 
-    public static void printDocumentXML(Config config) {
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = null;
-        try {
-            builder = factory.newDocumentBuilder();
-        } catch (ParserConfigurationException e) {
-            LOG.error("DocumentBuilder not create: " + e);
-            return;
-        }
-        String[] tempArr = new Parser().PATH_TO_CONFIG.split("/");
-        String fileConfig = tempArr[tempArr.length - 1];
-        Document doc = builder.newDocument();
-        Element root = doc.createElement("root");
-        Element nameFileConfig = doc.createElement("config");
-        Text text = doc.createTextNode(fileConfig);
-        Transformer transformer = null;
-        try {
-            transformer = TransformerFactory.newInstance().newTransformer();
-        } catch (TransformerConfigurationException e) {
-            e.printStackTrace();
-        }
-        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-        try {
-            transformer.transform(new DOMSource(doc), new StreamResult(new FileOutputStream("result.xml")));
-        } catch (TransformerException e) {
-            e.printStackTrace();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+//    public static void printResult(Config config) {
+//        Map<Path, String> filesMap = renameFiles(config);
+//        LOG.info("\nyyyy-MM-dd HH:mm:ss Level [main]: Original name --> New name\n" +
+//                "=============================================================");
+//        if (!filesMap.isEmpty()) {
+//            for (Map.Entry<Path, String> file : filesMap.entrySet()) {
+//                LOG.info(file.getKey() + " --> " + file.getValue());
+//            }
+//        } else {
+//            LOG.info("Files not find");
+//        }
+//    }
 
-    }
-
-    public static void printResult(Config config) {
-        Map<Path, String> filesMap = renameFiles(config);
-        LOG.info("\nyyyy-MM-dd HH:mm:ss Level [main]: Original name --> New name\n" +
-                "=============================================================");
-        if (!filesMap.isEmpty()) {
-            for (Map.Entry<Path, String> file : filesMap.entrySet()) {
-                LOG.info(file.getKey() + " --> " + file.getValue());
-            }
-        } else {
-            LOG.info("Files not find");
-        }
-    }
-
-    private static List<Path> checkFilesExist(Config config) {
+    public static List<Path> checkFilesExist(Config config) {
         List<Path> filesExistList = new ArrayList<>();
         for (Path file : config.getFilesList()) {
             Path currentFile = Path.of(config.getDirectory() + "\\" + file);
@@ -81,14 +49,13 @@ public class FileUtil {
         return filesExistList;
     }
 
-    public static Map<Path, String> renameFiles(Config config) {
-        List<Path> checkFilesExist = checkFilesExist(config);
-        Map<Path, String> filesMap = new HashMap<>();
-        for (Path file : checkFilesExist) {
+    public static List<Path> renameFiles(Config config) {
+        List<Path> originalFiles = checkFilesExist(config);
+        List<Path> newFiles = new ArrayList<>();
+        for (Path file : originalFiles) {
             Path originalName = Path.of(config.getDirectory() + "\\" + file);
             String[] filenamesList = String.valueOf(file).split("\\.");
             String newNameFile = filenamesList[0] + config.getSuffix() + "." + filenamesList[1];
-            filesMap.put(file, newNameFile);
             Path newName = Path.of(config.getDirectory() + "\\" + newNameFile);
             try {
                 Files.move(originalName, newName);
@@ -96,7 +63,8 @@ public class FileUtil {
             } catch (IOException e) {
                 LOG.error("File \"" + originalName + "\" not renamed: " + e);
             }
+            newFiles.add(Path.of(newNameFile));
         }
-        return filesMap;
+        return newFiles;
     }
 }

@@ -1,32 +1,42 @@
 import java.nio.file.Path;
-import java.util.Map;
+import java.util.List;
 
 public class Result {
-    private String name;
-    private String data;
-    private Map<Path, String> filesMap;
+    private String fileConfig;
+    private String time;
+    private List<String> originalFilenames;
+    private List<String> newFilenames;
 
-    public String getName() {
-        return name;
+
+    public String getFileConfig() {
+        return fileConfig;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFileConfig(String fileConfig) {
+        this.fileConfig = fileConfig;
     }
 
-    public String getData() {
-        return data;
+    public String getTime() {
+        return time;
     }
 
-    public void setData(String data) {
-        this.data = data;
+    public void setTime(String time) {
+        this.time = time;
     }
 
-    public Map<Path, String> getFilesMap() {
-        return filesMap;
+    public List<String> getOriginalFilenames() {
+        return originalFilenames;
     }
 
-    public void setFilesMap(Map<Path, String> filesMap) {
-        this.filesMap = filesMap;
+    public void setOriginalFilenames(List<String> originalFilenames) {
+        this.originalFilenames = originalFilenames;
+    }
+
+    public List<String> getNewFilenames() {
+        return newFilenames;
+    }
+
+    public void setNewFilenames(List<String> newFilenames) {
+        this.newFilenames = newFilenames;
     }
 }
