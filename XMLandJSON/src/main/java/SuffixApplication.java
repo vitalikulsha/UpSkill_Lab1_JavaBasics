@@ -53,9 +53,13 @@ public class SuffixApplication {
 
     public static void main(String[] args) {
         LOG.debug("The application has started.");
-        Parser parser = new Parser();
-        Config config = parser.parse();
-        FileUtil.printResult(config);
+//        Parser parser = new Parser();
+//        Config config = parser.parse();
+//        FileUtil.printResult(config);
+//        FileUtil.printDocumentXML(config);
+        ParserJackson parserJackson = new ParserJackson();
+        Config config = parserJackson.parse();
+        parserJackson.createXML(config);
         LOG.debug("The application has finished.");
     }
 }

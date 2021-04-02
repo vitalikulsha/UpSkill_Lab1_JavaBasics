@@ -1,0 +1,8 @@
+<Result>
+    <name>config.xml</name>
+    <data>2021-04-04 09:00:00</data>
+    <filesMap>
+        <help.txt>help_new.txt</help.txt>
+        <info.txt>info_new.txt</info.txt>
+    </filesMap>
+</Result>

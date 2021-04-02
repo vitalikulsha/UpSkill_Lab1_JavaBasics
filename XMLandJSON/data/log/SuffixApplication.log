@@ -1,0 +1,147 @@
+2021-04-01 19:14:21 ERROR [main]: Open parsing error: java.io.FileNotFoundException: E:\Java\EPAM\UpSkill_Lab1_JavaBasics\XMLandJSON\PATH_TO_CONFIG (Не удается найти указанный файл)
+2021-04-01 19:17:52 ERROR [main]: Open parsing error: java.io.FileNotFoundException: E:\Java\EPAM\UpSkill_Lab1_JavaBasics\XMLandJSON\PATH_TO_CONFIG (Не удается найти указанный файл)
+2021-04-01 19:19:13 ERROR [main]: Open parsing error: java.io.FileNotFoundException: E:\Java\EPAM\UpSkill_Lab1_JavaBasics\XMLandJSON\PATH_TO_CONFIG (Не удается найти указанный файл)
+2021-04-01 19:19:58 ERROR [main]: Open parsing error: java.io.FileNotFoundException: E:\Java\EPAM\UpSkill_Lab1_JavaBasics\XMLandJSON\src\main\resources\config.properties (Не удается найти указанный файл)
+2021-04-01 19:20:19 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-01 19:22:10 DEBUG [main]: The application has started.
+2021-04-01 19:22:10 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-01 19:22:10 DEBUG [main]: The application has finished.
+2021-04-01 20:05:02 DEBUG [main]: The application has started.
+2021-04-01 20:05:03 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-01 20:05:03 DEBUG [main]: File "help.txt" exist.
+2021-04-01 20:05:03 INFO  [main]: File "setting.txt" not exist.
+2021-04-01 20:05:03 DEBUG [main]: File "info.txt" exist.
+2021-04-01 20:05:03 DEBUG [main]: The application has finished.
+2021-04-01 20:08:29 DEBUG [main]: The application has started.
+2021-04-01 20:08:29 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-01 20:08:29 DEBUG [main]: File "help.txt" exist.
+2021-04-01 20:08:29 INFO  [main]: File "setting.txt" not exist.
+2021-04-01 20:08:29 DEBUG [main]: File "info.txt" exist.
+2021-04-01 20:08:58 DEBUG [main]: The application has started.
+2021-04-01 20:08:59 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-01 20:08:59 DEBUG [main]: File "help.txt" exist.
+2021-04-01 20:08:59 INFO  [main]: File "setting.txt" not exist.
+2021-04-01 20:08:59 DEBUG [main]: File "info.txt" exist.
+2021-04-01 20:08:59 DEBUG [main]: filesExistList = [help.txt, info.txt]
+2021-04-01 20:08:59 DEBUG [main]: The application has finished.
+2021-04-01 20:28:20 DEBUG [main]: The application has started.
+2021-04-01 20:28:21 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-01 20:28:21 DEBUG [main]: File "help.txt" exist.
+2021-04-01 20:28:21 INFO  [main]: File "setting.txt" not exist.
+2021-04-01 20:28:21 DEBUG [main]: File "info.txt" exist.
+2021-04-01 20:28:21 DEBUG [main]: filesExistList = [help.txt, info.txt]
+2021-04-01 20:28:21 INFO  [main]: File "help.txt" renamed to file "help_new.txt"
+2021-04-01 20:28:21 INFO  [main]: File "info.txt" renamed to file "info_new.txt"
+2021-04-01 20:28:21 DEBUG [main]: The application has finished.
+2021-04-01 20:32:27 DEBUG [main]: The application has started.
+2021-04-01 20:32:27 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-01 20:32:27 DEBUG [main]: File "help.txt" exist.
+2021-04-01 20:32:27 INFO  [main]: File "setting.txt" not exist.
+2021-04-01 20:32:27 DEBUG [main]: File "info.txt" exist.
+2021-04-01 20:32:27 DEBUG [main]: filesExistList = [help.txt, info.txt]
+2021-04-01 20:32:27 INFO  [main]: File "help.txt" renamed to file "help_new.txt"
+2021-04-01 20:32:27 INFO  [main]: File "info.txt" renamed to file "info_new.txt"
+2021-04-01 20:32:27 INFO  [main]: 
+Original name --> New name
+===========================
+2021-04-01 20:32:27 INFO  [main]: help.txt --> help_new.txt
+2021-04-01 20:32:27 INFO  [main]: info.txt --> info_new.txt
+2021-04-01 20:32:27 DEBUG [main]: The application has finished.
+2021-04-01 20:34:44 DEBUG [main]: The application has started.
+2021-04-01 20:34:45 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-01 20:34:45 INFO  [main]: File "help.txt" not exist.
+2021-04-01 20:34:45 INFO  [main]: File "setting.txt" not exist.
+2021-04-01 20:34:45 INFO  [main]: File "info.txt" not exist.
+2021-04-01 20:34:45 DEBUG [main]: filesExistList = []
+2021-04-01 20:34:45 INFO  [main]: 
+yyyy-MM-dd HH:mm:ss Level [main]: Original name --> New name
+===================================
+2021-04-01 20:34:45 DEBUG [main]: The application has finished.
+2021-04-01 20:39:13 DEBUG [main]: The application has started.
+2021-04-01 20:39:13 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-01 20:39:13 INFO  [main]: File "help.txt" not exist.
+2021-04-01 20:39:13 INFO  [main]: File "setting.txt" not exist.
+2021-04-01 20:39:13 INFO  [main]: File "info.txt" not exist.
+2021-04-01 20:39:13 DEBUG [main]: filesExistList = []
+2021-04-01 20:39:13 INFO  [main]: 
+yyyy-MM-dd HH:mm:ss Level [main]: Original name --> New name
+===================================
+2021-04-01 20:39:13 DEBUG [main]: The application has finished.
+2021-04-01 20:42:06 DEBUG [main]: The application has started.
+2021-04-01 20:42:07 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-01 20:42:07 INFO  [main]: File "help.txt" not exist.
+2021-04-01 20:42:07 INFO  [main]: File "setting.txt" not exist.
+2021-04-01 20:42:07 INFO  [main]: File "info.txt" not exist.
+2021-04-01 20:42:07 DEBUG [main]: filesExistList = []
+2021-04-01 20:42:07 INFO  [main]: 
+yyyy-MM-dd HH:mm:ss Level [main]: Original name --> New name
+===================================
+2021-04-01 20:42:07 INFO  [main]: Files not find
+2021-04-01 20:42:07 DEBUG [main]: The application has finished.
+2021-04-01 20:43:05 DEBUG [main]: The application has started.
+2021-04-01 20:43:05 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-01 20:43:05 DEBUG [main]: File "help.txt" exist.
+2021-04-01 20:43:05 INFO  [main]: File "setting.txt" not exist.
+2021-04-01 20:43:05 DEBUG [main]: File "info.txt" exist.
+2021-04-01 20:43:05 DEBUG [main]: filesExistList = [help.txt, info.txt]
+2021-04-01 20:43:05 INFO  [main]: File "help.txt" renamed to file "help_new.txt"
+2021-04-01 20:43:05 INFO  [main]: File "info.txt" renamed to file "info_new.txt"
+2021-04-01 20:43:05 INFO  [main]: 
+yyyy-MM-dd HH:mm:ss Level [main]: Original name --> New name
+===============================================================
+2021-04-01 20:43:05 INFO  [main]: help.txt --> help_new.txt
+2021-04-01 20:43:05 INFO  [main]: info.txt --> info_new.txt
+2021-04-01 20:43:05 DEBUG [main]: The application has finished.
+2021-04-01 20:43:45 DEBUG [main]: The application has started.
+2021-04-01 20:43:46 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-01 20:43:46 DEBUG [main]: File "help.txt" exist.
+2021-04-01 20:43:46 INFO  [main]: File "setting.txt" not exist.
+2021-04-01 20:43:46 DEBUG [main]: File "info.txt" exist.
+2021-04-01 20:43:46 DEBUG [main]: filesExistList = [help.txt, info.txt]
+2021-04-01 20:43:46 INFO  [main]: File "help.txt" renamed to file "help_new.txt"
+2021-04-01 20:43:46 INFO  [main]: File "info.txt" renamed to file "info_new.txt"
+2021-04-01 20:43:46 INFO  [main]: 
+yyyy-MM-dd HH:mm:ss Level [main]: Original name --> New name
+=============================================================
+
+2021-04-01 20:43:46 INFO  [main]: help.txt --> help_new.txt
+2021-04-01 20:43:46 INFO  [main]: info.txt --> info_new.txt
+2021-04-01 20:43:46 DEBUG [main]: The application has finished.
+2021-04-01 21:24:33 DEBUG [main]: The application has started.
+2021-04-01 21:24:34 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-01 21:24:34 DEBUG [main]: File "help.txt" exist.
+2021-04-01 21:24:34 INFO  [main]: File "setting.txt" not exist.
+2021-04-01 21:24:34 DEBUG [main]: File "info.txt" exist.
+2021-04-01 21:24:34 DEBUG [main]: filesExistList = [help.txt, info.txt]
+2021-04-01 21:24:34 INFO  [main]: File "help.txt" renamed to file "help_new.txt"
+2021-04-01 21:24:34 INFO  [main]: File "info.txt" renamed to file "info_new.txt"
+2021-04-01 21:24:34 INFO  [main]: 
+yyyy-MM-dd HH:mm:ss Level [main]: Original name --> New name
+=============================================================
+2021-04-01 21:24:34 INFO  [main]: help.txt --> help_new.txt
+2021-04-01 21:24:34 INFO  [main]: info.txt --> info_new.txt
+2021-04-01 21:24:35 DEBUG [main]: The application has finished.
+2021-04-02 08:38:07 DEBUG [main]: The application has started.
+2021-04-02 08:38:11 DEBUG [main]: The application has finished.
+2021-04-02 08:41:04 DEBUG [main]: The application has started.
+2021-04-02 08:41:06 DEBUG [main]: File "help.txt" exist.
+2021-04-02 08:41:06 INFO  [main]: File "setting.txt" not exist.
+2021-04-02 08:41:06 DEBUG [main]: File "info.txt" exist.
+2021-04-02 08:41:06 DEBUG [main]: filesExistList = [help.txt, info.txt]
+2021-04-02 08:41:06 INFO  [main]: File "help.txt" renamed to file "help_new.txt"
+2021-04-02 08:41:06 INFO  [main]: File "info.txt" renamed to file "info_new.txt"
+2021-04-02 08:41:06 INFO  [main]: 
+yyyy-MM-dd HH:mm:ss Level [main]: Original name --> New name
+=============================================================
+2021-04-02 08:41:06 INFO  [main]: help.txt --> help_new.txt
+2021-04-02 08:41:06 INFO  [main]: info.txt --> info_new.txt
+2021-04-02 08:41:06 DEBUG [main]: The application has finished.
+2021-04-02 09:05:02 DEBUG [main]: The application has started.
+2021-04-02 09:05:04 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-02 09:05:04 DEBUG [main]: File "help.txt" exist.
+2021-04-02 09:05:04 INFO  [main]: File "setting.txt" not exist.
+2021-04-02 09:05:04 DEBUG [main]: File "info.txt" exist.
+2021-04-02 09:05:04 DEBUG [main]: filesExistList = [help.txt, info.txt]
+2021-04-02 09:05:04 INFO  [main]: File "help.txt" renamed to file "help_new.txt"
+2021-04-02 09:05:04 INFO  [main]: File "info.txt" renamed to file "info_new.txt"
+2021-04-02 09:05:05 DEBUG [main]: The application has finished.
