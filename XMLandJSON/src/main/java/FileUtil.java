@@ -9,20 +9,7 @@ import java.util.*;
 public class FileUtil {
     private final static Logger LOG = Logger.getLogger(FileUtil.class);
 
-//    public static void printResult(Config config) {
-//        Map<Path, String> filesMap = renameFiles(config);
-//        LOG.info("\nyyyy-MM-dd HH:mm:ss Level [main]: Original name --> New name\n" +
-//                "=============================================================");
-//        if (!filesMap.isEmpty()) {
-//            for (Map.Entry<Path, String> file : filesMap.entrySet()) {
-//                LOG.info(file.getKey() + " --> " + file.getValue());
-//            }
-//        } else {
-//            LOG.info("Files not find");
-//        }
-//    }
-
-    public static List<Path> checkFilesExist(Config config) {
+    public static List<Path> getFilesExistList(Config config) {
         List<Path> filesExistList = new ArrayList<>();
         for (Path file : config.getFilesList()) {
             Path currentFile = Path.of(config.getDirectory() + "\\" + file);
@@ -37,8 +24,7 @@ public class FileUtil {
         return filesExistList;
     }
 
-    public static List<Path> renameFiles(Config config) {
-        List<Path> originalFiles = checkFilesExist(config);
+    public static List<Path> renameFiles(Config config, List<Path> originalFiles) {
         List<Path> newFiles = new ArrayList<>();
         for (Path file : originalFiles) {
             Path originalName = Path.of(config.getDirectory() + "\\" + file);

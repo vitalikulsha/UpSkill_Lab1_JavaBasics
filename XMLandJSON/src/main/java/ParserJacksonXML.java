@@ -1,6 +1,5 @@
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.apache.log4j.Logger;
 
@@ -37,8 +36,9 @@ public class ParserJacksonXML {
         Result result = new Result();
         result.setFileConfig(getFilenameResult());
         result.setTime(getFileCreateDate());
-        result.setOriginalFilenames(getFilenames(FileUtil.checkFilesExist(config)));
-        result.setNewFilenames(getFilenames(FileUtil.renameFiles(config)));
+        List<Path> originalFiles = FileUtil.getFilesExistList(config);
+        result.setOriginalFilenames(getFilenames(originalFiles));
+        result.setNewFilenames(getFilenames(FileUtil.renameFiles(config, originalFiles)));
         try {
             mapper.writeValue(new File(PATH_TO_RESULT), result);
             LOG.info("File " + getFilenameResult() + " created.");

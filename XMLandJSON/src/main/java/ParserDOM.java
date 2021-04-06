@@ -1,4 +1,4 @@
-import org.apache.log4j.Logger;
+/*mport org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -80,6 +80,4 @@ public class ParserDOM {
             return null;
         }
     }
-
-
-}
+}*/
