@@ -1,4 +1,5 @@
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /*
 Description
@@ -40,17 +41,15 @@ Specify structure of the following documents:
 Show the mentor your results.
  */
 public class SuffixApplication {
-    private final static Logger LOG = Logger.getLogger(SuffixApplication.class);
+    private final static Logger LOG = LoggerFactory.getLogger(SuffixApplication.class);
 
     public static void main(String[] args) {
-        LOG.debug("The application has started.");
+        LOG.info("The application has started.");
 //        ParserDOM parser = new ParserDOM();
 //        Config config = parser.parse();
-//        FileUtil.printResult(config);
-//        FileUtil.printDocumentXML(config);
         ParserJacksonXML parserJacksonXML = new ParserJacksonXML();
         Config config = parserJacksonXML.parse();
         parserJacksonXML.writeXML(config);
-        LOG.debug("The application has finished.");
+        LOG.info("The application has finished.");
     }
 }

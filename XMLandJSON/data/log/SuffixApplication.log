@@ -269,3 +269,61 @@ yyyy-MM-dd HH:mm:ss Level [main]: Original name --> New name
 2021-04-06 21:04:35 INFO  [main]: File "info.txt" renamed to file "info_new.txt"
 2021-04-06 21:04:35 INFO  [main]: File config.xml created.
 2021-04-06 21:04:35 DEBUG [main]: The application has finished.
+2021-04-06 21:07:50 DEBUG [main]: The application has started.
+2021-04-06 21:07:52 INFO  [main]: Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-06 21:07:52 DEBUG [main]: File "help.txt" exist.
+2021-04-06 21:07:52 INFO  [main]: File "setting.txt" not exist.
+2021-04-06 21:07:52 DEBUG [main]: File "info.txt" exist.
+2021-04-06 21:07:52 DEBUG [main]: filesExistList = [help.txt, info.txt]
+2021-04-06 21:07:52 INFO  [main]: File "help.txt" renamed to file "help_new.txt"
+2021-04-06 21:07:52 INFO  [main]: File "info.txt" renamed to file "info_new.txt"
+2021-04-06 21:07:52 INFO  [main]: File config.xml created.
+2021-04-06 21:07:52 DEBUG [main]: The application has finished.
+06.04.2021 21:21:45.809 [main] DEBUG  SuffixApplication - The application has started.
+06.04.2021 21:21:47.400 [main] INFO   ParserJacksonXML - Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+06.04.2021 21:21:47.425 [main] INFO   FileUtil - File "help.txt" not exist.
+06.04.2021 21:21:47.429 [main] INFO   FileUtil - File "setting.txt" not exist.
+06.04.2021 21:21:47.430 [main] INFO   FileUtil - File "info.txt" not exist.
+06.04.2021 21:21:47.431 [main] DEBUG  FileUtil - filesExistList = []
+06.04.2021 21:21:47.587 [main] INFO   ParserJacksonXML - File config.xml created.
+06.04.2021 21:21:47.589 [main] DEBUG  SuffixApplication - The application has finished.
+06.04.2021 21:22:44.570 [main] DEBUG  SuffixApplication - The application has started.
+06.04.2021 21:22:45.869 [main] INFO   ParserJacksonXML - Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+06.04.2021 21:22:45.898 [main] DEBUG  FileUtil - File "help.txt" exist.
+06.04.2021 21:22:45.906 [main] INFO   FileUtil - File "setting.txt" not exist.
+06.04.2021 21:22:45.908 [main] DEBUG  FileUtil - File "info.txt" exist.
+06.04.2021 21:22:45.909 [main] DEBUG  FileUtil - filesExistList = [help.txt, info.txt]
+06.04.2021 21:22:45.923 [main] INFO   FileUtil - File "help.txt" renamed to file "help_new.txt"
+06.04.2021 21:22:45.929 [main] INFO   FileUtil - File "info.txt" renamed to file "info_new.txt"
+06.04.2021 21:22:46.096 [main] INFO   ParserJacksonXML - File config.xml created.
+06.04.2021 21:22:46.098 [main] DEBUG  SuffixApplication - The application has finished.
+06.04.2021 21:29:22.239 [main] DEBUG  SuffixApplication - The application has started.
+06.04.2021 21:29:24.060 [main] INFO   ParserJacksonXML - Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+06.04.2021 21:29:24.080 [main] DEBUG  FileUtil - File "help.txt" exist.
+06.04.2021 21:29:24.105 [main] INFO   FileUtil - File "setting.txt" not exist.
+06.04.2021 21:29:24.106 [main] DEBUG  FileUtil - File "info.txt" exist.
+06.04.2021 21:29:24.107 [main] DEBUG  FileUtil - filesExistList = [help.txt, info.txt]
+06.04.2021 21:29:24.114 [main] INFO   FileUtil - File "help.txt" renamed to file "help_new.txt"
+06.04.2021 21:29:24.116 [main] INFO   FileUtil - File "info.txt" renamed to file "info_new.txt"
+06.04.2021 21:29:24.267 [main] INFO   ParserJacksonXML - File config.xml created.
+06.04.2021 21:29:24.271 [main] DEBUG  SuffixApplication - The application has finished.
+2021-04-06 21:35:52 [main] DEBUG SuffixApplication - The application has started.
+2021-04-06 21:35:54 [main] INFO  ParserJacksonXML - Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-06 21:35:54 [main] DEBUG FileUtil - File "help.txt" exist.
+2021-04-06 21:35:54 [main] INFO  FileUtil - File "setting.txt" not exist.
+2021-04-06 21:35:54 [main] DEBUG FileUtil - File "info.txt" exist.
+2021-04-06 21:35:54 [main] DEBUG FileUtil - filesExistList = [help.txt, info.txt]
+2021-04-06 21:35:54 [main] INFO  FileUtil - File "help.txt" renamed to file "help_new.txt"
+2021-04-06 21:35:54 [main] INFO  FileUtil - File "info.txt" renamed to file "info_new.txt"
+2021-04-06 21:35:54 [main] INFO  ParserJacksonXML - File "config.xml" created.
+2021-04-06 21:35:54 [main] DEBUG SuffixApplication - The application has finished.
+2021-04-06 21:38:08 [main] INFO  SuffixApplication - The application has started.
+2021-04-06 21:38:10 [main] INFO  ParserJacksonXML - Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}
+2021-04-06 21:38:10 [main] INFO  FileUtil - File "help.txt" exist.
+2021-04-06 21:38:10 [main] INFO  FileUtil - File "setting.txt" not exist.
+2021-04-06 21:38:10 [main] INFO  FileUtil - File "info.txt" exist.
+2021-04-06 21:38:10 [main] INFO  FileUtil - filesExistList = [help.txt, info.txt]
+2021-04-06 21:38:10 [main] INFO  FileUtil - File "help.txt" renamed to file "help_new.txt"
+2021-04-06 21:38:10 [main] INFO  FileUtil - File "info.txt" renamed to file "info_new.txt"
+2021-04-06 21:38:10 [main] INFO  ParserJacksonXML - File "config.xml" created.
+2021-04-06 21:38:10 [main] INFO  SuffixApplication - The application has finished.

@@ -1,4 +1,5 @@
-/*mport org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ParserDOM {
-    private final static Logger LOG = Logger.getLogger(ParserDOM.class);
+    private final static Logger LOG = LoggerFactory.getLogger(ParserDOM.class);
     private final static String PATH_TO_CONFIG = "src/main/resources/config.xml";
     private final static String TAG_SUFFIX = "suffix";
     private final static String TAG_DIRECTORY = "directory";
@@ -53,7 +54,7 @@ public class ParserDOM {
         }
         List<Path> fileList = parsFileList(filesListNode);
         config.setFilesList(fileList);
-        LOG.info("Config file reading: " + config.toString());
+        LOG.info("Config file reading: {}", config.toString());
         return config;
     }
 
@@ -76,8 +77,8 @@ public class ParserDOM {
         try {
             return factory.newDocumentBuilder().parse(file);
         } catch (Exception e) {
-            LOG.error("Open parsing error: " + e);
+            LOG.error("Open parsing error: ", e);
             return null;
         }
     }
-}*/
+}

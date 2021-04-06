@@ -1,4 +1,5 @@
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -7,20 +8,20 @@ import java.util.*;
 
 
 public class FileUtil {
-    private final static Logger LOG = Logger.getLogger(FileUtil.class);
+    private final static Logger LOG = LoggerFactory.getLogger(FileUtil.class);
 
     public static List<Path> getFilesExistList(Config config) {
         List<Path> filesExistList = new ArrayList<>();
         for (Path file : config.getFilesList()) {
             Path currentFile = Path.of(config.getDirectory() + "\\" + file);
             if (Files.exists(currentFile)) {
-                LOG.debug("File \"" + file + "\" exist.");
+                LOG.info("File \"{}\" exist.", file);
                 filesExistList.add(file);
             } else {
-                LOG.info("File \"" + file + "\" not exist.");
+                LOG.info("File \"{}\" not exist.", file);
             }
         }
-        LOG.debug("filesExistList = " + filesExistList);
+        LOG.info("filesExistList = {}", filesExistList);
         return filesExistList;
     }
 
