@@ -2,7 +2,7 @@ import java.util.List;
 
 public class Result {
     private String fileConfig;
-    private String time;
+    private String timestamp;
     private List<String> originalFilenames;
     private List<String> newFilenames;
 
@@ -15,12 +15,12 @@ public class Result {
         this.fileConfig = fileConfig;
     }
 
-    public String getTime() {
-        return time;
+    public String getTimestamp() {
+        return timestamp;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
     }
 
     public List<String> getOriginalFilenames() {

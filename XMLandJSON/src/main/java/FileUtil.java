@@ -15,10 +15,10 @@ public class FileUtil {
         for (Path file : config.getFilesList()) {
             Path currentFile = Path.of(config.getDirectory() + "\\" + file);
             if (Files.exists(currentFile)) {
-                LOG.info("File \"{}\" exist.", file);
+                LOG.info("File '{}' exist.", file);
                 filesExistList.add(file);
             } else {
-                LOG.info("File \"{}\" not exist.", file);
+                LOG.info("File '{}' not exist.", file);
             }
         }
         LOG.info("filesExistList = {}", filesExistList);
@@ -26,20 +26,20 @@ public class FileUtil {
     }
 
     public static List<Path> renameFiles(Config config, List<Path> originalFiles) {
-        List<Path> newFiles = new ArrayList<>();
+        List<Path> newFilesList = new ArrayList<>();
         for (Path file : originalFiles) {
-            Path originalName = Path.of(config.getDirectory() + "\\" + file);
-            String[] filenamesList = String.valueOf(file).split("\\.");
-            String newNameFile = filenamesList[0] + config.getSuffix() + "." + filenamesList[1];
-            Path newName = Path.of(config.getDirectory() + "\\" + newNameFile);
+            Path originalFilename = Path.of(config.getDirectory() + "\\" + file);
+            String[] filename = String.valueOf(file).split("\\.");
+            String newName = filename[0] + config.getSuffix() + "." + filename[1];
+            Path newFilename = Path.of(config.getDirectory() + "\\" + newName);
             try {
-                Files.move(originalName, newName);
-                LOG.info("File \"" + file + "\" renamed to file \"" + newNameFile + '\"');
+                Files.move(originalFilename, newFilename);
+                LOG.info("File '{}' renamed to file '{}'", file, newName);
             } catch (IOException e) {
-                LOG.error("File \"" + originalName + "\" not renamed: " + e);
+                LOG.error("File '{}' not renamed: ", originalFilename, e);
             }
-            newFiles.add(Path.of(newNameFile));
+            newFilesList.add(Path.of(newName));
         }
-        return newFiles;
+        return newFilesList;
     }
 }

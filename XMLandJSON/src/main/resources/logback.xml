@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-
-    <properties>
-        <property name="pattern">%d{yyyy-MM-dd HH:mm:ss.SSS} | %-5.5p | %-20.20C:%-5.5L | %msg%n</property>
-        <property name="filePath">data/log</property>
-        <property name="fileName">SuffixApplication</property>
-        <!--            <property name="FILE_PATH" value="data/log/"/>-->
-    </properties>
+<configuration debug="true">
+    <property name="FILE" value="data/log/SuffixApplication.json"/>
 
     <appender name="STDOUT"
               class="ch.qos.logback.core.ConsoleAppender">
@@ -15,31 +9,17 @@
         </encoder>
     </appender>
 
-    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>data/log/SuffixApplication.log</file>
-        <rollingPolicy
-                class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>data/log/SuffixApplication.%d{yyyy-MM-dd}.log</fileNamePattern>
-            <maxHistory>10</maxHistory>
-            <totalSizeCap>10MB</totalSizeCap>
-        </rollingPolicy>
-        <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{20} -> %msg%n</pattern>
-        </encoder>
-    </appender>
-
     <appender name="JSON" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>data/log/SuffixApplication.json</file>
+        <file>${FILE}</file>
         <rollingPolicy
-                class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>data/log/SuffixApplication.%d{yyyy-MM-dd}.json</fileNamePattern>
+                class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${FILE}.%d{yyyy-MM-dd}.%i.gz</fileNamePattern>
+            <maxFileSize>1MB</maxFileSize>
             <maxHistory>10</maxHistory>
             <totalSizeCap>10MB</totalSizeCap>
         </rollingPolicy>
         <layout class="ch.qos.logback.contrib.json.classic.JsonLayout">
-            <jsonFormatter class="ch.qos.logback.contrib.jackson.JacksonJsonFormatter">
-                <prettyPrint>true</prettyPrint>
-            </jsonFormatter>
+            <jsonFormatter class="ch.qos.logback.contrib.jackson.JacksonJsonFormatter"/>
             <timestampFormat>yyyy-MM-dd HH:mm:ss</timestampFormat>
             <appendLineSeparator>true</appendLineSeparator>
         </layout>
@@ -47,7 +27,6 @@
 
     <root level="info">
         <appender-ref ref="STDOUT"/>
-        <appender-ref ref="FILE"/>
         <appender-ref ref="JSON"/>
     </root>
 </configuration>
