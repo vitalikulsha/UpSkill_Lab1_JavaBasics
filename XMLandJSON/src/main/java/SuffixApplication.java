@@ -45,11 +45,9 @@ public class SuffixApplication {
 
     public static void main(String[] args) {
         LOG.info("The application has started.");
-//        ParserDOM parser = new ParserDOM();
-//        Config config = parser.parse();
-        ParserJacksonXML parserJacksonXML = new ParserJacksonXML();
-        Config config = parserJacksonXML.parse();
-        parserJacksonXML.writeXML(config);
+        HandlerXMLJackson handlerXMLJackson = new HandlerXMLJackson();
+        Config config = handlerXMLJackson.parse();
+        handlerXMLJackson.writeXML(config);
         LOG.info("The application has finished.");
     }
 }
