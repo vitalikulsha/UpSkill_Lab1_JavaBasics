@@ -54,7 +54,7 @@ public class HandlerXMLJackson {
         result.setNewFilenames(getFilenames(FileUtil.renameFiles(config, originalFiles)));
         try {
             mapper.writeValue(new File(PATH_TO_RESULT), result);
-            LOG.info("File '{}' created.", getFilenameResult());
+            LOG.info("File '{}' created.", PATH_TO_RESULT);
         } catch (IOException e) {
             LOG.error("File not create: ", e);
         }
