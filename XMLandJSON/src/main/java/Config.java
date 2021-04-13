@@ -5,6 +5,7 @@ public class Config {
     private String suffix;
     private Path directory;
     private List<Path> filesList;
+    private String pathResult;
 
     public String getSuffix() {
         return suffix;
@@ -30,12 +31,21 @@ public class Config {
         this.filesList = filesList;
     }
 
+    public String getPathResult() {
+        return pathResult;
+    }
+
+    public void setPathResult(String pathResult) {
+        this.pathResult = pathResult;
+    }
+
     @Override
     public String toString() {
         return "Config{" +
                 "suffix='" + suffix + '\'' +
                 ", directory=" + directory +
                 ", filesList=" + filesList +
+                ", pathResult='" + pathResult + '\'' +
                 '}';
     }
 }

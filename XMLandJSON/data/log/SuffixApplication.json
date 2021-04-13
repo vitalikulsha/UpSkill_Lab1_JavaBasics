@@ -1,147 +1,20 @@
-{
-  "timestamp": "2021-04-11 18:02:10",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "The application has started.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-11 18:02:11",
-  "level": "ERROR",
-  "thread": "main",
-  "logger": "HandlerXMLJackson",
-  "message": "Config object not created: ",
-  "context": "default",
-  "exception": "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"noNamespaceSchemaLocation\" (class Config), not marked as ignorable (3 known properties: \"suffix\", \"directory\", \"filesList\"])\n at [Source: (FileInputStream); line: 3, column: 52] (through reference chain: Config[\"noNamespaceSchemaLocation\"])\r\n\tat com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)\r\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)\r\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)\r\n\tat com.fasterxml.jackson.dataformat.xml.deser.XmlDeserializationContext.readRootValue(XmlDeserializationContext.java:91)\r\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)\r\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3593)\r\n\tat HandlerXMLJackson.parse(HandlerXMLJackson.java:24)\r\n\tat SuffixApplication.main(SuffixApplication.java:51)\r\n"
-}
-{
-  "timestamp": "2021-04-11 18:09:13",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "The application has started.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-11 18:09:13",
-  "level": "ERROR",
-  "thread": "main",
-  "logger": "HandlerXMLJackson",
-  "message": "Config object not created: ",
-  "context": "default",
-  "exception": "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"noNamespaceSchemaLocation\" (class Config), not marked as ignorable (3 known properties: \"suffix\", \"directory\", \"filesList\"])\n at [Source: (FileInputStream); line: 3, column: 52] (through reference chain: Config[\"noNamespaceSchemaLocation\"])\r\n\tat com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)\r\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)\r\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)\r\n\tat com.fasterxml.jackson.dataformat.xml.deser.XmlDeserializationContext.readRootValue(XmlDeserializationContext.java:91)\r\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)\r\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3593)\r\n\tat HandlerXMLJackson.parse(HandlerXMLJackson.java:24)\r\n\tat SuffixApplication.main(SuffixApplication.java:51)\r\n"
-}
-{
-  "timestamp": "2021-04-11 18:32:44",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "The application has started.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-11 18:32:45",
-  "level": "ERROR",
-  "thread": "main",
-  "logger": "HandlerXMLJackson",
-  "message": "Config file is invalid",
-  "context": "default",
-  "exception": "org.xml.sax.SAXParseException: cvc-elt.1.a: Cannot find the declaration of element 'config'.\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:2132)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:829)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:613)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3078)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:836)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.StreamValidatorHelper.validate(StreamValidatorHelper.java:176)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorImpl.validate(ValidatorImpl.java:115)\r\n\tat java.xml/javax.xml.validation.Validator.validate(Validator.java:124)\r\n\tat HandlerXMLJackson.validateXMLSchema(HandlerXMLJackson.java:70)\r\n\tat HandlerXMLJackson.parse(HandlerXMLJackson.java:28)\r\n\tat SuffixApplication.main(SuffixApplication.java:51)\r\n"
-}
-{
-  "timestamp": "2021-04-11 18:32:45",
-  "level": "ERROR",
-  "thread": "main",
-  "logger": "HandlerXMLJackson",
-  "message": "Results file not created: config file is missing",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-11 18:32:45",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "The application has finished.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-11 18:38:00",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "The application has started.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-11 18:38:01",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "HandlerXMLJackson",
-  "message": "Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt]}",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-11 18:38:01",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'help.txt' exist.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-11 18:38:01",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'setting.txt' not exist.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-11 18:38:01",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'info.txt' exist.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-11 18:38:01",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "filesExistList = [help.txt, info.txt]",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-11 18:38:01",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'help.txt' renamed to file 'help_new.txt'",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-11 18:38:01",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'info.txt' renamed to file 'info_new.txt'",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-11 18:38:01",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "HandlerXMLJackson",
-  "message": "File 'config.xml' created.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-11 18:38:01",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "The application has finished.",
-  "context": "default"
-}
+{"timestamp":"2021-04-13 21:41:28","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has started.","context":"default"}
+{"timestamp":"2021-04-13 21:41:30","level":"INFO","thread":"main","logger":"XMLJacksonHandler","message":"Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt], pathResult='data/result.xml'}","context":"default"}
+{"timestamp":"2021-04-13 21:41:30","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'help.txt' exist.","context":"default"}
+{"timestamp":"2021-04-13 21:41:30","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'setting.txt' not exist.","context":"default"}
+{"timestamp":"2021-04-13 21:41:30","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'info.txt' exist.","context":"default"}
+{"timestamp":"2021-04-13 21:41:30","level":"INFO","thread":"main","logger":"FileUtil","message":"filesExistList = [help.txt, info.txt]","context":"default"}
+{"timestamp":"2021-04-13 21:41:30","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'help.txt' renamed to file 'help_new.txt'","context":"default"}
+{"timestamp":"2021-04-13 21:41:30","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'info.txt' renamed to file 'info_new.txt'","context":"default"}
+{"timestamp":"2021-04-13 21:41:30","level":"INFO","thread":"main","logger":"XMLJacksonHandler","message":"File 'config.xml' created.","context":"default"}
+{"timestamp":"2021-04-13 21:41:30","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has finished.","context":"default"}
+{"timestamp":"2021-04-13 21:43:34","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has started.","context":"default"}
+{"timestamp":"2021-04-13 21:43:35","level":"INFO","thread":"main","logger":"XMLJacksonHandler","message":"Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt], pathResult='data/result.xml'}","context":"default"}
+{"timestamp":"2021-04-13 21:43:35","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'help.txt' exist.","context":"default"}
+{"timestamp":"2021-04-13 21:43:35","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'setting.txt' not exist.","context":"default"}
+{"timestamp":"2021-04-13 21:43:35","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'info.txt' exist.","context":"default"}
+{"timestamp":"2021-04-13 21:43:35","level":"INFO","thread":"main","logger":"FileUtil","message":"filesExistList = [help.txt, info.txt]","context":"default"}
+{"timestamp":"2021-04-13 21:43:35","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'help.txt' renamed to file 'help_new.txt'","context":"default"}
+{"timestamp":"2021-04-13 21:43:35","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'info.txt' renamed to file 'info_new.txt'","context":"default"}
+{"timestamp":"2021-04-13 21:43:35","level":"INFO","thread":"main","logger":"XMLJacksonHandler","message":"File 'data/result.xml' created.","context":"default"}
+{"timestamp":"2021-04-13 21:43:35","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has finished.","context":"default"}

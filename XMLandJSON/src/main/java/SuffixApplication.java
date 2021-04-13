@@ -45,9 +45,9 @@ public class SuffixApplication {
 
     public static void main(String[] args) {
         LOG.info("The application has started.");
-        HandlerXMLJackson handlerXMLJackson = new HandlerXMLJackson();
-        Config config = handlerXMLJackson.parse();
-        handlerXMLJackson.writeXML(config);
+        XMLJacksonHandler XMLJacksonHandler = new XMLJacksonHandler();
+        Config config = XMLJacksonHandler.parse();
+        XMLJacksonHandler.writeXML(config);
         LOG.info("The application has finished.");
     }
 }

@@ -14,11 +14,11 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class HandlerXMLJackson {
-    private final static Logger LOG = LoggerFactory.getLogger(HandlerXMLJackson.class);
+public class XMLJacksonHandler {
+    private final static Logger LOG = LoggerFactory.getLogger(XMLJacksonHandler.class);
     private final static String PATH_TO_CONFIG = "src/main/resources/config.xml";
     private final static String PATH_TO_SCHEMA = "src/main/resources/config.xsd";
-    private final static String PATH_TO_RESULT = "data/result.xml";
+    //private final static String PATH_TO_RESULT = "data/result.xml";
     private ObjectMapper mapper = new XmlMapper();
 
     public Config parse() {
@@ -53,8 +53,8 @@ public class HandlerXMLJackson {
         result.setOriginalFilenames(getFilenames(originalFiles));
         result.setNewFilenames(getFilenames(FileUtil.renameFiles(config, originalFiles)));
         try {
-            mapper.writeValue(new File(PATH_TO_RESULT), result);
-            LOG.info("File '{}' created.", getFilenameResult());
+            mapper.writeValue(new File(config.getPathResult()), result);
+            LOG.info("File '{}' created.", config.getPathResult());
         } catch (IOException e) {
             LOG.error("File not create: ", e);
         }

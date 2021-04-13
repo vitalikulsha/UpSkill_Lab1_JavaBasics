@@ -7,4 +7,5 @@
         <file>setting.txt</file>
         <file>info.txt</file>
     </filesList>
+    <pathResult>data/result.xml</pathResult>
 </config>

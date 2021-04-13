@@ -12,6 +12,7 @@
                         </xsd:sequence>
                     </xsd:complexType>
                 </xsd:element>
+                <xsd:element name="pathResult" type="xsd:string"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
