@@ -20,10 +20,10 @@ public class XMLJacksonHandler {
     private final static String PATH_TO_SCHEMA = "src/main/resources/config.xsd";
     private ObjectMapper mapper = new XmlMapper();
 
-    public Config parse() {
+    public Config parse() throws IOException, SAXException, MyException {
         Config config;
         if (!validateXMLSchema(PATH_TO_SCHEMA, PATH_TO_CONFIG)) {
-            return null;
+            throw new MyException("Config file is invalid");
         }
         try (InputStream input = new FileInputStream(PATH_TO_CONFIG)) {
             TypeReference<Config> typeReference = new TypeReference<Config>() {
@@ -59,19 +59,11 @@ public class XMLJacksonHandler {
         }
     }
 
-    private boolean validateXMLSchema(String xsdPath, String xmlPath) {
-        try {
-            SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-            Schema schema = factory.newSchema(new File(xsdPath));
-            Validator validator = schema.newValidator();
-            validator.validate(new StreamSource(new File(xmlPath)));
-        } catch (IOException e) {
-            LOG.error("Config file no read", e);
-            return false;
-        } catch (SAXException e) {
-            LOG.error("Config file is invalid", e);
-            return false;
-        }
+    private boolean validateXMLSchema(String xsdPath, String xmlPath) throws IOException, SAXException {
+        SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+        Schema schema = factory.newSchema(new File(xsdPath));
+        Validator validator = schema.newValidator();
+        validator.validate(new StreamSource(new File(xmlPath)));
         return true;
     }
 

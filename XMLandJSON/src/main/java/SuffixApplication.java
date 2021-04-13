@@ -1,5 +1,8 @@
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.xml.sax.SAXException;
+
+import java.io.IOException;
 
 /*
 Description
@@ -46,7 +49,16 @@ public class SuffixApplication {
     public static void main(String[] args) {
         LOG.info("The application has started.");
         XMLJacksonHandler XMLJacksonHandler = new XMLJacksonHandler();
-        Config config = XMLJacksonHandler.parse();
+        Config config = null;
+        try {
+            config = XMLJacksonHandler.parse();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
+            e.printStackTrace();
+        } catch (MyException e) {
+            e.printStackTrace();
+        }
         XMLJacksonHandler.writeXML(config);
         LOG.info("The application has finished.");
     }
