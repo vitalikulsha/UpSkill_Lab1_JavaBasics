@@ -2,6 +2,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xml.sax.SAXException;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /*
@@ -52,14 +53,22 @@ public class SuffixApplication {
         Config config = null;
         try {
             config = XMLJacksonHandler.parse();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
         } catch (MyException e) {
-            e.printStackTrace();
+            LOG.error(e.getMessage(), e);
+        } catch (FileNotFoundException e) {
+            LOG.error("File not found. Config object not created: ", e);
+        } catch (IOException e) {
+            LOG.error("Config file no read: ", e);
+        } catch (SAXException e) {
+            LOG.error("Config file is invalid: ", e);
         }
-        XMLJacksonHandler.writeXML(config);
+        try {
+            XMLJacksonHandler.writeXML(config);
+        } catch (MyException e) {
+            LOG.error(e.getMessage(), e);
+        } catch (IOException e) {
+            LOG.error("File not create: ", e);
+        }
         LOG.info("The application has finished.");
     }
 }

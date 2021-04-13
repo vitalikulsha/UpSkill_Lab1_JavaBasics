@@ -22,28 +22,20 @@ public class XMLJacksonHandler {
 
     public Config parse() throws IOException, SAXException, MyException {
         Config config;
-        if (!validateXMLSchema(PATH_TO_SCHEMA, PATH_TO_CONFIG)) {
-            throw new MyException("Config file is invalid");
-        }
-        try (InputStream input = new FileInputStream(PATH_TO_CONFIG)) {
-            TypeReference<Config> typeReference = new TypeReference<Config>() {
-            };
-            config = mapper.readValue(input, typeReference);
-        } catch (FileNotFoundException e) {
-            LOG.error("File not found. Config object not created: ", e);
-            return null;
-        } catch (IOException e) {
-            LOG.error("Config object not created: ", e);
-            return null;
-        }
+        validateXMLSchema(PATH_TO_SCHEMA, PATH_TO_CONFIG);
+        LOG.info("The config file matches the schema");
+        InputStream input = new FileInputStream(PATH_TO_CONFIG);
+        TypeReference<Config> typeReference = new TypeReference<Config>() {
+        };
+        config = mapper.readValue(input, typeReference);
+        input.close();
         LOG.info("Config file reading: {}", config.toString());
         return config;
     }
 
-    public void writeXML(Config config) {
+    public void writeXML(Config config) throws MyException, IOException {
         if (config == null) {
-            LOG.error("Results file not created: config file is missing");
-            return;
+            throw new MyException("Results file not created: config file is missing");
         }
         Result result = new Result();
         result.setFileConfig(getFilenameResult());
@@ -51,12 +43,8 @@ public class XMLJacksonHandler {
         List<Path> originalFiles = FileUtil.getFilesExistList(config);
         result.setOriginalFilenames(getFilenames(originalFiles));
         result.setNewFilenames(getFilenames(FileUtil.renameFiles(config, originalFiles)));
-        try {
-            mapper.writeValue(new File(config.getPathResult()), result);
-            LOG.info("File '{}' created.", config.getPathResult());
-        } catch (IOException e) {
-            LOG.error("File not create: ", e);
-        }
+        mapper.writeValue(new File(config.getPathResult()), result);
+        LOG.info("File '{}' created.", config.getPathResult());
     }
 
     private boolean validateXMLSchema(String xsdPath, String xmlPath) throws IOException, SAXException {
