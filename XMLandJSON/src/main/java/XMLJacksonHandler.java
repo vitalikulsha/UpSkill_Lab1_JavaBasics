@@ -18,7 +18,6 @@ public class XMLJacksonHandler {
     private final static Logger LOG = LoggerFactory.getLogger(XMLJacksonHandler.class);
     private final static String PATH_TO_CONFIG = "src/main/resources/config.xml";
     private final static String PATH_TO_SCHEMA = "src/main/resources/config.xsd";
-    //private final static String PATH_TO_RESULT = "data/result.xml";
     private ObjectMapper mapper = new XmlMapper();
 
     public Config parse() {
