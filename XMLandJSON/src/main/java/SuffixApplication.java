@@ -50,24 +50,18 @@ public class SuffixApplication {
     public static void main(String[] args) {
         LOG.info("The application has started.");
         XMLJacksonHandler XMLJacksonHandler = new XMLJacksonHandler();
-        Config config = null;
+        Config config;
         try {
             config = XMLJacksonHandler.parse();
-        } catch (MyException e) {
-            LOG.error(e.getMessage(), e);
-        } catch (FileNotFoundException e) {
-            LOG.error("File not found. Config object not created: ", e);
-        } catch (IOException e) {
-            LOG.error("Config file no read: ", e);
-        } catch (SAXException e) {
-            LOG.error("Config file is invalid: ", e);
-        }
-        try {
             XMLJacksonHandler.writeXML(config);
         } catch (MyException e) {
             LOG.error(e.getMessage(), e);
+        } catch (FileNotFoundException e) {
+            LOG.error("File not found. Config object not created.", e);
         } catch (IOException e) {
-            LOG.error("File not create: ", e);
+            LOG.error("Config file no read.", e);
+        } catch (SAXException e) {
+            LOG.error("Config file is invalid.", e);
         }
         LOG.info("The application has finished.");
     }

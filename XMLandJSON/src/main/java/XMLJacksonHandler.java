@@ -23,7 +23,7 @@ public class XMLJacksonHandler {
     public Config parse() throws IOException, SAXException, MyException {
         Config config;
         validateXMLSchema(PATH_TO_SCHEMA, PATH_TO_CONFIG);
-        LOG.info("The config file matches the schema");
+        LOG.info("The config file '{}' matches the schema '{}.", PATH_TO_CONFIG, PATH_TO_SCHEMA);
         InputStream input = new FileInputStream(PATH_TO_CONFIG);
         TypeReference<Config> typeReference = new TypeReference<Config>() {
         };
