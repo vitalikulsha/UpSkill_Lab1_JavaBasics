@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-04-13 21:41:28",
+  "timestamp": "2021-04-23 20:41:22",
   "level": "INFO",
   "thread": "main",
   "logger": "SuffixApplication",
@@ -7,193 +7,16 @@
   "context": "default"
 }
 {
-  "timestamp": "2021-04-13 21:41:30",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "XMLJacksonHandler",
-  "message": "Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt], pathResult='data/result.xml'}",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:41:30",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'help.txt' exist.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:41:30",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'setting.txt' not exist.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:41:30",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'info.txt' exist.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:41:30",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "filesExistList = [help.txt, info.txt]",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:41:30",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'help.txt' renamed to file 'help_new.txt'",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:41:30",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'info.txt' renamed to file 'info_new.txt'",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:41:30",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "XMLJacksonHandler",
-  "message": "File 'config.xml' created.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:41:30",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "The application has finished.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:43:34",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "The application has started.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:43:35",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "XMLJacksonHandler",
-  "message": "Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt], pathResult='data/result.xml'}",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:43:35",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'help.txt' exist.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:43:35",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'setting.txt' not exist.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:43:35",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'info.txt' exist.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:43:35",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "filesExistList = [help.txt, info.txt]",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:43:35",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'help.txt' renamed to file 'help_new.txt'",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:43:35",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "FileUtil",
-  "message": "File 'info.txt' renamed to file 'info_new.txt'",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:43:35",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "XMLJacksonHandler",
-  "message": "File 'data/result.xml' created.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 21:43:35",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "The application has finished.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 22:28:18",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "The application has started.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 22:28:19",
+  "timestamp": "2021-04-23 20:41:23",
   "level": "ERROR",
   "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "File not found. Config object not created: ",
+  "logger": "XMLJacksonHandler",
+  "message": "XSD-schema not created. Path to file with XSD-schema: src/main/resources/config.xsd",
   "context": "default",
-  "exception": "java.io.FileNotFoundException: E:\\Java\\EPAM\\UpSkill_Lab1_JavaBasics\\XMLandJSON\\src\\main\\resources\\config.xml (Не удается найти указанный файл)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:212)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.StreamValidatorHelper.validate(StreamValidatorHelper.java:176)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorImpl.validate(ValidatorImpl.java:115)\r\n\tat java.xml/javax.xml.validation.Validator.validate(Validator.java:124)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:54)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:25)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\n"
+  "exception": "org.xml.sax.SAXParseException: schema_reference.4: Failed to read schema document 'file:/E:/Java/EPAM/UpSkill_Lab1_JavaBasics/XMLandJSON/src/main/resources/config.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:306)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4257)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4240)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2531)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2238)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:588)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:576)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:542)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:276)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:669)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:685)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:57)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:25)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\nCaused by: java.io.FileNotFoundException: E:\\Java\\EPAM\\UpSkill_Lab1_JavaBasics\\XMLandJSON\\src\\main\\resources\\config.xsd (Не удается найти указанный файл)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:212)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:593)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:696)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2226)\r\n\t... 10 common frames omitted\r\n"
 }
 {
-  "timestamp": "2021-04-13 22:28:19",
-  "level": "ERROR",
-  "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "Results file not created: config file is missing",
-  "context": "default",
-  "exception": "MyException: Results file not created: config file is missing\r\n\tat XMLJacksonHandler.writeXML(XMLJacksonHandler.java:38)\r\n\tat SuffixApplication.main(SuffixApplication.java:66)\r\n"
-}
-{
-  "timestamp": "2021-04-13 22:28:19",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "The application has finished.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 22:31:48",
+  "timestamp": "2021-04-23 20:42:51",
   "level": "INFO",
   "thread": "main",
   "logger": "SuffixApplication",
@@ -201,24 +24,16 @@
   "context": "default"
 }
 {
-  "timestamp": "2021-04-13 22:31:49",
+  "timestamp": "2021-04-23 20:42:52",
   "level": "ERROR",
   "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "File not found. Config object not created.",
+  "logger": "XMLJacksonHandler",
+  "message": "XSD-schema not created. Path to file with XSD-schema: src/main/resources/config.xsd",
   "context": "default",
-  "exception": "java.io.FileNotFoundException: E:\\Java\\EPAM\\UpSkill_Lab1_JavaBasics\\XMLandJSON\\src\\main\\resources\\config.xml (Не удается найти указанный файл)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:212)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.StreamValidatorHelper.validate(StreamValidatorHelper.java:176)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorImpl.validate(ValidatorImpl.java:115)\r\n\tat java.xml/javax.xml.validation.Validator.validate(Validator.java:124)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:54)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:25)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\n"
+  "exception": "org.xml.sax.SAXParseException: schema_reference.4: Failed to read schema document 'file:/E:/Java/EPAM/UpSkill_Lab1_JavaBasics/XMLandJSON/src/main/resources/config.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:306)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4257)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4240)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2531)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2238)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:588)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:576)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:542)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:276)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:669)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:685)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:58)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:25)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\nCaused by: java.io.FileNotFoundException: E:\\Java\\EPAM\\UpSkill_Lab1_JavaBasics\\XMLandJSON\\src\\main\\resources\\config.xsd (Не удается найти указанный файл)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:212)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:593)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:696)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2226)\r\n\t... 10 common frames omitted\r\n"
 }
 {
-  "timestamp": "2021-04-13 22:31:49",
-  "level": "INFO",
-  "thread": "main",
-  "logger": "SuffixApplication",
-  "message": "The application has finished.",
-  "context": "default"
-}
-{
-  "timestamp": "2021-04-13 22:36:39",
+  "timestamp": "2021-04-23 20:44:29",
   "level": "INFO",
   "thread": "main",
   "logger": "SuffixApplication",
@@ -226,7 +41,33 @@
   "context": "default"
 }
 {
-  "timestamp": "2021-04-13 22:36:39",
+  "timestamp": "2021-04-23 20:44:29",
+  "level": "ERROR",
+  "thread": "main",
+  "logger": "XMLJacksonHandler",
+  "message": "XSD-schema not created. Path to file with XSD-schema: src/main/resources/config.xsd",
+  "context": "default",
+  "exception": "org.xml.sax.SAXParseException: schema_reference.4: Failed to read schema document 'file:/E:/Java/EPAM/UpSkill_Lab1_JavaBasics/XMLandJSON/src/main/resources/config.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:306)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4257)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4240)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2531)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2238)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:588)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:576)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:542)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:276)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:669)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:685)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:58)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:25)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\nCaused by: java.io.FileNotFoundException: E:\\Java\\EPAM\\UpSkill_Lab1_JavaBasics\\XMLandJSON\\src\\main\\resources\\config.xsd (Не удается найти указанный файл)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:212)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:593)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:696)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2226)\r\n\t... 10 common frames omitted\r\n"
+}
+{
+  "timestamp": "2021-04-23 20:46:56",
+  "level": "INFO",
+  "thread": "main",
+  "logger": "SuffixApplication",
+  "message": "The application has started.",
+  "context": "default"
+}
+{
+  "timestamp": "2021-04-23 20:46:56",
+  "level": "ERROR",
+  "thread": "main",
+  "logger": "XMLJacksonHandler",
+  "message": "XSD-schema not created. Path to file with XSD-schema: src/main/resources/config.xsd",
+  "context": "default",
+  "exception": "org.xml.sax.SAXParseException: schema_reference.4: Failed to read schema document 'file:/E:/Java/EPAM/UpSkill_Lab1_JavaBasics/XMLandJSON/src/main/resources/config.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:306)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4257)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4240)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2531)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2238)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:588)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:576)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:542)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:276)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:669)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:685)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:56)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:25)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\nCaused by: java.io.FileNotFoundException: E:\\Java\\EPAM\\UpSkill_Lab1_JavaBasics\\XMLandJSON\\src\\main\\resources\\config.xsd (Не удается найти указанный файл)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:212)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:593)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:696)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2226)\r\n\t... 10 common frames omitted\r\n"
+}
+{
+  "timestamp": "2021-04-23 20:46:56",
   "level": "INFO",
   "thread": "main",
   "logger": "XMLJacksonHandler",
@@ -234,7 +75,7 @@
   "context": "default"
 }
 {
-  "timestamp": "2021-04-13 22:36:41",
+  "timestamp": "2021-04-23 20:46:57",
   "level": "INFO",
   "thread": "main",
   "logger": "XMLJacksonHandler",
@@ -242,7 +83,7 @@
   "context": "default"
 }
 {
-  "timestamp": "2021-04-13 22:36:41",
+  "timestamp": "2021-04-23 20:46:57",
   "level": "INFO",
   "thread": "main",
   "logger": "FileUtil",
@@ -250,7 +91,7 @@
   "context": "default"
 }
 {
-  "timestamp": "2021-04-13 22:36:41",
+  "timestamp": "2021-04-23 20:46:57",
   "level": "INFO",
   "thread": "main",
   "logger": "FileUtil",
@@ -258,7 +99,7 @@
   "context": "default"
 }
 {
-  "timestamp": "2021-04-13 22:36:41",
+  "timestamp": "2021-04-23 20:46:57",
   "level": "INFO",
   "thread": "main",
   "logger": "FileUtil",
@@ -266,7 +107,7 @@
   "context": "default"
 }
 {
-  "timestamp": "2021-04-13 22:36:41",
+  "timestamp": "2021-04-23 20:46:57",
   "level": "INFO",
   "thread": "main",
   "logger": "FileUtil",
@@ -274,7 +115,7 @@
   "context": "default"
 }
 {
-  "timestamp": "2021-04-13 22:36:41",
+  "timestamp": "2021-04-23 20:46:57",
   "level": "INFO",
   "thread": "main",
   "logger": "FileUtil",
@@ -282,7 +123,7 @@
   "context": "default"
 }
 {
-  "timestamp": "2021-04-13 22:36:41",
+  "timestamp": "2021-04-23 20:46:57",
   "level": "INFO",
   "thread": "main",
   "logger": "FileUtil",
@@ -290,7 +131,7 @@
   "context": "default"
 }
 {
-  "timestamp": "2021-04-13 22:36:42",
+  "timestamp": "2021-04-23 20:46:57",
   "level": "INFO",
   "thread": "main",
   "logger": "XMLJacksonHandler",
@@ -298,10 +139,182 @@
   "context": "default"
 }
 {
-  "timestamp": "2021-04-13 22:36:42",
+  "timestamp": "2021-04-23 20:46:57",
   "level": "INFO",
   "thread": "main",
   "logger": "SuffixApplication",
   "message": "The application has finished.",
   "context": "default"
 }
+{
+  "timestamp": "2021-04-23 20:51:07",
+  "level": "INFO",
+  "thread": "main",
+  "logger": "SuffixApplication",
+  "message": "The application has started.",
+  "context": "default"
+}
+{
+  "timestamp": "2021-04-23 20:51:08",
+  "level": "ERROR",
+  "thread": "main",
+  "logger": "XMLJacksonHandler",
+  "message": "XSD-schema not created. Path to file with XSD-schema: src/main/resources/config.xsd",
+  "context": "default",
+  "exception": "org.xml.sax.SAXParseException: schema_reference.4: Failed to read schema document 'file:/E:/Java/EPAM/UpSkill_Lab1_JavaBasics/XMLandJSON/src/main/resources/config.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:306)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4257)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4240)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2531)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2238)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:588)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:576)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:542)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:276)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:669)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:685)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:57)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:25)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\nCaused by: java.io.FileNotFoundException: E:\\Java\\EPAM\\UpSkill_Lab1_JavaBasics\\XMLandJSON\\src\\main\\resources\\config.xsd (Не удается найти указанный файл)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:212)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:593)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:696)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2226)\r\n\t... 10 common frames omitted\r\n"
+}
+{
+  "timestamp": "2021-04-23 20:51:08",
+  "level": "INFO",
+  "thread": "main",
+  "logger": "XMLJacksonHandler",
+  "message": "The config file 'src/main/resources/config.xml' matches the schema 'src/main/resources/config.xsd.",
+  "context": "default"
+}
+{
+  "timestamp": "2021-04-23 20:51:08",
+  "level": "INFO",
+  "thread": "main",
+  "logger": "XMLJacksonHandler",
+  "message": "Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt], pathResult='data/result.xml'}",
+  "context": "default"
+}
+{
+  "timestamp": "2021-04-23 20:51:08",
+  "level": "INFO",
+  "thread": "main",
+  "logger": "FileUtil",
+  "message": "File 'help.txt' not exist.",
+  "context": "default"
+}
+{
+  "timestamp": "2021-04-23 20:51:08",
+  "level": "INFO",
+  "thread": "main",
+  "logger": "FileUtil",
+  "message": "File 'setting.txt' not exist.",
+  "context": "default"
+}
+{
+  "timestamp": "2021-04-23 20:51:08",
+  "level": "INFO",
+  "thread": "main",
+  "logger": "FileUtil",
+  "message": "File 'info.txt' not exist.",
+  "context": "default"
+}
+{
+  "timestamp": "2021-04-23 20:51:08",
+  "level": "INFO",
+  "thread": "main",
+  "logger": "FileUtil",
+  "message": "filesExistList = []",
+  "context": "default"
+}
+{
+  "timestamp": "2021-04-23 20:51:08",
+  "level": "INFO",
+  "thread": "main",
+  "logger": "XMLJacksonHandler",
+  "message": "File 'data/result.xml' created.",
+  "context": "default"
+}
+{
+  "timestamp": "2021-04-23 20:51:08",
+  "level": "INFO",
+  "thread": "main",
+  "logger": "SuffixApplication",
+  "message": "The application has finished.",
+  "context": "default"
+}
+{
+  "timestamp": "2021-04-23 20:58:03",
+  "level": "INFO",
+  "thread": "main",
+  "logger": "SuffixApplication",
+  "message": "The application has started.",
+  "context": "default"
+}
+{
+  "timestamp": "2021-04-23 20:58:04",
+  "level": "ERROR",
+  "thread": "main",
+  "logger": "SuffixApplication",
+  "message": "XSD-schema not created.",
+  "context": "default",
+  "exception": "MyException: XSD-schema not created.\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:69)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:25)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\nCaused by: org.xml.sax.SAXParseException: schema_reference.4: Failed to read schema document 'file:/E:/Java/EPAM/UpSkill_Lab1_JavaBasics/XMLandJSON/src/main/resources/config.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:306)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4257)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4240)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2531)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2238)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:588)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:576)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:542)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:276)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:669)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:685)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:57)\r\n\t... 2 common frames omitted\r\nCaused by: java.io.FileNotFoundException: E:\\Java\\EPAM\\UpSkill_Lab1_JavaBasics\\XMLandJSON\\src\\main\\resources\\config.xsd (Не удается найти указанный файл)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:212)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:593)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:696)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2226)\r\n\t... 10 common frames omitted\r\n"
+}
+{
+  "timestamp": "2021-04-23 20:58:04",
+  "level": "INFO",
+  "thread": "main",
+  "logger": "SuffixApplication",
+  "message": "The application has finished.",
+  "context": "default"
+}
+{
+  "timestamp": "2021-04-23 21:03:39",
+  "level": "INFO",
+  "thread": "main",
+  "logger": "SuffixApplication",
+  "message": "The application has started.",
+  "context": "default"
+}
+{
+  "timestamp": "2021-04-23 21:03:40",
+  "level": "ERROR",
+  "thread": "main",
+  "logger": "SuffixApplication",
+  "message": "Config file is invalid.",
+  "context": "default",
+  "exception": "org.xml.sax.SAXException: XSD-schema not created.\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:70)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:25)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\nCaused by: org.xml.sax.SAXParseException: schema_reference.4: Failed to read schema document 'file:/E:/Java/EPAM/UpSkill_Lab1_JavaBasics/XMLandJSON/src/main/resources/config.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:306)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4257)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4240)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2531)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2238)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:588)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:576)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:542)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:276)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:669)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:685)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:57)\r\n\t... 2 common frames omitted\r\nCaused by: java.io.FileNotFoundException: E:\\Java\\EPAM\\UpSkill_Lab1_JavaBasics\\XMLandJSON\\src\\main\\resources\\config.xsd (Не удается найти указанный файл)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:212)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:593)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:696)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2226)\r\n\t... 10 common frames omitted\r\n"
+}
+{
+  "timestamp": "2021-04-23 21:03:40",
+  "level": "INFO",
+  "thread": "main",
+  "logger": "SuffixApplication",
+  "message": "The application has finished.",
+  "context": "default"
+}
+{"timestamp":"2021-04-23 21:08:13","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has started.","context":"default"}
+{"timestamp":"2021-04-23 21:08:14","level":"ERROR","thread":"main","logger":"XMLJacksonHandler","message":"XSD-schema not created. Path to file with XSD-schema: src/main/resources/config.xsd","context":"default","exception":"org.xml.sax.SAXParseException: schema_reference.4: Failed to read schema document 'file:/E:/Java/EPAM/UpSkill_Lab1_JavaBasics/XMLandJSON/src/main/resources/config.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:306)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4257)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4240)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2531)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2238)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:588)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:576)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:542)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:276)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:669)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:685)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:57)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:25)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\nCaused by: java.io.FileNotFoundException: E:\\Java\\EPAM\\UpSkill_Lab1_JavaBasics\\XMLandJSON\\src\\main\\resources\\config.xsd (Не удается найти указанный файл)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:212)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:593)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:696)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2226)\r\n\t... 10 common frames omitted\r\n"}
+{"timestamp":"2021-04-23 21:08:14","level":"ERROR","thread":"main","logger":"SuffixApplication","message":"Config file is invalid.","context":"default","exception":"org.xml.sax.SAXException: null\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:70)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:25)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\n"}
+{"timestamp":"2021-04-23 21:08:14","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has finished.","context":"default"}
+{"timestamp":"2021-04-23 21:16:05","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has started.","context":"default"}
+{"timestamp":"2021-04-23 21:16:06","level":"ERROR","thread":"main","logger":"XMLJacksonHandler","message":"XSD-schema not created. Path to file with XSD-schema: src/main/resources/config.xsd","context":"default","exception":"org.xml.sax.SAXParseException: schema_reference.4: Failed to read schema document 'file:/E:/Java/EPAM/UpSkill_Lab1_JavaBasics/XMLandJSON/src/main/resources/config.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:306)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4257)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4240)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2531)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2238)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:588)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:576)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:542)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:276)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:669)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:685)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:57)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:26)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\nCaused by: java.io.FileNotFoundException: E:\\Java\\EPAM\\UpSkill_Lab1_JavaBasics\\XMLandJSON\\src\\main\\resources\\config.xsd (Не удается найти указанный файл)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:212)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:593)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:696)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2226)\r\n\t... 10 common frames omitted\r\n"}
+{"timestamp":"2021-04-23 21:16:06","level":"ERROR","thread":"main","logger":"SuffixApplication","context":"default","exception":"MyException: null\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:73)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:26)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\n"}
+{"timestamp":"2021-04-23 21:16:06","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has finished.","context":"default"}
+{"timestamp":"2021-04-23 21:21:54","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has started.","context":"default"}
+{"timestamp":"2021-04-23 21:21:54","level":"ERROR","thread":"main","logger":"XMLJacksonHandler","message":"XSD-schema not created. Path to file with XSD-schema: src/main/resources/config.xsd","context":"default","exception":"org.xml.sax.SAXParseException: schema_reference.4: Failed to read schema document 'file:/E:/Java/EPAM/UpSkill_Lab1_JavaBasics/XMLandJSON/src/main/resources/config.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:306)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4257)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4240)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2531)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2238)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:588)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:576)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:542)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:276)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:669)\r\n\tat java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:685)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:57)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:26)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\nCaused by: java.io.FileNotFoundException: E:\\Java\\EPAM\\UpSkill_Lab1_JavaBasics\\XMLandJSON\\src\\main\\resources\\config.xsd (Не удается найти указанный файл)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:212)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:593)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:696)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2226)\r\n\t... 10 common frames omitted\r\n"}
+{"timestamp":"2021-04-23 21:21:54","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has finished.","context":"default"}
+{"timestamp":"2021-04-23 21:23:18","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has started.","context":"default"}
+{"timestamp":"2021-04-23 21:23:19","level":"ERROR","thread":"main","logger":"XMLJacksonHandler","message":"XML-file 'src/main/resources/config.xml' does not read","context":"default","exception":"java.io.FileNotFoundException: E:\\Java\\EPAM\\UpSkill_Lab1_JavaBasics\\XMLandJSON\\src\\main\\resources\\config.xml (Не удается найти указанный файл)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:212)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.StreamValidatorHelper.validate(StreamValidatorHelper.java:176)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorImpl.validate(ValidatorImpl.java:115)\r\n\tat java.xml/javax.xml.validation.Validator.validate(Validator.java:124)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:60)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:26)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\n"}
+{"timestamp":"2021-04-23 21:23:19","level":"ERROR","thread":"main","logger":"XMLJacksonHandler","message":"XSD-schema not created. Path to file with XSD-schema: src/main/resources/config.xsd","context":"default","exception":"ValidateException: null\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:66)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:26)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\n"}
+{"timestamp":"2021-04-23 21:23:19","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has finished.","context":"default"}
+{"timestamp":"2021-04-23 21:25:14","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has started.","context":"default"}
+{"timestamp":"2021-04-23 21:25:15","level":"ERROR","thread":"main","logger":"XMLJacksonHandler","message":"XML-file 'src/main/resources/config.xml' does not read","context":"default","exception":"java.io.FileNotFoundException: E:\\Java\\EPAM\\UpSkill_Lab1_JavaBasics\\XMLandJSON\\src\\main\\resources\\config.xml (Не удается найти указанный файл)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:212)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)\r\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)\r\n\tat java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.StreamValidatorHelper.validate(StreamValidatorHelper.java:176)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorImpl.validate(ValidatorImpl.java:115)\r\n\tat java.xml/javax.xml.validation.Validator.validate(Validator.java:124)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:60)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:26)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\n"}
+{"timestamp":"2021-04-23 21:25:15","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has finished.","context":"default"}
+{"timestamp":"2021-04-23 21:26:34","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has started.","context":"default"}
+{"timestamp":"2021-04-23 21:26:34","level":"ERROR","thread":"main","logger":"XMLJacksonHandler","message":"XML-file 'src/main/resources/config.xml' does not match XSD-schema 'src/main/resources/config.xsd'.","context":"default","exception":"org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found starting with element 'suffix'. One of '{suffix11}' is expected.\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:511)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3587)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1971)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:829)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2725)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.StreamValidatorHelper.validate(StreamValidatorHelper.java:176)\r\n\tat java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorImpl.validate(ValidatorImpl.java:115)\r\n\tat java.xml/javax.xml.validation.Validator.validate(Validator.java:124)\r\n\tat XMLJacksonHandler.validateXMLSchema(XMLJacksonHandler.java:60)\r\n\tat XMLJacksonHandler.parse(XMLJacksonHandler.java:26)\r\n\tat SuffixApplication.main(SuffixApplication.java:55)\r\n"}
+{"timestamp":"2021-04-23 21:26:34","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has finished.","context":"default"}
+{"timestamp":"2021-04-23 21:26:56","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has started.","context":"default"}
+{"timestamp":"2021-04-23 21:26:57","level":"INFO","thread":"main","logger":"XMLJacksonHandler","message":"The config file 'src/main/resources/config.xml' matches the schema 'src/main/resources/config.xsd.","context":"default"}
+{"timestamp":"2021-04-23 21:26:57","level":"INFO","thread":"main","logger":"XMLJacksonHandler","message":"Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt], pathResult='data/result.xml'}","context":"default"}
+{"timestamp":"2021-04-23 21:26:57","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'help.txt' not exist.","context":"default"}
+{"timestamp":"2021-04-23 21:26:57","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'setting.txt' not exist.","context":"default"}
+{"timestamp":"2021-04-23 21:26:57","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'info.txt' not exist.","context":"default"}
+{"timestamp":"2021-04-23 21:26:57","level":"INFO","thread":"main","logger":"FileUtil","message":"filesExistList = []","context":"default"}
+{"timestamp":"2021-04-23 21:26:57","level":"INFO","thread":"main","logger":"XMLJacksonHandler","message":"File 'data/result.xml' created.","context":"default"}
+{"timestamp":"2021-04-23 21:26:57","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has finished.","context":"default"}
+{"timestamp":"2021-04-23 21:28:55","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has started.","context":"default"}
+{"timestamp":"2021-04-23 21:28:55","level":"INFO","thread":"main","logger":"XMLJacksonHandler","message":"The config file 'src/main/resources/config.xml' matches the schema 'src/main/resources/config.xsd.","context":"default"}
+{"timestamp":"2021-04-23 21:28:56","level":"INFO","thread":"main","logger":"XMLJacksonHandler","message":"Config file reading: Config{suffix='_new', directory=data, filesList=[help.txt, setting.txt, info.txt], pathResult='data/result.xml'}","context":"default"}
+{"timestamp":"2021-04-23 21:28:56","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'help.txt' exist.","context":"default"}
+{"timestamp":"2021-04-23 21:28:56","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'setting.txt' not exist.","context":"default"}
+{"timestamp":"2021-04-23 21:28:56","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'info.txt' exist.","context":"default"}
+{"timestamp":"2021-04-23 21:28:56","level":"INFO","thread":"main","logger":"FileUtil","message":"filesExistList = [help.txt, info.txt]","context":"default"}
+{"timestamp":"2021-04-23 21:28:56","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'help.txt' renamed to file 'help_new.txt'","context":"default"}
+{"timestamp":"2021-04-23 21:28:56","level":"INFO","thread":"main","logger":"FileUtil","message":"File 'info.txt' renamed to file 'info_new.txt'","context":"default"}
+{"timestamp":"2021-04-23 21:28:56","level":"INFO","thread":"main","logger":"XMLJacksonHandler","message":"File 'data/result.xml' created.","context":"default"}
+{"timestamp":"2021-04-23 21:28:56","level":"INFO","thread":"main","logger":"SuffixApplication","message":"The application has finished.","context":"default"}

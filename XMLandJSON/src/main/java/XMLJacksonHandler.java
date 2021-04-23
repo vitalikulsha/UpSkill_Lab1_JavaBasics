@@ -18,9 +18,10 @@ public class XMLJacksonHandler {
     private final static Logger LOG = LoggerFactory.getLogger(XMLJacksonHandler.class);
     private final static String PATH_TO_CONFIG = "src/main/resources/config.xml";
     private final static String PATH_TO_SCHEMA = "src/main/resources/config.xsd";
+
     private ObjectMapper mapper = new XmlMapper();
 
-    public Config parse() throws IOException, SAXException, MyException {
+    public Config parse() throws IOException, MyException, ValidateException {
         Config config;
         validateXMLSchema(PATH_TO_SCHEMA, PATH_TO_CONFIG);
         LOG.info("The config file '{}' matches the schema '{}.", PATH_TO_CONFIG, PATH_TO_SCHEMA);
@@ -35,23 +36,38 @@ public class XMLJacksonHandler {
 
     public void writeXML(Config config) throws MyException, IOException {
         if (config == null) {
-            throw new MyException("Results file not created: config file is missing");
+            throw new MyException("Results file not created: config is null");
         }
+        List<Path> originalFiles = FileUtil.getFilesExistList(config);
+
         Result result = new Result();
         result.setFileConfig(getFilenameResult());
         result.setTimestamp(getFileCreateDate());
-        List<Path> originalFiles = FileUtil.getFilesExistList(config);
         result.setOriginalFilenames(getFilenames(originalFiles));
         result.setNewFilenames(getFilenames(FileUtil.renameFiles(config, originalFiles)));
+
         mapper.writeValue(new File(config.getPathResult()), result);
         LOG.info("File '{}' created.", config.getPathResult());
     }
 
-    private boolean validateXMLSchema(String xsdPath, String xmlPath) throws IOException, SAXException {
+    private boolean validateXMLSchema(String xsdPath, String xmlPath) throws ValidateException {
         SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Schema schema = factory.newSchema(new File(xsdPath));
-        Validator validator = schema.newValidator();
-        validator.validate(new StreamSource(new File(xmlPath)));
+        try {
+            Schema schema = factory.newSchema(new File(xsdPath));
+            Validator validator = schema.newValidator();
+            try {
+                validator.validate(new StreamSource(new File(xmlPath)));
+            } catch (SAXException e) {
+                LOG.error("XML-file '{}' does not match XSD-schema '{}'.", xmlPath, xsdPath, e);
+                throw new ValidateException();
+            } catch (IOException e) {
+                LOG.error("XML-file '{}' does not read.", xmlPath, e);
+                throw new ValidateException();
+            }
+        } catch (SAXException e) {
+            LOG.error("XSD-schema not created. Path to file with XSD-schema: {}", xsdPath, e);
+            throw new ValidateException();
+        }
         return true;
     }
 

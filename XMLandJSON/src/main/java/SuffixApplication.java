@@ -56,12 +56,11 @@ public class SuffixApplication {
             XMLJacksonHandler.writeXML(config);
         } catch (MyException e) {
             LOG.error(e.getMessage(), e);
+        } catch (ValidateException e) {
         } catch (FileNotFoundException e) {
             LOG.error("File not found. Config object not created.", e);
         } catch (IOException e) {
             LOG.error("Config file no read.", e);
-        } catch (SAXException e) {
-            LOG.error("Config file is invalid.", e);
         }
         LOG.info("The application has finished.");
     }
