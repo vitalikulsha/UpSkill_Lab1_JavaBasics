@@ -56,7 +56,6 @@ public class SuffixApplication {
             XMLJacksonHandler.writeXML(config);
         } catch (MyException e) {
             LOG.error(e.getMessage(), e);
-        } catch (ValidateException e) {
         } catch (FileNotFoundException e) {
             LOG.error("File not found. Config object not created.", e);
         } catch (IOException e) {

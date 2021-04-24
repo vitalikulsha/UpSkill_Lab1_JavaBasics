@@ -1,12 +1,1 @@
-<Result>
-    <fileConfig>config.xml</fileConfig>
-    <timestamp>2021-04-23 21:28:56</timestamp>
-    <originalFilenames>
-        <originalFilenames>help.txt</originalFilenames>
-        <originalFilenames>info.txt</originalFilenames>
-    </originalFilenames>
-    <newFilenames>
-        <newFilenames>help_new.txt</newFilenames>
-        <newFilenames>info_new.txt</newFilenames>
-    </newFilenames>
-</Result>
+<Result><fileConfig>config.xml</fileConfig><timestamp>2021-04-24 18:14:32</timestamp><originalFilenames><originalFilenames>help.txt</originalFilenames><originalFilenames>info.txt</originalFilenames></originalFilenames><newFilenames><newFilenames>help_new.txt</newFilenames><newFilenames>info_new.txt</newFilenames></newFilenames></Result>

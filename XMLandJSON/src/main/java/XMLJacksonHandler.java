@@ -21,7 +21,7 @@ public class XMLJacksonHandler {
 
     private ObjectMapper mapper = new XmlMapper();
 
-    public Config parse() throws IOException, MyException, ValidateException {
+    public Config parse() throws IOException, MyException {
         Config config;
         validateXMLSchema(PATH_TO_SCHEMA, PATH_TO_CONFIG);
         LOG.info("The config file '{}' matches the schema '{}.", PATH_TO_CONFIG, PATH_TO_SCHEMA);
@@ -46,11 +46,11 @@ public class XMLJacksonHandler {
         result.setOriginalFilenames(getFilenames(originalFiles));
         result.setNewFilenames(getFilenames(FileUtil.renameFiles(config, originalFiles)));
 
-        mapper.writeValue(new File(config.getPathResult()), result);
-        LOG.info("File '{}' created.", config.getPathResult());
+        mapper.writeValue(new File(config.getPathFileResult()), result);
+        LOG.info("File '{}' created.", config.getPathFileResult());
     }
 
-    private boolean validateXMLSchema(String xsdPath, String xmlPath) throws ValidateException {
+    private boolean validateXMLSchema(String xsdPath, String xmlPath) throws MyException {
         SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
         try {
             Schema schema = factory.newSchema(new File(xsdPath));
@@ -58,15 +58,12 @@ public class XMLJacksonHandler {
             try {
                 validator.validate(new StreamSource(new File(xmlPath)));
             } catch (SAXException e) {
-                LOG.error("XML-file '{}' does not match XSD-schema '{}'.", xmlPath, xsdPath, e);
-                throw new ValidateException();
+                throw new MyException("XML-file '" + xmlPath + "' does not match XSD-schema '" + xsdPath + "'.", e);
             } catch (IOException e) {
-                LOG.error("XML-file '{}' does not read.", xmlPath, e);
-                throw new ValidateException();
+                throw new MyException("XML-file '" + xmlPath + "' does not read.", e);
             }
         } catch (SAXException e) {
-            LOG.error("XSD-schema not created. Path to file with XSD-schema: {}", xsdPath, e);
-            throw new ValidateException();
+            throw new MyException("XSD-schema not created. Path to file with XSD-schema: " + xsdPath, e);
         }
         return true;
     }
