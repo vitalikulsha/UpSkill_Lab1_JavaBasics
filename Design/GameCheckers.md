@@ -1,4 +1,4 @@
-# Requirements for a system: functional and non-functional.
+# Requirements for a system
 ## Functional requirements
 1. Object of the game: pieces (checkers) and a board.
 2. At the start of the game, the pieces are automatically placed in position.
@@ -13,3 +13,4 @@
 1. Game menu.
 2. Registration at the entrance to the game.
 3. Help describing the rules of the game.
+# Use cases
