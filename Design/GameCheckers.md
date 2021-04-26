@@ -14,3 +14,6 @@
 2. Registration at the entrance to the game.
 3. Help describing the rules of the game.
 # Use cases
+| Действующие лица | Система, пользователь |
+|:--------|:------------------------|
+| Цель | Пользователь/игрок |
