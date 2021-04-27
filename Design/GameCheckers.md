@@ -1,7 +1,7 @@
 # Requirements for a system
 ## Functional requirements
 1. Object of the game: pieces (checkers) and a board.
-2. Number of players: automatic 1, optional 2 (play against each other)
+2. Number of players: automatic 1 (play with computer), optional 2 (play against each other)
 3. At the start of the game, the pieces are automatically placed in position.
 4. Victory: 
     * by agreement of the parties; 
@@ -16,13 +16,14 @@
 3. Help describing the rules of the game.
 # Use cases
 ## 1. Launching the game
-|          Пункт USE_CASES | Описание пункта |
+| Пункт USE_CASES | Описание пункта |
 |:-----------|:------------|
 | __Действующие лица__ | Система, игрок |
 | __Цель__ | Начать игру |
 | __Успешный сценарий__ | 1. Игрок запускает приложение.
 || 2. Система запускает приложение и выводит на экран кнопку "Start".
 || 3. Игрок нажимает кнопку "Start".
-|| 4. Система предлагает выбрать цвет пешек.,
-|| 5. Игрок выбирает цвет пешек.
-|| 6. Система расставляет пешки по исходным позициям. Игроку с белыми пешками предосталяется право первого хода.
+|| 4. Система предлагает выбрать цвет шашек.
+|| 5. Игрок выбирает цвет шашек.
+|| 6. Система расставляет шашки по исходным позициям. Игроку с белыми шашками предосталяется право первого хода.
+| __Результат__ | Игра запущена. Игрок выбрал цвет шашек. Игрок с белыми шашками находится в состоянии ожадания первого хода. |
