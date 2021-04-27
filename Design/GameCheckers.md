@@ -10,8 +10,9 @@
     * by agreement of the parties;
     * if after 15 moves there has been no capture of a piece.
 6. When a pawn reaches the opposite edge of the board, it becomes a queen.
+7. Game menu.
 ## Non-functional
-1. Game menu.
+1. Gameplay visualization. 
 2. Registration at the entrance to the game.
 3. Help describing the rules of the game.
 # Use cases
