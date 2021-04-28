@@ -23,25 +23,25 @@
 | __Acting persons__ | System, player |
 | __Goal__ | Start game. |
 | __Successful scenario__ | 1. The player launches the application.
-|| 2. The system launches the application and displays the "Start " button.
-|| 3. The player presses the "START" button
-|| 4. The system offers to choose the color of the checkers
-|| 5. The player chooses the color of checkers
+|| 2. The system launches the application and displays the "START " button.
+|| 3. The player presses the "START" button.
+|| 4. The system offers to choose the color of the checkers.
+|| 5. The player chooses the color of checkers.
 || 6. The system places checkers in their original positions. The player with white checkers is given the right of the first move.
 | __Результат__ | The game is running. The color of the checkers is distributed among the participants in the game. The player with white checkers is waiting for the first move. |
 ## 2. Player turn
 | Item use case | Description |
 |:-----------|:------------|
 | __Acting persons__ | System, gamer |
-| __Goal__ | Ход игрока |
-| __Successful scenario__ | 1. Игрок выбирает шашку для совершения своего хода.
-|| 2. Система подсвечивает шашку и переводит ее в активное состояние. 
-|| 3. Игрок указывает место, куда необходимо переместить шашку.
-|| 4. Система перемещает шашку в указанную позицию и передает ход другому игроку.
-| __Результат__ | Игра запущена. Цвет шашек распределен между участниками игры. Игрок с белыми шашками находится в состоянии ожидания первого хода. |
-| __Расширения__ | 1. Если ход недопустим, система выдает об этом сообщение. 
-|| 2. Игрок нажимает "Допустимые ходы". Система предлагает допустимые ходы выбранной шашкой.
-|| 3. Игрок во время хода захватывает шашку(и) противника. Система удаляет из игры захваченную(ые) шашку(и).
+| __Goal__ | The player made a move |
+| __Successful scenario__ | 1. The player chooses a checker to make his move.
+|| 2. The system highlights the checker and switches it into an active state.
+|| 3. The player indicates the place where the checker needs to be moved.
+|| 4. The system moves the checker to the specified position and passes the move to another player.
+| __Результат__ | The player made a move |
+| __Расширения__ | 1. If the move is unacceptable, the system issues a message about it.
+|| 2. The player clicks "Allowed Moves". The system suggests the allowed moves with the selected checker.
+|| 3. The player captures the opponent's checker (s) during his turn. The system removes the captured checker (s) from the game.
 ## 3. Victory
 | Item use case | Description |
 |:-----------|:------------|
