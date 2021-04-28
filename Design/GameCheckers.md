@@ -46,30 +46,30 @@
 | Item use case | Description |
 |:-----------|:------------|
 | __Acting persons__ | System, gamer |
-| __Goal__ | Победа в игре |
-| __Successful scenario__ | 1. Реализовать сценарий "Player turn"
-|| 2. После хода игрока 1 у игрока 2 отсутвуют шашки. 
-|| 3. Система выдает сообщение о победе игрока 1 и предлагает начать занова/реванш.
-| __Результат__ | Игрок победил. |
-| __Расширения__ | 1. Если игрок 2 сдался, система выдает сообшение, что игрок 1 победил. 
-|| 2. Активный игрок всегда может из меню выбрать сдаться или предложить ничью.
+| __Goal__ | Winning the gam|
+| __Successful scenario__ | 1. Implement the "Player Turn" scenario.
+|| 2. After player 1's move, player 2 has no checkers.
+|| 3. The system issues a message about the victory of player 1 and offers to start a re-match / revenge.
+| __Результат__ | Victory |
+| __Расширения__ | 1. If player 2 surrenders, the system issues a message that player 1 won.
+|| 2. An active player can always choose to surrender or offer a draw from the menu.
 ## 4. Draw
 | Item use case | Description |
 |:-----------|:------------|
 | __Acting persons__ | System, gamer |
-| __Goal__ | Ничья в игре. |
-| __Successful scenario__ | 1. Реализовать сценарий "Player turn".
-|| 2. Игроки совершили 15 безрезультатных ходов.
-|| 3. Система выводит сообщение о ничьей и предлагает начать занова.
-| __Результат__ | Ничья |
-| __Расширения__ | 1. Если игрок не может в течении 3 минут сделать ход, система предлагает завершить игру ничьей или сдаться .
-|| 2. Активный игрок всегда может из меню выбрать сдаться или предложить ничью.
+| __Goal__ | Draw in the game  |
+| __Successful scenario__ | 1. Implement the "Player Turn" scenario.
+|| 2. The players made 15 unsuccessful moves.
+|| 3. The system displays a message about a draw and offers to start over.
+| __Результат__ | Draw |
+| __Расширения__ | 1. If the player cannot make a move within 3 minutes, the system offers to end the game in a draw or surrender.
+|| 2. An active player can always choose to surrender or offer a draw from the menu.
 ## 5. The checker becomes a queen
 | Item use case | Description |
 |:-----------|:------------|
 | __Acting persons__ | System, gamer |
-| __Goal__ | Шашка становится дамкой. |
-| __Successful scenario__ | 1. Реализовать сценарий "Player turn".
-|| 2. Шашка игрока достигла противоположной стороны доски.
-|| 3. Система переключает шашку в состояние дамка. 
-| __Результат__ | Обычная шашка теперь дамка. |
+| __Goal__ | The checker becomes a queen. |
+| __Successful scenario__ | 1. Implement the "Player Turn" scenario.
+|| 2. The player's checker has reached the opposite side of the board.
+|| 3. The system switches the checker to the queen state.
+| __Результат__ | Checker became queen |
