@@ -73,3 +73,7 @@
 || 2. The player's checker has reached the opposite side of the board.
 || 3. The system switches the checker to the queen state.
 | __Result__ | Checker became queen |
+# Class diagram
+<h2>
+   <img src="img/diagram.jpg" width="800">
+</h2>
