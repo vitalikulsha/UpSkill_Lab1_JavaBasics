@@ -75,5 +75,5 @@
 | __Result__ | Checker became queen |
 # Class diagram
 <h2>
-   <img src="img/diagram.jpg" width="800">
+   <img src="diagram.jpg" width="800">
 </h2>
