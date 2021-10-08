@@ -1,0 +1,105 @@
+2021-10-08 19:06:17 DEBUG [main]: Main start
+2021-10-08 19:06:17 DEBUG [main]: name = Kevin
+2021-10-08 19:06:17 DEBUG [main]: list = []
+2021-10-08 19:06:17 DEBUG [main]: times = 10
+2021-10-08 19:13:26 DEBUG [main]: Start method main()
+2021-10-08 19:13:26 DEBUG [main]: name = Kevin
+2021-10-08 19:13:26 DEBUG [main]: list = []
+2021-10-08 19:13:26 DEBUG [main]: times = 10
+2021-10-08 19:13:26 DEBUG [main]: Start method println()
+2021-10-08 19:13:26 DEBUG [main]: shrunk = Kvnei
+2021-10-08 19:13:26 DEBUG [main]: times = 7
+2021-10-08 19:13:26 DEBUG [main]: cycle for start
+2021-10-08 19:13:26 DEBUG [main]: collection.add(shrunk) size1
+2021-10-08 19:13:26 DEBUG [main]: cycle for start
+2021-10-08 19:13:26 DEBUG [main]: collection.add(shrunk) size2
+2021-10-08 19:13:26 DEBUG [main]: cycle for start
+2021-10-08 19:13:26 DEBUG [main]: collection.add(shrunk) size3
+2021-10-08 19:13:26 DEBUG [main]: Start method println()
+2021-10-08 19:16:35 DEBUG [main]: Start method main()
+2021-10-08 19:16:35 DEBUG [main]: name = Kevin
+2021-10-08 19:16:35 DEBUG [main]: list = []
+2021-10-08 19:16:35 DEBUG [main]: times = 10
+2021-10-08 19:16:35 DEBUG [main]: Start method println()
+2021-10-08 19:16:35 DEBUG [main]: Start method shrink()
+2021-10-08 19:16:35 DEBUG [main]: newLength = 5
+2021-10-08 19:16:35 DEBUG [main]: chars = [C@5a42bbf4
+2021-10-08 19:16:35 DEBUG [main]: cycle for start
+2021-10-08 19:16:35 DEBUG [main]: charsK
+2021-10-08 19:16:35 DEBUG [main]: cycle for start
+2021-10-08 19:16:35 DEBUG [main]: charsv
+2021-10-08 19:16:35 DEBUG [main]: cycle for start
+2021-10-08 19:16:35 DEBUG [main]: charsn
+2021-10-08 19:16:35 DEBUG [main]: cycle for start
+2021-10-08 19:16:35 DEBUG [main]: charse
+2021-10-08 19:16:35 DEBUG [main]: cycle for start
+2021-10-08 19:16:35 DEBUG [main]: charsi
+2021-10-08 19:16:35 DEBUG [main]: new StringKvnei
+2021-10-08 19:16:35 DEBUG [main]: shrunk = Kvnei
+2021-10-08 19:16:35 DEBUG [main]: times = 7
+2021-10-08 19:16:35 DEBUG [main]: cycle for start
+2021-10-08 19:16:35 DEBUG [main]: collection.add(shrunk) size = 1
+2021-10-08 19:16:35 DEBUG [main]: cycle for start
+2021-10-08 19:16:35 DEBUG [main]: collection.add(shrunk) size = 2
+2021-10-08 19:16:35 DEBUG [main]: cycle for start
+2021-10-08 19:16:35 DEBUG [main]: collection.add(shrunk) size = 3
+2021-10-08 19:16:35 DEBUG [main]: times = 7
+2021-10-08 19:16:35 DEBUG [main]: Start method println()
+2021-10-08 19:17:21 DEBUG [main]: Start method main()
+2021-10-08 19:17:21 DEBUG [main]: name = Kevin
+2021-10-08 19:17:21 DEBUG [main]: list = []
+2021-10-08 19:17:21 DEBUG [main]: times = 10
+2021-10-08 19:17:21 DEBUG [main]: Start method println()
+2021-10-08 19:17:21 DEBUG [main]: Start method shrink()
+2021-10-08 19:17:21 DEBUG [main]: newLength = 5
+2021-10-08 19:17:21 DEBUG [main]: chars = [C@5a42bbf4
+2021-10-08 19:17:21 DEBUG [main]: cycle for start - shrink()
+2021-10-08 19:17:21 DEBUG [main]: charsK
+2021-10-08 19:17:21 DEBUG [main]: cycle for start - shrink()
+2021-10-08 19:17:21 DEBUG [main]: charsv
+2021-10-08 19:17:21 DEBUG [main]: cycle for start - shrink()
+2021-10-08 19:17:21 DEBUG [main]: charsn
+2021-10-08 19:17:21 DEBUG [main]: cycle for start - shrink()
+2021-10-08 19:17:21 DEBUG [main]: charse
+2021-10-08 19:17:21 DEBUG [main]: cycle for start - shrink()
+2021-10-08 19:17:21 DEBUG [main]: charsi
+2021-10-08 19:17:21 DEBUG [main]: new StringKvnei
+2021-10-08 19:17:21 DEBUG [main]: shrunk = Kvnei
+2021-10-08 19:17:21 DEBUG [main]: times = 7
+2021-10-08 19:17:21 DEBUG [main]: cycle for start - fill()
+2021-10-08 19:17:21 DEBUG [main]: collection.add(shrunk) size = 1
+2021-10-08 19:17:21 DEBUG [main]: cycle for start - fill()
+2021-10-08 19:17:21 DEBUG [main]: collection.add(shrunk) size = 2
+2021-10-08 19:17:21 DEBUG [main]: cycle for start - fill()
+2021-10-08 19:17:21 DEBUG [main]: collection.add(shrunk) size = 3
+2021-10-08 19:17:21 DEBUG [main]: times = 7
+2021-10-08 19:17:21 DEBUG [main]: Start method println()
+2021-10-08 19:17:59 DEBUG [main]: Start method main()
+2021-10-08 19:17:59 DEBUG [main]: name = Kevin
+2021-10-08 19:17:59 DEBUG [main]: list = []
+2021-10-08 19:17:59 DEBUG [main]: times = 10
+2021-10-08 19:17:59 DEBUG [main]: Start method println()
+2021-10-08 19:17:59 DEBUG [main]: Start method shrink()
+2021-10-08 19:17:59 DEBUG [main]: newLength = 5
+2021-10-08 19:17:59 DEBUG [main]: chars[] = [C@5a42bbf4
+2021-10-08 19:17:59 DEBUG [main]: cycle for start - shrink()
+2021-10-08 19:17:59 DEBUG [main]: chars = K
+2021-10-08 19:17:59 DEBUG [main]: cycle for start - shrink()
+2021-10-08 19:17:59 DEBUG [main]: chars = v
+2021-10-08 19:17:59 DEBUG [main]: cycle for start - shrink()
+2021-10-08 19:17:59 DEBUG [main]: chars = n
+2021-10-08 19:17:59 DEBUG [main]: cycle for start - shrink()
+2021-10-08 19:17:59 DEBUG [main]: chars = e
+2021-10-08 19:17:59 DEBUG [main]: cycle for start - shrink()
+2021-10-08 19:17:59 DEBUG [main]: chars = i
+2021-10-08 19:17:59 DEBUG [main]: new StringKvnei
+2021-10-08 19:17:59 DEBUG [main]: shrunk = Kvnei
+2021-10-08 19:17:59 DEBUG [main]: times = 7
+2021-10-08 19:17:59 DEBUG [main]: cycle for start - fill()
+2021-10-08 19:17:59 DEBUG [main]: collection.add(shrunk) size = 1
+2021-10-08 19:17:59 DEBUG [main]: cycle for start - fill()
+2021-10-08 19:17:59 DEBUG [main]: collection.add(shrunk) size = 2
+2021-10-08 19:17:59 DEBUG [main]: cycle for start - fill()
+2021-10-08 19:17:59 DEBUG [main]: collection.add(shrunk) size = 3
+2021-10-08 19:17:59 DEBUG [main]: times = 7
+2021-10-08 19:17:59 DEBUG [main]: Start method println()
