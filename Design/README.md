@@ -1,4 +1,4 @@
-# Hohe task "OO Design"
+# Home task "OO Design"
 ## Description
 Discuss with a tutor choosing one of the following variants of a system to design class hierarchy for.
 * Table or Card Games simulations:
