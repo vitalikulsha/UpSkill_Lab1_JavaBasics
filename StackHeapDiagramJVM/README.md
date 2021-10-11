@@ -36,3 +36,7 @@ public class Main {
 ## Steps
 1. Complete the step-by step Stack-Heap Diagram.
 2. Show the mentor your results.
+## Solution
+<h2>
+   <img src="Stack-Heap diagram.png" width="600">
+</h2>
