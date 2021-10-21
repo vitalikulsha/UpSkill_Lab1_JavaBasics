@@ -24,4 +24,4 @@
 |__Checker__|id: int <br> color: String <br> cell: Cell <br> isQueen: boolean | A checker has a color, cell membership and status. The checker moves around the board with the help of the player. When you move a checker, the cell on which the checker stands changes. One player can only have checkers of one specific color. |
 |__Board__|id: int <br> table: Cell | The game board consists of a set of black and white cells. |
 |__Cell__|id: int <br> position: String <br> color: String <br> isEmpty: boolean| A cell has its own color, position on the board and state: empty or occupied by a checker. Checkers can only move along black squares and if this square is empty. |
-|__Menu__|id: int <br> help: String <br> description: String <br> gameStatus: Enum | In the menu, you can select help, a description of the game, and you can also change the status of the game or player. |
+|__Menu__|id: int <br> help: String <br> description:String <br> gameStatus:Enum | In the menu, you can select help, a description of the game, and you can also change the status of the game or player. |
