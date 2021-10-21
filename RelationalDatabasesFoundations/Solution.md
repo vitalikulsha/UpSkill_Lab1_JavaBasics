@@ -16,3 +16,8 @@
 2. Registration at the entrance to the game.
 3. Guide describing the rules of the game
 4. Various difficulty levels.
+## Description of design entities
+| Entities | Attributes | Relationships |
+|:-----------|:------------|:------------|
+| __Gamer__ | id: int <br> name: String <br> checkers: list <br> gamerStatus: Enum| The player interacts with checkers through id. The player can move checkers according to the rules. By moving a checker, the player changes its position on the board.|
+
