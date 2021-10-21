@@ -46,7 +46,7 @@
 | Item use case | Description |
 |:-----------|:------------|
 | __Acting persons__ | System, gamer |
-| __Goal__ | Winning the gam|
+| __Goal__ | Winning the game|
 | __Successful scenario__ | 1. Implement the "Player Turn" scenario.
 || 2. After player 1's move, player 2 has no checkers.
 || 3. The system issues a message about the victory of player 1 and offers to start a re-match / revenge.
