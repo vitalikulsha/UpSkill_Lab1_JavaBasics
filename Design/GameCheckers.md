@@ -20,7 +20,7 @@
 ## 1. Launching the game
 | Item use case | Description |
 |:-----------|:------------|
-| __Acting persons__ | System, player |
+| __Acting persons__ | System, gamer |
 | __Goal__ | Start game. |
 | __Successful scenario__ | 1. The player launches the application.
 || 2. The system launches the application and displays the "START " button.
@@ -32,7 +32,7 @@
 ## 2. Player turn
 | Item use case | Description |
 |:-----------|:------------|
-| __Acting persons__ | System, player |
+| __Acting persons__ | System, gamer |
 | __Goal__ | The player made a move |
 | __Successful scenario__ | 1. The player chooses a checker to make his move.
 || 2. The system highlights the checker and switches it into an active state.
@@ -45,7 +45,7 @@
 ## 3. Victory
 | Item use case | Description |
 |:-----------|:------------|
-| __Acting persons__ | System, player |
+| __Acting persons__ | System, gamer |
 | __Goal__ | Winning the game|
 | __Successful scenario__ | 1. Implement the "Player Turn" scenario.
 || 2. After player 1's move, player 2 has no checkers.
@@ -56,7 +56,7 @@
 ## 4. Draw
 | Item use case | Description |
 |:-----------|:------------|
-| __Acting persons__ | System, player |
+| __Acting persons__ | System, gamer |
 | __Goal__ | Draw in the game  |
 | __Successful scenario__ | 1. Implement the "Player Turn" scenario.
 || 2. The players made 15 unsuccessful moves.
@@ -67,7 +67,7 @@
 ## 5. The checker becomes a queen
 | Item use case | Description |
 |:-----------|:------------|
-| __Acting persons__ | System, player |
+| __Acting persons__ | System, gamer |
 | __Goal__ | The checker becomes a queen. |
 | __Successful scenario__ | 1. Implement the "Player Turn" scenario.
 || 2. The player's checker has reached the opposite side of the board.
