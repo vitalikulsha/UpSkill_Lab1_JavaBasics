@@ -26,4 +26,4 @@
 |__Cell__|id: int <br> position: String <br> color: String <br> isEmpty: boolean| A cell has its own color, position on the board and state: empty or occupied by a checker. Checkers can only move along black squares and if this square is empty. |
 |__Menu__|id: int <br> help: String <br> description:String <br> gameStatus:Enum | In the menu, you can select help, a description of the game, and you can also change the status of the game or player. |
 ## ER-diagram
-<img src="ER-diagram.png" width="600">
+<img src="ER-diagram.png" width="900">
