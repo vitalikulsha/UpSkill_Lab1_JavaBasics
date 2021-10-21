@@ -19,7 +19,7 @@
 ## Description of design entities
 | Entities | Attributes | Relationships |
 |:----------------|:---------------|:--------------------|
-| __Game__ | id: int <br> board: Board <br> checkers:list\<Checker\> <br> isGameOver:boolean | When the system starts up, a game is created. The game includes a game board, a set of checkers and has an initial state. The list of checkers of the game interacts with the set of the player's checkers: the position of the checkers changes, their status and quantity change. The state of the game changes depending on the player's status. |
+| __Game__ | id: int <br> board: Board <br> player: Player <br> isGameOver:boolean <br> menu: Menu| When the system starts up, a game is created. When the game starts, a game board is created and the players are automatically set to the initial state of the game. The game state can be forcedly changed from the menu. The game state changes automatically depending on the player's status. |
 | __Player__ | id: int <br> name: String <br> checkers:list\<Checker\> <br> status: Enum | The player has a set of checkers consistent with the set of checkers in the game. The player can move checkers according to the rules. By moving a checker, the player changes its position on the board. The player has a status that affects the state of the game.|
 |__Checker__|id: int <br> color: String <br> position: int[][] <br> isQueen: boolean|A checker has color, position and status. The checker moves around the board with the help of the player. One player can only have checkers of one specific color.|
 |__Board__|id: int <br> table: Cell[8][8]|The game board consists of a set of black and white cells.|
