@@ -18,7 +18,7 @@
 4. Various difficulty levels.
 ## Description of design entities
 | Entities | Attributes | Relationships |
-|:-----------|:------------|:------------|
-| __Game__ | id: int <br> board: Board <br> checkers: list<Checker> <br> isGameOver: boolean | When the system starts up, a game is created. The game includes a game board, a set of checkers and has an initial state. The set of checkers of the game interacts with the set of the player's checkers: the position of the checkers changes, their status and quantity change. The state of the game changes depending on the player's status. |
-| __Player__ | id: int <br> name: String <br> checkers: list <br> gamerStatus: Enum| The player interacts with checkers through id. The player can move checkers according to the rules. By moving a checker, the player changes its position on the board.|
+|:----------------|:---------------|:--------------------|
+| __Game__ | id: int <br> board: Board <br> checkers:list\<Checker\> <br> isGameOver:boolean | When the system starts up, a game is created. The game includes a game board, a set of checkers and has an initial state. The list of checkers of the game interacts with the set of the player's checkers: the position of the checkers changes, their status and quantity change. The state of the game changes depending on the player's status. |
+| __Player__ | id: int <br> name: String <br> playerCheckers:list\<Checker\> <br> playerStatus: Enum | The player has a set of checkers consistent with the set of checkers in the game. The player can move checkers according to the rules. By moving a checker, the player changes its position on the board. The player has a status that affects the state of the game.|
 
