@@ -15,7 +15,6 @@
 1. Gameplay visualization. 
 2. Registration at the entrance to the game.
 3. Guide describing the rules of the game
-4. Various difficulty levels.
 ## Description of design entities
 | Entities | Attributes | Relationships |
 |:----------------|:---------------|:--------------------|
