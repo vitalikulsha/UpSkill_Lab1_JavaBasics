@@ -14,7 +14,8 @@
 ## Non-functional
 1. Gameplay visualization. 
 2. Registration at the entrance to the game.
-3. Guide describing the rules of the game
+3. Guide describing the rules of the game.
+4. Change the state of the game.
 ## Description of design entities
 | Entities | Attributes | Relationships |
 |:----------------|:---------------|:--------------------|
