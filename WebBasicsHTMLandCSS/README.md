@@ -40,3 +40,4 @@ Information contained on the page:
     - number of pages;
     - description.
 * At the bottom of the page there is a button to quickly jump to the top of the page.
+### [Social network registration form](https://ecstatic-lovelace-c0c125.netlify.app/)
