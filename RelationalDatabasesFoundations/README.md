@@ -1,27 +1,27 @@
-# Home task "ER Design"
+# Home task "Design a Web Page"
 ## Description
-Discuss with a tutor choosing one of the following variants of a system to design an ER diagram for.
-* Table or Card Games simulations:
-    - Chess,
-    - Checkers,
-    - Narde,
-    - Go,
+Discuss with a tutor choosing one of the following variants of a page.
+* Catalogue:
+    - Store catalogue,
+    - Library catalogue,
+    - MOOCs Platform courses catalogue,
     - ...
-* Publicly available devices/services:
-    - Public printer/copier in a university,
-    - Public coffee/vending machine in a university/dormitory/hospital/street,
-    - Public phone booth on a street,
+* Form:
+    - Social network registration form,
+    - Internet Store request form,
+    - Taxes Declaration form,
     - ...
-* Scheduling/Management systems:
-    - Dormitory accommodation management,
-    - Zoo animals nutrition management,
-    - Robotized warehouse management,
+* Report:
+    - IT: servers, virtual machines and services availability report,
+    - Port workload schedule monthly report,
+    - Group's semester results report,
     - ...
 Then follow steps described below.
 
 _NB_ : You may refer to previous "OO Design" exercise variant and results if you have finished it.
 
 ## Steps
-* Give a high-level overview of what functions and use cases are relevant for a chosen system.
-* Design entities and their attributes, relationships between them. Describe them.
-* Draw an ER diagram depicting designed entities, attributes (with data types) and relationships.
+* Describe, what information must be shown on a page.
+* DDesign a Web Page using HTML and CSS (+JavaScript if necessary).
+* Show or send a mentor the designed page.
+## Solution
