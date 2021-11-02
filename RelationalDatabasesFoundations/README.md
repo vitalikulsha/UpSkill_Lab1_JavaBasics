@@ -18,8 +18,6 @@ Discuss with a tutor choosing one of the following variants of a page.
     - ...
 Then follow steps described below.
 
-_NB_ : You may refer to previous "OO Design" exercise variant and results if you have finished it.
-
 ## Steps
 * Describe, what information must be shown on a page.
 * DDesign a Web Page using HTML and CSS (+JavaScript if necessary).
