@@ -44,4 +44,7 @@ Information contained on the page:
 Information contained on the page:
 * Page title.
 * The form must contain the following fields:
-    - book title;
+    - login;
+    - password;
+    - first name;
+    - last name;
