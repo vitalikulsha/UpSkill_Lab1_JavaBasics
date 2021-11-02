@@ -1,0 +1,134 @@
+html, body, p {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: red;
+	font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    color: purple;
+    font-size: 30px;
+	margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3 {
+	margin-top: 70px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.new-font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.grey-text {
+	color: grey;
+}
+
+.banner-text{
+	text-align: center;
+	letter-spacing: 15px;
+	font-size: 40px;
+}
+
+.header-text {
+    color: blue;
+	text-align: center;
+	letter-spacing: 15px;
+}
+
+.banner {
+	background-position: center;
+    background-size: cover;
+	padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.banner.header {
+    background-image: url("../img/library-banner.jpg");
+}
+
+.banner.java {
+    background-image: url("../img/java-banner.png");
+}
+
+.banner.sql {
+    background-image: url("../img/sql-banner.png");
+}
+
+.banner.html-css {
+    background-image: url("../img/html-css-banner.png");
+}
+
+.color-fon {
+    background: rgb(95, 125, 165);
+}
+
+.fon {
+	background: url (../icon/icon.png);
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+	font-weight: bold;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.block {
+    width: 980px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.img-position {
+    display: flex;
+
+	height: 270px;
+}
+
+#gotop {
+   text-decoration: none;
+   display: inline-block;
+   border-radius: 10px;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: center;
+   position: fixed;
+   bottom: 10px;
+   right: 80px;
+}
+
+
