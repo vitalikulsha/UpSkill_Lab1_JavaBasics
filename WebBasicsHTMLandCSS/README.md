@@ -48,3 +48,12 @@ Information contained on the page:
     - password;
     - first name;
     - last name;
+    - sex;
+    - date of Birth;
+    - marital status;
+    - city;
+    - country;
+    - E-mail;
+    - phone;
+    - information about myself.
+* Submit and reset buttons.
