@@ -16,6 +16,7 @@ Discuss with a tutor choosing one of the following variants of a page.
     - Port workload schedule monthly report,
     - Group's semester results report,
     - ...
+
 Then follow steps described below.
 
 ## Steps
