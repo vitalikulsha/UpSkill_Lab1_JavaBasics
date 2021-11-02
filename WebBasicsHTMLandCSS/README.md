@@ -24,3 +24,19 @@ Then follow steps described below.
 * DDesign a Web Page using HTML and CSS (+JavaScript if necessary).
 * Show or send a mentor the designed page.
 ## Solution
+### Library catalogue
+Information contained on the page:
+* Page title.
+* Library section selection menu (contains links to sections).
+* Section title.
+* Description of the books contained in the section:
+    - book title;
+    - book author;
+    - publisher;
+    - year of issue;
+    - ISBN;
+    - cover type;
+    - language of publication;
+    - number of pages;
+    - description.
+* At the bottom of the page there is a button to quickly jump to the top of the page.
