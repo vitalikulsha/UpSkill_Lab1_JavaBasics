@@ -24,7 +24,7 @@ Then follow steps described below.
 * DDesign a Web Page using HTML and CSS (+JavaScript if necessary).
 * Show or send a mentor the designed page.
 ## Solution
-### Library catalogue
+### [Library catalogue](https://romantic-lamarr-83b913.netlify.app/)
 Information contained on the page:
 * Page title.
 * Library section selection menu (contains links to sections).
