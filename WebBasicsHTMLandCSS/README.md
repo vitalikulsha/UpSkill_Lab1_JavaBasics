@@ -41,3 +41,7 @@ Information contained on the page:
     - description.
 * At the bottom of the page there is a button to quickly jump to the top of the page.
 ### [Social network registration form](https://ecstatic-lovelace-c0c125.netlify.app/)
+Information contained on the page:
+* Page title.
+* The form must contain the following fields:
+    - book title;
