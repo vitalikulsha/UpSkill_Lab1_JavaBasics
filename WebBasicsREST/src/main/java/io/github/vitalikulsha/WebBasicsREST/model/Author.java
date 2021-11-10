@@ -1,20 +1,21 @@
-package io.github.vitalikulsha.WebBasicsREST.entity;
+package io.github.vitalikulsha.WebBasicsREST.model;
 
-import javax.persistence.*;
+import io.github.vitalikulsha.WebBasicsREST.entity.AuthorEntity;
 
-@Entity
-public class AuthorEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class Author {
     private Long id;
     private String firstName;
     private String lastName;
 
-    @ManyToOne
-    @JoinColumn(name = "category_id")
-    private CategoryEntity category;
+    public static Author toModel(AuthorEntity entity){
+        Author model = new Author();
+        model.setId(entity.getId());
+        model.setFirstName(entity.getFirstName());
+        model.setLastName(entity.getLastName());
+        return model;
+    }
 
-    public AuthorEntity() {
+    public Author() {
     }
 
     public Long getId() {
@@ -39,13 +40,5 @@ public class AuthorEntity {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public CategoryEntity getCategory() {
-        return category;
-    }
-
-    public void setCategory(CategoryEntity category) {
-        this.category = category;
     }
 }

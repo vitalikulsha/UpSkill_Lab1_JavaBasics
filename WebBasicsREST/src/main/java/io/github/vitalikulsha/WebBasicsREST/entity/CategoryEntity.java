@@ -32,4 +32,12 @@ public class CategoryEntity {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    public List<AuthorEntity> getAuthors() {
+        return authors;
+    }
+
+    public void setAuthors(List<AuthorEntity> authors) {
+        this.authors = authors;
+    }
 }
