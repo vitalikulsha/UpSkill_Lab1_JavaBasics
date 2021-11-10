@@ -38,6 +38,9 @@ public class CategoryController {
         }
     }
 
+    @GetMapping("/all")
+
+
     @DeleteMapping("/{id}")
     public ResponseEntity deleteCategory(@PathVariable Long id) {
         try {
