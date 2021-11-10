@@ -16,9 +16,9 @@ public class CategoryController {
     private CategoryService categoryService;
 
     @PostMapping
-    public ResponseEntity registration(@RequestBody CategoryEntity category) {
+    public ResponseEntity addCategory(@RequestBody CategoryEntity category) {
         try {
-            categoryService.add(category);
+            categoryService.addCategory(category);
             return ResponseEntity.ok("Category added successfully!");
         } catch (CategoryAlreadyExistsException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
@@ -41,7 +41,7 @@ public class CategoryController {
     @DeleteMapping("/{id}")
     public ResponseEntity deleteCategory(@PathVariable Long id) {
         try {
-            return ResponseEntity.ok(categoryService.delete(id));
+            return ResponseEntity.ok("Category id = " + categoryService.delete(id) + " deleted.");
         } catch (Exception e) {
             return ResponseEntity.badRequest().body("Something went wrong...");
         }
