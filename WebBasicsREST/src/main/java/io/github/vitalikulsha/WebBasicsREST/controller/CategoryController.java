@@ -3,7 +3,6 @@ package io.github.vitalikulsha.WebBasicsREST.controller;
 import io.github.vitalikulsha.WebBasicsREST.entity.CategoryEntity;
 import io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException;
 import io.github.vitalikulsha.WebBasicsREST.exception.CategoryNotFoundException;
-import io.github.vitalikulsha.WebBasicsREST.repository.CategoryRepository;
 import io.github.vitalikulsha.WebBasicsREST.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -34,6 +33,15 @@ public class CategoryController {
             return ResponseEntity.ok(categoryService.getCategoryById(id));
         } catch (CategoryNotFoundException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body("Something went wrong...");
+        }
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity deleteCategory(@PathVariable Long id) {
+        try {
+            return ResponseEntity.ok(categoryService.delete(id));
         } catch (Exception e) {
             return ResponseEntity.badRequest().body("Something went wrong...");
         }

@@ -1,9 +1,8 @@
 package io.github.vitalikulsha.WebBasicsREST.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class CategoryEntity {
@@ -11,6 +10,9 @@ public class CategoryEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
+    private List<AuthorEntity> authors;
 
     public CategoryEntity() {
     }
