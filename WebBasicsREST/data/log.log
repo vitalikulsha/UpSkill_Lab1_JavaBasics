@@ -1,0 +1,120 @@
+2021-11-14 18:32:46 ERROR [http-nio-8080-exec-1]: A category with the same name already exists.
+2021-11-14 18:32:54 ERROR [http-nio-8080-exec-1]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException: A category with the same name already exists.
+2021-11-14 18:34:52 INFO  [http-nio-8080-exec-1]: Category added successfully! id = null
+2021-11-14 18:35:11 ERROR [http-nio-8080-exec-1]: java.lang.NullPointerException
+2021-11-14 18:35:11 INFO  [http-nio-8080-exec-3]: All categories received successfully!
+2021-11-14 18:36:45 ERROR [http-nio-8080-exec-1]: java.util.NoSuchElementException: No value present
+2021-11-14 18:37:22 INFO  [http-nio-8080-exec-4]: Category deleted successfully! id = 3
+2021-11-14 18:37:27 INFO  [http-nio-8080-exec-5]: All categories received successfully!
+2021-11-14 18:41:07 ERROR [http-nio-8080-exec-8]: A category with the same name already exists.
+2021-11-14 18:41:07 ERROR [http-nio-8080-exec-8]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException: A category with the same name already exists.
+2021-11-14 18:41:25 ERROR [http-nio-8080-exec-10]: A category with the same name already exists.
+2021-11-14 18:41:25 ERROR [http-nio-8080-exec-10]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException: A category with the same name already exists.
+2021-11-14 18:42:34 ERROR [http-nio-8080-exec-4]: A category with the same name already exists.
+2021-11-14 18:42:34 ERROR [http-nio-8080-exec-4]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException: A category with the same name already exists.
+2021-11-14 18:42:45 INFO  [http-nio-8080-exec-7]: Category added successfully! id = null
+2021-11-14 18:42:46 ERROR [http-nio-8080-exec-7]: java.lang.NullPointerException
+2021-11-14 18:42:50 INFO  [http-nio-8080-exec-9]: All categories received successfully!
+2021-11-14 18:43:16 INFO  [http-nio-8080-exec-10]: Category updated successfully! id = 2
+2021-11-14 18:43:16 ERROR [http-nio-8080-exec-10]: java.lang.NullPointerException
+2021-11-14 18:43:25 INFO  [http-nio-8080-exec-1]: All categories received successfully!
+2021-11-14 18:43:32 INFO  [http-nio-8080-exec-3]: Category updated successfully! id = 2
+2021-11-14 18:43:33 ERROR [http-nio-8080-exec-3]: java.lang.NullPointerException
+2021-11-14 18:43:38 INFO  [http-nio-8080-exec-4]: All categories received successfully!
+2021-11-14 18:50:39 INFO  [http-nio-8080-exec-2]: All categories received successfully!
+2021-11-14 19:00:56 ERROR [http-nio-8080-exec-1]: The List of categories is empty
+2021-11-14 19:00:56 ERROR [http-nio-8080-exec-1]: The List of categories is empty
+2021-11-14 19:00:56 ERROR [http-nio-8080-exec-1]: io.github.vitalikulsha.WebBasicsREST.exception.CategoriesIsEmptyException: The List of categories is empty
+2021-11-14 19:08:43 ERROR [http-nio-8080-exec-2]: No categories found.
+2021-11-14 19:08:43 ERROR [http-nio-8080-exec-2]: No categories found.
+2021-11-14 19:08:43 ERROR [http-nio-8080-exec-2]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryNotFoundException: No categories found.
+2021-11-14 19:10:34 INFO  [http-nio-8080-exec-5]: Category added successfully! id = null
+2021-11-14 19:10:35 ERROR [http-nio-8080-exec-5]: java.lang.NullPointerException
+2021-11-14 19:10:45 INFO  [http-nio-8080-exec-7]: All categories received successfully!
+2021-11-14 19:10:52 INFO  [http-nio-8080-exec-8]: Category received successfully! id = 1
+2021-11-14 19:12:44 INFO  [http-nio-8080-exec-1]: Category updated successfully! id = 1
+2021-11-14 19:12:44 ERROR [http-nio-8080-exec-1]: java.lang.NullPointerException
+2021-11-14 19:12:54 INFO  [http-nio-8080-exec-4]: Category received successfully! id = 1
+2021-11-14 19:13:25 INFO  [http-nio-8080-exec-5]: Category added successfully! title = Classic
+2021-11-14 19:13:25 ERROR [http-nio-8080-exec-5]: java.lang.NullPointerException
+2021-11-14 19:13:32 INFO  [http-nio-8080-exec-7]: Category added successfully! title = Detective
+2021-11-14 19:13:32 ERROR [http-nio-8080-exec-7]: java.lang.NullPointerException
+2021-11-14 19:13:43 INFO  [http-nio-8080-exec-9]: Category updated successfully! id = 1
+2021-11-14 19:13:44 ERROR [http-nio-8080-exec-9]: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [category.UK_lnmf77qvjnr2lmyxrrydom9hd]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2021-11-14 19:13:49 INFO  [http-nio-8080-exec-2]: Category received successfully! id = 1
+2021-11-14 19:13:56 INFO  [http-nio-8080-exec-1]: All categories received successfully!
+2021-11-14 19:14:14 INFO  [http-nio-8080-exec-3]: Category updated successfully! id = 2
+2021-11-14 19:14:14 ERROR [http-nio-8080-exec-3]: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [category.UK_lnmf77qvjnr2lmyxrrydom9hd]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2021-11-14 19:20:09 INFO  [http-nio-8080-exec-5]: All categories received successfully!
+2021-11-14 19:20:31 INFO  [http-nio-8080-exec-6]: Category updated successfully! id = 2
+2021-11-14 19:20:31 ERROR [http-nio-8080-exec-6]: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [category.UK_lnmf77qvjnr2lmyxrrydom9hd]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2021-11-14 19:20:55 INFO  [http-nio-8080-exec-8]: Category updated successfully! id = 2
+2021-11-14 19:20:55 ERROR [http-nio-8080-exec-8]: java.lang.NullPointerException
+2021-11-14 19:27:39 ERROR [http-nio-8080-exec-1]: No categories found.
+2021-11-14 19:27:39 ERROR [http-nio-8080-exec-1]: No categories found.
+2021-11-14 19:27:39 ERROR [http-nio-8080-exec-1]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryNotFoundException: No categories found.
+2021-11-14 19:27:49 INFO  [http-nio-8080-exec-3]: Category added successfully! title = Detective
+2021-11-14 19:27:50 ERROR [http-nio-8080-exec-3]: java.lang.NullPointerException
+2021-11-14 19:32:14 INFO  [http-nio-8080-exec-2]: All categories received successfully!
+2021-11-14 19:32:32 ERROR [http-nio-8080-exec-3]: org.springframework.orm.jpa.JpaSystemException: More than one row with the given identifier was found: 0, for class: io.github.vitalikulsha.WebBasicsREST.entity.CategoryEntity; nested exception is org.hibernate.HibernateException: More than one row with the given identifier was found: 0, for class: io.github.vitalikulsha.WebBasicsREST.entity.CategoryEntity
+2021-11-14 19:33:55 ERROR [http-nio-8080-exec-2]: No categories found.
+2021-11-14 19:33:55 ERROR [http-nio-8080-exec-2]: No categories found.
+2021-11-14 19:33:55 ERROR [http-nio-8080-exec-2]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryNotFoundException: No categories found.
+2021-11-14 19:34:02 INFO  [http-nio-8080-exec-3]: Category added successfully! title = Detective
+2021-11-14 19:34:02 ERROR [http-nio-8080-exec-3]: java.lang.NullPointerException
+2021-11-14 19:34:06 INFO  [http-nio-8080-exec-5]: All categories received successfully!
+2021-11-14 19:37:02 ERROR [http-nio-8080-exec-8]: A category with the same name already exists.
+2021-11-14 19:37:02 ERROR [http-nio-8080-exec-8]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException: A category with the same name already exists.
+2021-11-14 19:37:09 INFO  [http-nio-8080-exec-10]: Category added successfully! title = Fantastic
+2021-11-14 19:37:09 ERROR [http-nio-8080-exec-10]: java.lang.NullPointerException
+2021-11-14 19:37:14 INFO  [http-nio-8080-exec-2]: All categories received successfully!
+2021-11-14 19:39:09 ERROR [http-nio-8080-exec-5]: A category with the same name already exists.
+2021-11-14 19:39:09 ERROR [http-nio-8080-exec-5]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException: A category with the same name already exists.
+2021-11-14 19:39:27 INFO  [http-nio-8080-exec-7]: Category added successfully! title = classic
+2021-11-14 19:39:27 ERROR [http-nio-8080-exec-7]: java.lang.NullPointerException
+2021-11-14 19:39:34 INFO  [http-nio-8080-exec-9]: All categories received successfully!
+2021-11-14 19:40:02 ERROR [http-nio-8080-exec-10]: A category with the same name already exists.
+2021-11-14 19:40:02 ERROR [http-nio-8080-exec-10]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException: A category with the same name already exists.
+2021-11-14 19:40:08 INFO  [http-nio-8080-exec-2]: Category added successfully! title = faq
+2021-11-14 19:40:08 ERROR [http-nio-8080-exec-2]: java.lang.NullPointerException
+2021-11-14 19:40:14 INFO  [http-nio-8080-exec-4]: All categories received successfully!
+2021-11-14 19:41:26 INFO  [http-nio-8080-exec-7]: Category deleted successfully! id = 1
+2021-11-14 19:41:41 ERROR [http-nio-8080-exec-8]: java.util.NoSuchElementException: No value present
+2021-11-14 19:43:16 ERROR [http-nio-8080-exec-10]: java.util.NoSuchElementException: No value present
+2021-11-14 19:45:31 ERROR [http-nio-8080-exec-2]: java.util.NoSuchElementException: No value present
+2021-11-14 19:46:54 ERROR [http-nio-8080-exec-4]: java.util.NoSuchElementException: No value present
+2021-11-14 19:51:42 ERROR [http-nio-8080-exec-2]: java.util.NoSuchElementException: No value present
+2021-11-14 19:51:53 INFO  [http-nio-8080-exec-4]: All categories received successfully!
+2021-11-14 19:52:33 INFO  [http-nio-8080-exec-6]: All categories received successfully!
+2021-11-14 19:53:06 INFO  [http-nio-8080-exec-7]: Category updated successfully! id = 3
+2021-11-14 19:53:06 ERROR [http-nio-8080-exec-7]: java.lang.NullPointerException
+2021-11-14 19:53:11 INFO  [http-nio-8080-exec-9]: All categories received successfully!
+2021-11-14 19:53:42 INFO  [http-nio-8080-exec-10]: Category updated successfully! id = 3
+2021-11-14 19:53:42 ERROR [http-nio-8080-exec-10]: java.lang.NullPointerException
+2021-11-14 20:01:05 INFO  [http-nio-8080-exec-1]: All categories received successfully!
+2021-11-14 20:01:14 INFO  [http-nio-8080-exec-3]: Category deleted successfully! id = 2
+2021-11-14 20:01:18 ERROR [http-nio-8080-exec-4]: Category not found
+2021-11-14 20:01:18 ERROR [http-nio-8080-exec-4]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryNotFoundException: Category not found
+2021-11-14 20:05:42 INFO  [http-nio-8080-exec-1]: Category added successfully! title = faq
+2021-11-14 20:05:43 ERROR [http-nio-8080-exec-1]: java.lang.NullPointerException
+2021-11-14 20:05:55 INFO  [http-nio-8080-exec-4]: All categories received successfully!
+2021-11-14 20:06:18 INFO  [http-nio-8080-exec-7]: Category added successfully! title = detective
+2021-11-14 20:06:18 ERROR [http-nio-8080-exec-7]: java.lang.NullPointerException
+2021-11-14 20:06:26 INFO  [http-nio-8080-exec-9]: All categories received successfully!
+2021-11-14 20:07:06 INFO  [http-nio-8080-exec-10]: Category deleted successfully! id = 5
+2021-11-14 20:07:10 ERROR [http-nio-8080-exec-2]: Category not found
+2021-11-14 20:07:10 ERROR [http-nio-8080-exec-2]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryNotFoundException: Category not found
+2021-11-14 20:07:24 INFO  [http-nio-8080-exec-1]: Category added successfully! title = detective
+2021-11-14 20:07:24 ERROR [http-nio-8080-exec-1]: java.lang.NullPointerException
+2021-11-14 20:16:42 INFO  [http-nio-8080-exec-1]: All categories received successfully!
+2021-11-14 20:16:56 INFO  [http-nio-8080-exec-3]: Category added successfully! title = jazz
+2021-11-14 20:17:04 INFO  [http-nio-8080-exec-4]: All categories received successfully!
+2021-11-14 20:21:43 INFO  [http-nio-8080-exec-1]: Category updated successfully! id = 3; newTitle = Classic
+2021-11-14 20:21:47 INFO  [http-nio-8080-exec-3]: Category updated successfully! id = 3; newTitle = Classic
+2021-11-14 20:21:58 INFO  [http-nio-8080-exec-4]: All categories received successfully!
+2021-11-14 20:22:26 INFO  [http-nio-8080-exec-5]: Category updated successfully! id = 3; newTitle = detective
+2021-11-14 20:22:32 INFO  [http-nio-8080-exec-6]: All categories received successfully!
+2021-11-14 20:27:13 ERROR [http-nio-8080-exec-1]: A category with the same name already exists.
+2021-11-14 20:27:13 ERROR [http-nio-8080-exec-1]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException: A category with the same name already exists.
+2021-11-14 20:28:50 ERROR [http-nio-8080-exec-2]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException: A category with the same name already exists.
+2021-11-14 20:30:22 ERROR [http-nio-8080-exec-1]: A category with the same name already exists.

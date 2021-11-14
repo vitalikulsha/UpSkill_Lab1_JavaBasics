@@ -1,12 +1,8 @@
 package io.github.vitalikulsha.WebBasicsREST.service;
 
-import io.github.vitalikulsha.WebBasicsREST.controller.CategoryController;
-import io.github.vitalikulsha.WebBasicsREST.entity.AuthorEntity;
 import io.github.vitalikulsha.WebBasicsREST.entity.CategoryEntity;
-import io.github.vitalikulsha.WebBasicsREST.exception.CategoriesIsEmptyException;
 import io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException;
 import io.github.vitalikulsha.WebBasicsREST.exception.CategoryNotFoundException;
-import io.github.vitalikulsha.WebBasicsREST.model.Author;
 import io.github.vitalikulsha.WebBasicsREST.model.Category;
 import io.github.vitalikulsha.WebBasicsREST.repository.CategoryRepository;
 import org.apache.log4j.Logger;
@@ -15,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CategoryService {
@@ -23,50 +20,57 @@ public class CategoryService {
     @Autowired
     private CategoryRepository categoryRepository;
 
-    public Category addCategory(CategoryEntity category) throws CategoryAlreadyExistsException {
+    public void addCategory(CategoryEntity category) throws CategoryAlreadyExistsException {
         if (categoryRepository.findByTitle(category.getTitle()) != null) {
             LOG.error("A category with the same name already exists.");
             throw new CategoryAlreadyExistsException("A category with the same name already exists.");
         }
-        return Category.toModel(categoryRepository.save(category));
+        LOG.info("Category added successfully! title = " + category.getTitle());
+        categoryRepository.save(category);
     }
 
     public Category getCategory(Long id) throws CategoryNotFoundException {
-        CategoryEntity category = categoryRepository.findById(id).get();
-        if (category == null) {
+        Optional<CategoryEntity> category = categoryRepository.findById(id);
+        if (category.isEmpty()) {
             LOG.error("Category not found");
             throw new CategoryNotFoundException("Category not found");
         }
-        return Category.toModel(category);
+        LOG.info("Category received successfully! id = " + id);
+        return Category.toModel(category.get());
     }
 
-    public List<Category> getAllCategories() throws CategoriesIsEmptyException {
+    public List<Category> getAllCategories() throws CategoryNotFoundException {
         Iterable<CategoryEntity> categoryList = categoryRepository.findAll();
-        if (categoryList == null) {
-            LOG.error("The List of categories is empty");
-            throw new CategoriesIsEmptyException("The List of categories is empty");
+        if (!categoryList.iterator().hasNext()) {
+            LOG.error("No categories found.");
+            throw new CategoryNotFoundException("No categories found.");
         }
         List<Category> categories = new ArrayList<>();
         categoryList.forEach(c -> categories.add(Category.toModel(c)));
+        LOG.info("All categories received successfully!");
         return categories;
     }
 
-    public Category updateCategory(Long id, CategoryEntity category) throws CategoryNotFoundException {
-        if (categoryRepository.findById(id).get() == null) {
+    public void updateCategory(Long id, CategoryEntity category) throws CategoryNotFoundException, CategoryAlreadyExistsException {
+        if (categoryRepository.findById(id).isEmpty()) {
             LOG.error("Category not found");
             throw new CategoryNotFoundException("Category not found");
         }
+        if (categoryRepository.findByTitle(category.getTitle()) != null) {
+            LOG.error("A category with the same name already exists.");
+            throw new CategoryAlreadyExistsException("A category with the same name already exists.");
+        }
         category.setId(id);
-        return Category.toModel(categoryRepository.save(category));
+        LOG.info("Category updated successfully! id = " + id + "; newTitle = " + category.getTitle());
     }
 
     public Long deleteCategory(Long id) throws CategoryNotFoundException {
-//        CategoryEntity category = categoryRepository.findById(id).get();
-        if (categoryRepository.findById(id).get() == null) {
+        if (categoryRepository.findById(id).isEmpty()) {
             LOG.error("Category not found");
             throw new CategoryNotFoundException("Category not found");
         }
         categoryRepository.deleteById(id);
+        LOG.info("Category deleted successfully! id = " + id);
         return id;
     }
 }

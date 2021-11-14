@@ -23,13 +23,11 @@ public class CategoryController {
     private CategoryService categoryService;
 
     @PostMapping()
-    public ResponseEntity addCategory(@RequestBody CategoryEntity category) {
+    public ResponseEntity<?> addCategory(@RequestBody CategoryEntity category) {
         try {
             categoryService.addCategory(category);
-            LOG.info("Category added successfully! id = " + category.getId());
             return ResponseEntity.ok("Category added successfully!");
         } catch (CategoryAlreadyExistsException e) {
-            LOG.error(e);
             return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {
             LOG.error(e);
@@ -38,12 +36,10 @@ public class CategoryController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity getCategory(@PathVariable Long id) {
+    public ResponseEntity<?> getCategory(@PathVariable Long id) {
         try {
-            LOG.info("Category received successfully! id = " + id);
             return ResponseEntity.ok(categoryService.getCategory(id));
         } catch (CategoryNotFoundException e) {
-            LOG.error(e);
             return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {
             LOG.error(e);
@@ -54,7 +50,6 @@ public class CategoryController {
     @GetMapping("/all")
     public ResponseEntity<List<Category>> getAllCategories() {
         try {
-            LOG.info("All categories received successfully!");
             return ResponseEntity.ok(categoryService.getAllCategories());
         } catch (Exception e) {
             LOG.error(e);
@@ -63,21 +58,27 @@ public class CategoryController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity updateCategory(@PathVariable Long id, @RequestBody CategoryEntity category) {
+    public ResponseEntity<?> updateCategory(@PathVariable Long id, @RequestBody CategoryEntity category) {
         try {
-            LOG.info("Category updated successfully! id = " + id);
-            return ResponseEntity.ok(categoryService.updateCategory(id, category));
+            categoryService.updateCategory(id, category);
+            return ResponseEntity.ok("Category updated successfully!");
+        } catch (CategoryNotFoundException | CategoryAlreadyExistsException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {
+            LOG.error(e);
             return ResponseEntity.badRequest().body("Something went wrong...");
         }
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity deleteCategory(@PathVariable Long id) {
+    public ResponseEntity<?> deleteCategory(@PathVariable Long id) {
         try {
-            LOG.info("Category deleted successfully! id = " + id);
-            return ResponseEntity.ok("Category id = " + categoryService.deleteCategory(id) + " deleted.");
+            long delId = categoryService.deleteCategory(id);
+            return ResponseEntity.ok("Category id = " + delId + " deleted.");
+        } catch (CategoryNotFoundException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {
+            LOG.error(e);
             return ResponseEntity.badRequest().body("Something went wrong...");
         }
     }

@@ -1,7 +1,5 @@
 package io.github.vitalikulsha.WebBasicsREST.entity;
 
-import com.sun.istack.NotNull;
-
 import javax.persistence.*;
 import java.util.List;
 
@@ -11,11 +9,10 @@ public class CategoryEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", length = 20)
+    @Column(name = "category_id", unique = true, nullable = false)
     private Long id;
 
-    @Column(name = "title", length = 20)
-    @NotNull
+    @Column(unique = true)
     private String title;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
