@@ -29,7 +29,7 @@ public class CategoryService {
         categoryRepository.save(category);
     }
 
-    public Category getCategory(Long id) throws CategoryNotFoundException {
+    public Category getCategoryById(Long id) throws CategoryNotFoundException {
         Optional<CategoryEntity> category = categoryRepository.findById(id);
         if (category.isEmpty()) {
             LOG.error("Category not found");
@@ -37,6 +37,16 @@ public class CategoryService {
         }
         LOG.info("Category received successfully! id = " + id);
         return Category.toModel(category.get());
+    }
+
+    public Category getCategoryByTitle(String title) throws CategoryNotFoundException {
+        CategoryEntity category = categoryRepository.findByTitle(title);
+        if (category == null) {
+            LOG.error("Category not found");
+            throw new CategoryNotFoundException("Category not found");
+        }
+        LOG.info("Category received successfully! title = " + title);
+        return Category.toModel(category);
     }
 
     public List<Category> getAllCategories() throws CategoryNotFoundException {

@@ -118,3 +118,8 @@
 2021-11-14 20:27:13 ERROR [http-nio-8080-exec-1]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException: A category with the same name already exists.
 2021-11-14 20:28:50 ERROR [http-nio-8080-exec-2]: io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException: A category with the same name already exists.
 2021-11-14 20:30:22 ERROR [http-nio-8080-exec-1]: A category with the same name already exists.
+2021-11-14 20:39:04 INFO  [http-nio-8080-exec-8]: All categories received successfully!
+2021-11-14 20:40:58 INFO  [http-nio-8080-exec-2]: Category received successfully! id = 3
+2021-11-14 20:46:24 INFO  [http-nio-8080-exec-2]: Category received successfully! title = classic
+2021-11-14 20:46:34 INFO  [http-nio-8080-exec-3]: All categories received successfully!
+2021-11-14 20:46:44 INFO  [http-nio-8080-exec-4]: Category received successfully! title = detective

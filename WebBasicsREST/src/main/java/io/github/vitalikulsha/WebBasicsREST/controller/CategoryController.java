@@ -36,9 +36,21 @@ public class CategoryController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> getCategory(@PathVariable Long id) {
+    public ResponseEntity<?> getCategoryById(@PathVariable Long id) {
         try {
-            return ResponseEntity.ok(categoryService.getCategory(id));
+            return ResponseEntity.ok(categoryService.getCategoryById(id));
+        } catch (CategoryNotFoundException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        } catch (Exception e) {
+            LOG.error(e);
+            return ResponseEntity.badRequest().body("Something went wrong...");
+        }
+    }
+
+    @GetMapping("/title/{title}")
+    public ResponseEntity<?> getCategoryByTitle(@PathVariable String title) {
+        try {
+            return ResponseEntity.ok(categoryService.getCategoryByTitle(title));
         } catch (CategoryNotFoundException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {
