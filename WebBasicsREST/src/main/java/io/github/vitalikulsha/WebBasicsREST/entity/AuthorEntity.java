@@ -3,11 +3,17 @@ package io.github.vitalikulsha.WebBasicsREST.entity;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "author")
 public class AuthorEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", length = 20)
     private Long id;
+
+    @Column(name = "first_name", length = 20)
     private String firstName;
+
+    @Column(name = "last_name", length = 20)
     private String lastName;
 
     @ManyToOne
