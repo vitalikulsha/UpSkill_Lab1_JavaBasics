@@ -1,6 +1,7 @@
 package io.github.vitalikulsha.WebBasicsREST.controller;
 
 import io.github.vitalikulsha.WebBasicsREST.entity.AuthorEntity;
+import io.github.vitalikulsha.WebBasicsREST.entity.CategoryEntity;
 import io.github.vitalikulsha.WebBasicsREST.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -22,8 +23,8 @@ public class AuthorController {
         }
     }
 
-    @PutMapping
-    public ResponseEntity updateAuthor(@RequestParam Long id) {
+    @PutMapping("/{id}")
+    public ResponseEntity updateAuthor(@PathVariable Long id) {
         try {
             return ResponseEntity.ok(authorService.updateAuthor(id));
         } catch (Exception e) {

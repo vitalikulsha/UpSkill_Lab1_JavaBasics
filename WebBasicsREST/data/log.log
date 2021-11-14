@@ -123,3 +123,25 @@
 2021-11-14 20:46:24 INFO  [http-nio-8080-exec-2]: Category received successfully! title = classic
 2021-11-14 20:46:34 INFO  [http-nio-8080-exec-3]: All categories received successfully!
 2021-11-14 20:46:44 INFO  [http-nio-8080-exec-4]: Category received successfully! title = detective
+2021-11-14 21:28:38 INFO  [http-nio-8080-exec-2]: Category received successfully! title = detective
+2021-11-14 21:28:45 ERROR [http-nio-8080-exec-3]: A category with the same name already exists.
+2021-11-14 21:28:53 ERROR [http-nio-8080-exec-5]: A category with the same name already exists.
+2021-11-14 21:28:57 INFO  [http-nio-8080-exec-7]: Category received successfully! title = detective
+2021-11-14 21:29:02 INFO  [http-nio-8080-exec-8]: All categories received successfully!
+2021-11-14 21:29:16 INFO  [http-nio-8080-exec-9]: Category updated successfully! id = 3; newTitle = Fantastic
+2021-11-14 21:29:27 INFO  [http-nio-8080-exec-10]: All categories received successfully!
+2021-11-14 21:29:45 ERROR [http-nio-8080-exec-1]: Category not found. id = 1
+2021-11-14 21:30:27 INFO  [http-nio-8080-exec-4]: All categories received successfully!
+2021-11-14 21:31:27 INFO  [http-nio-8080-exec-5]: All categories received successfully!
+2021-11-14 21:32:29 ERROR [http-nio-8080-exec-8]: Author not found. id = 3
+2021-11-14 21:32:52 INFO  [http-nio-8080-exec-10]: Author updated successfully! id = 2; newFulName = Ivan Ivanov
+2021-11-14 21:32:56 INFO  [http-nio-8080-exec-1]: All categories received successfully!
+2021-11-14 21:49:20 ERROR [http-nio-8080-exec-2]: A author with the same name already exists. fulName = Ivan Ivanov
+2021-11-14 21:49:29 ERROR [http-nio-8080-exec-4]: org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2021-11-14 21:49:57 INFO  [http-nio-8080-exec-6]: All categories received successfully!
+2021-11-14 21:50:33 ERROR [http-nio-8080-exec-7]: org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2021-11-14 21:52:26 ERROR [http-nio-8080-exec-9]: org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2021-11-14 22:03:32 INFO  [http-nio-8080-exec-4]: All categories received successfully!
+2021-11-14 22:07:06 INFO  [http-nio-8080-exec-7]: All categories received successfully!
+2021-11-14 22:16:11 INFO  [http-nio-8080-exec-3]: All categories received successfully!
+2021-11-14 22:18:06 INFO  [http-nio-8080-exec-9]: All categories received successfully!

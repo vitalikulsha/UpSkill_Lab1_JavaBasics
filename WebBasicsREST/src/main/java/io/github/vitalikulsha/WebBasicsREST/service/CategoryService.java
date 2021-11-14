@@ -22,7 +22,7 @@ public class CategoryService {
 
     public void addCategory(CategoryEntity category) throws CategoryAlreadyExistsException {
         if (categoryRepository.findByTitle(category.getTitle()) != null) {
-            LOG.error("A category with the same name already exists.");
+            LOG.error("A category with the same name already exists. title = " + category.getTitle());
             throw new CategoryAlreadyExistsException("A category with the same name already exists.");
         }
         LOG.info("Category added successfully! title = " + category.getTitle());
@@ -32,7 +32,7 @@ public class CategoryService {
     public Category getCategoryById(Long id) throws CategoryNotFoundException {
         Optional<CategoryEntity> category = categoryRepository.findById(id);
         if (category.isEmpty()) {
-            LOG.error("Category not found");
+            LOG.error("Category not found. id = " + id);
             throw new CategoryNotFoundException("Category not found");
         }
         LOG.info("Category received successfully! id = " + id);
@@ -42,7 +42,7 @@ public class CategoryService {
     public Category getCategoryByTitle(String title) throws CategoryNotFoundException {
         CategoryEntity category = categoryRepository.findByTitle(title);
         if (category == null) {
-            LOG.error("Category not found");
+            LOG.error("Category not found. title = " + title);
             throw new CategoryNotFoundException("Category not found");
         }
         LOG.info("Category received successfully! title = " + title);
@@ -52,7 +52,7 @@ public class CategoryService {
     public List<Category> getAllCategories() throws CategoryNotFoundException {
         Iterable<CategoryEntity> categoryList = categoryRepository.findAll();
         if (!categoryList.iterator().hasNext()) {
-            LOG.error("No categories found.");
+            LOG.error("No categories found: list of categories id empty.");
             throw new CategoryNotFoundException("No categories found.");
         }
         List<Category> categories = new ArrayList<>();
@@ -63,7 +63,7 @@ public class CategoryService {
 
     public void updateCategory(Long id, CategoryEntity category) throws CategoryNotFoundException, CategoryAlreadyExistsException {
         if (categoryRepository.findById(id).isEmpty()) {
-            LOG.error("Category not found");
+            LOG.error("Category not found. id = " + id);
             throw new CategoryNotFoundException("Category not found");
         }
         if (categoryRepository.findByTitle(category.getTitle()) != null) {
@@ -71,12 +71,13 @@ public class CategoryService {
             throw new CategoryAlreadyExistsException("A category with the same name already exists.");
         }
         category.setId(id);
+        categoryRepository.save(category);
         LOG.info("Category updated successfully! id = " + id + "; newTitle = " + category.getTitle());
     }
 
     public Long deleteCategory(Long id) throws CategoryNotFoundException {
         if (categoryRepository.findById(id).isEmpty()) {
-            LOG.error("Category not found");
+            LOG.error("Category not found. id = " + id);
             throw new CategoryNotFoundException("Category not found");
         }
         categoryRepository.deleteById(id);
