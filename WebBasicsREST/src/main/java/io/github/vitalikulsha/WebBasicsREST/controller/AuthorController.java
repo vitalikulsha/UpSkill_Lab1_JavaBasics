@@ -1,7 +1,7 @@
 package io.github.vitalikulsha.WebBasicsREST.controller;
 
 import io.github.vitalikulsha.WebBasicsREST.entity.AuthorEntity;
-import io.github.vitalikulsha.WebBasicsREST.entity.CategoryEntity;
+import io.github.vitalikulsha.WebBasicsREST.exception.CategoryNotFoundException;
 import io.github.vitalikulsha.WebBasicsREST.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,9 +15,12 @@ public class AuthorController {
     private AuthorService authorService;
 
     @PostMapping
-    public ResponseEntity createAuthor(@RequestBody AuthorEntity author, @RequestParam Long categoryId) {
+    public ResponseEntity<?> addAuthor(@RequestBody AuthorEntity author, @RequestParam Long categoryId) {
         try {
-            return ResponseEntity.ok(authorService.createAuthor(author, categoryId));
+            authorService.addAuthor(author, categoryId);
+            return ResponseEntity.ok("Category added successfully!");
+        } catch (CategoryNotFoundException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {
             return ResponseEntity.badRequest().body("Something went wrong...");
         }

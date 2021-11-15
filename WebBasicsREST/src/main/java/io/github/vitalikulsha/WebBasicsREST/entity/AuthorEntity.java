@@ -11,6 +11,7 @@ public class AuthorEntity {
 
     private String firstName;
     private String lastName;
+    private String book;
 
     @ManyToOne
     @JoinColumn(name = "category_id")
@@ -41,6 +42,14 @@ public class AuthorEntity {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getBook() {
+        return book;
+    }
+
+    public void setBook(String book) {
+        this.book = book;
     }
 
     public CategoryEntity getCategory() {

@@ -22,7 +22,7 @@ public class CategoryController {
     @Autowired
     private CategoryService categoryService;
 
-    @PostMapping()
+    @PostMapping
     public ResponseEntity<?> addCategory(@RequestBody CategoryEntity category) {
         try {
             categoryService.addCategory(category);

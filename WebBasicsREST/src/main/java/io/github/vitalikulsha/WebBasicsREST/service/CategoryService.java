@@ -25,8 +25,8 @@ public class CategoryService {
             LOG.error("A category with the same name already exists. title = " + category.getTitle());
             throw new CategoryAlreadyExistsException("A category with the same name already exists.");
         }
-        LOG.info("Category added successfully! title = " + category.getTitle());
         categoryRepository.save(category);
+        LOG.info("Category added successfully! title = " + category.getTitle());
     }
 
     public Category getCategoryById(Long id) throws CategoryNotFoundException {

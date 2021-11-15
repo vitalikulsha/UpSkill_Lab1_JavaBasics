@@ -1,0 +1,8 @@
+2021-11-15 17:27:00 INFO  [http-nio-8080-exec-1]: Category received successfully! id = 3
+2021-11-15 17:27:24 INFO  [http-nio-8080-exec-3]: Category received successfully! title = Fantastic
+2021-11-15 17:31:04 INFO  [http-nio-8080-exec-4]: Category received successfully! title = Fantastic
+2021-11-15 18:26:13 INFO  [http-nio-8080-exec-1]: All categories received successfully!
+2021-11-15 18:26:58 INFO  [http-nio-8080-exec-3]: Author added successfully! fulName = Ivan Ivanov
+2021-11-15 18:27:04 INFO  [http-nio-8080-exec-4]: All categories received successfully!
+2021-11-15 18:27:34 INFO  [http-nio-8080-exec-5]: Author added successfully! fulName = Ivan Ivanov
+2021-11-15 18:27:39 INFO  [http-nio-8080-exec-6]: All categories received successfully!
