@@ -47,8 +47,8 @@ public class CategoryController {
         }
     }
 
-    @GetMapping("/title/{title}")
-    public ResponseEntity<?> getCategoryByTitle(@PathVariable String title) {
+    @GetMapping
+    public ResponseEntity<?> getCategoryByTitle(@RequestParam String title) {
         try {
             return ResponseEntity.ok(categoryService.getCategoryByTitle(title));
         } catch (CategoryNotFoundException e) {
