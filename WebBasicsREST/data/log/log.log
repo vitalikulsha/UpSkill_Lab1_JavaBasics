@@ -30,3 +30,7 @@
 2021-11-15 19:17:19 ERROR [http-nio-8080-exec-2]: java.lang.NullPointerException
 2021-11-15 19:18:08 INFO  [http-nio-8080-exec-4]: Author updated successfully! id = 4
 2021-11-15 19:18:13 INFO  [http-nio-8080-exec-5]: All categories received successfully!
+2021-11-15 19:42:41 ERROR [http-nio-8080-exec-1]: Author not found. id = 4
+2021-11-15 19:42:56 INFO  [http-nio-8080-exec-4]: All authors received successfully!
+2021-11-15 19:43:07 INFO  [http-nio-8080-exec-5]: Author deleted successfully! id = 1
+2021-11-15 19:43:35 INFO  [http-nio-8080-exec-6]: Author updated successfully! id = 2

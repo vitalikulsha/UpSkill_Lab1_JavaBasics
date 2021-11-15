@@ -72,8 +72,8 @@ public class CategoryController {
     @PutMapping("/{id}")
     public ResponseEntity<?> updateCategory(@PathVariable Long id, @RequestBody CategoryEntity category) {
         try {
-            categoryService.updateCategory(id, category);
-            return ResponseEntity.ok("Category updated successfully!");
+            long updId = categoryService.updateCategory(id, category);
+            return ResponseEntity.ok("Category #" + updId + "updated successfully!");
         } catch (CategoryNotFoundException | CategoryAlreadyExistsException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {
@@ -86,7 +86,7 @@ public class CategoryController {
     public ResponseEntity<?> deleteCategory(@PathVariable Long id) {
         try {
             long delId = categoryService.deleteCategory(id);
-            return ResponseEntity.ok("Category id = " + delId + " deleted.");
+            return ResponseEntity.ok("Category #" + delId + " deleted.");
         } catch (CategoryNotFoundException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {

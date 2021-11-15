@@ -38,11 +38,7 @@ public class AuthorService {
     }
 
     public Author getAuthorById(Long id) throws AuthorNotFoundException {
-        Optional<AuthorEntity> author = authorRepository.findById(id);
-        if (author.isEmpty()) {
-            LOG.error("Author not found. id = " + id);
-            throw new AuthorNotFoundException("Author not found");
-        }
+        Optional<AuthorEntity> author = getAuthorFromDB(id);
         LOG.info("Author received successfully! id = " + id);
         return Author.toModel(author.get());
     }
@@ -59,17 +55,32 @@ public class AuthorService {
         return authors;
     }
 
-    public void updateAuthor(Long id, AuthorEntity author) throws AuthorNotFoundException {
-        Optional<AuthorEntity> authorDB = authorRepository.findById(id);
-        if (authorDB.isEmpty()) {
-            LOG.error("Author not found. id = " + id);
-            throw new AuthorNotFoundException("Author not found");
-        }
+    public Long updateAuthor(Long id, AuthorEntity author) throws AuthorNotFoundException {
+        Optional<AuthorEntity> authorDB = getAuthorFromDB(id);
         if (author.getCategory() == null) {
             author.setCategory(authorDB.get().getCategory());
         }
         author.setId(id);
         authorRepository.save(author);
         LOG.info("Author updated successfully! id = " + id);
+        return id;
     }
+
+
+    public Long deleteAuthor(Long id) throws AuthorNotFoundException {
+        Optional<AuthorEntity> authorDB = getAuthorFromDB(id);
+        authorRepository.deleteById(id);
+        LOG.info("Author deleted successfully! id = " + id);
+        return id;
+    }
+
+    private Optional<AuthorEntity> getAuthorFromDB(Long id) throws AuthorNotFoundException {
+        Optional<AuthorEntity> authorDB = authorRepository.findById(id);
+        if (authorDB.isEmpty()) {
+            LOG.error("Author not found. id = " + id);
+            throw new AuthorNotFoundException("Author not found");
+        }
+        return authorDB;
+    }
+
 }

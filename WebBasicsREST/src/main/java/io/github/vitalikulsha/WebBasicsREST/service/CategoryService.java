@@ -61,7 +61,7 @@ public class CategoryService {
         return categories;
     }
 
-    public void updateCategory(Long id, CategoryEntity category) throws CategoryNotFoundException, CategoryAlreadyExistsException {
+    public Long updateCategory(Long id, CategoryEntity category) throws CategoryNotFoundException, CategoryAlreadyExistsException {
         if (categoryRepository.findById(id).isEmpty()) {
             LOG.error("Category not found. id = " + id);
             throw new CategoryNotFoundException("Category not found");
@@ -73,6 +73,7 @@ public class CategoryService {
         category.setId(id);
         categoryRepository.save(category);
         LOG.info("Category updated successfully! id = " + id + "; newTitle = " + category.getTitle());
+        return id;
     }
 
     public Long deleteCategory(Long id) throws CategoryNotFoundException {

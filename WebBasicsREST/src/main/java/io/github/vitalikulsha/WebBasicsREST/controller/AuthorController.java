@@ -59,8 +59,21 @@ public class AuthorController {
     @PutMapping("/{id}")
     public ResponseEntity updateAuthor(@PathVariable Long id, @RequestBody AuthorEntity author) {
         try {
-            authorService.updateAuthor(id, author);
-            return ResponseEntity.ok("Author updated successfully!");
+            long updId = authorService.updateAuthor(id, author);
+            return ResponseEntity.ok("Author #" + updId + " updated successfully!");
+        } catch (AuthorNotFoundException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        } catch (Exception e) {
+            LOG.error(e);
+            return ResponseEntity.badRequest().body("Something went wrong...");
+        }
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity deleteAuthor(@PathVariable Long id) {
+        try {
+            long delId = authorService.deleteAuthor(id);
+            return ResponseEntity.ok("Author #" + delId + " deleted successfully!");
         } catch (AuthorNotFoundException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {
