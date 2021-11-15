@@ -3,15 +3,11 @@ package io.github.vitalikulsha.WebBasicsREST.controller;
 import io.github.vitalikulsha.WebBasicsREST.entity.CategoryEntity;
 import io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException;
 import io.github.vitalikulsha.WebBasicsREST.exception.CategoryNotFoundException;
-import io.github.vitalikulsha.WebBasicsREST.model.Category;
 import io.github.vitalikulsha.WebBasicsREST.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.apache.log4j.Logger;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/categories")
@@ -60,12 +56,14 @@ public class CategoryController {
     }
 
     @GetMapping("/all")
-    public ResponseEntity<List<Category>> getAllCategories() {
+    public ResponseEntity<?> getAllCategories() {
         try {
             return ResponseEntity.ok(categoryService.getAllCategories());
+        } catch (CategoryNotFoundException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {
             LOG.error(e);
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return ResponseEntity.badRequest().body("Something went wrong...");
         }
     }
 
@@ -73,7 +71,7 @@ public class CategoryController {
     public ResponseEntity<?> updateCategory(@PathVariable Long id, @RequestBody CategoryEntity category) {
         try {
             long updId = categoryService.updateCategory(id, category);
-            return ResponseEntity.ok("Category #" + updId + "updated successfully!");
+            return ResponseEntity.ok("Category #" + updId + " updated successfully!");
         } catch (CategoryNotFoundException | CategoryAlreadyExistsException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {

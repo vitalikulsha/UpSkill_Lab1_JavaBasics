@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class CategoryService {
@@ -30,13 +29,9 @@ public class CategoryService {
     }
 
     public Category getCategoryById(Long id) throws CategoryNotFoundException {
-        Optional<CategoryEntity> category = categoryRepository.findById(id);
-        if (category.isEmpty()) {
-            LOG.error("Category not found. id = " + id);
-            throw new CategoryNotFoundException("Category not found");
-        }
+        verifyCategoryExists(id);
         LOG.info("Category received successfully! id = " + id);
-        return Category.toModel(category.get());
+        return Category.toModel(categoryRepository.findById(id).get());
     }
 
     public Category getCategoryByTitle(String title) throws CategoryNotFoundException {
@@ -62,10 +57,7 @@ public class CategoryService {
     }
 
     public Long updateCategory(Long id, CategoryEntity category) throws CategoryNotFoundException, CategoryAlreadyExistsException {
-        if (categoryRepository.findById(id).isEmpty()) {
-            LOG.error("Category not found. id = " + id);
-            throw new CategoryNotFoundException("Category not found");
-        }
+        verifyCategoryExists(id);
         if (categoryRepository.findByTitle(category.getTitle()) != null) {
             LOG.error("A category with the same name already exists.");
             throw new CategoryAlreadyExistsException("A category with the same name already exists.");
@@ -77,12 +69,16 @@ public class CategoryService {
     }
 
     public Long deleteCategory(Long id) throws CategoryNotFoundException {
+        verifyCategoryExists(id);
+        categoryRepository.deleteById(id);
+        LOG.info("Category deleted successfully! id = " + id);
+        return id;
+    }
+
+    private void verifyCategoryExists(Long id) throws CategoryNotFoundException {
         if (categoryRepository.findById(id).isEmpty()) {
             LOG.error("Category not found. id = " + id);
             throw new CategoryNotFoundException("Category not found");
         }
-        categoryRepository.deleteById(id);
-        LOG.info("Category deleted successfully! id = " + id);
-        return id;
     }
 }
