@@ -12,6 +12,8 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -43,6 +45,18 @@ public class AuthorService {
         }
         LOG.info("Author received successfully! id = " + id);
         return Author.toModel(author.get());
+    }
+
+    public List<Author> getAllAuthors() throws AuthorNotFoundException {
+        Iterable<AuthorEntity> authorList = authorRepository.findAll();
+        if (!authorList.iterator().hasNext()) {
+            LOG.error("No authors found: list of authors id empty.");
+            throw new AuthorNotFoundException("No authors found.");
+        }
+        List<Author> authors = new ArrayList<>();
+        authorList.forEach(a -> authors.add(Author.toModel(a)));
+        LOG.info("All authors received successfully!");
+        return authors;
     }
 
     public Author updateAuthor(Long id) {
