@@ -9,8 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/authors")
 public class AuthorController {
@@ -57,7 +55,7 @@ public class AuthorController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity updateAuthor(@PathVariable Long id, @RequestBody AuthorEntity author) {
+    public ResponseEntity<?> updateAuthor(@PathVariable Long id, @RequestBody AuthorEntity author) {
         try {
             long updId = authorService.updateAuthor(id, author);
             return ResponseEntity.ok("Author #" + updId + " updated successfully!");
@@ -70,7 +68,7 @@ public class AuthorController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity deleteAuthor(@PathVariable Long id) {
+    public ResponseEntity<?> deleteAuthor(@PathVariable Long id) {
         try {
             long delId = authorService.deleteAuthor(id);
             return ResponseEntity.ok("Author #" + delId + " deleted successfully!");
