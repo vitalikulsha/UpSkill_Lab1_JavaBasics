@@ -89,3 +89,4 @@
 2021-11-15 20:53:26 INFO  [http-nio-8080-exec-4]: All categories received successfully!
 2021-11-15 20:53:35 ERROR [http-nio-8080-exec-5]: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [category.UK_lnmf77qvjnr2lmyxrrydom9hd]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
 2021-11-15 20:56:09 ERROR [http-nio-8080-exec-2]: A category with the same name already exists.
+2021-11-15 21:06:37 INFO  [http-nio-8080-exec-2]: All categories received successfully!
