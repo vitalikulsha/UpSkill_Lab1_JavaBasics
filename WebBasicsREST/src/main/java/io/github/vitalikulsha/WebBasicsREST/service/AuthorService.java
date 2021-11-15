@@ -59,8 +59,17 @@ public class AuthorService {
         return authors;
     }
 
-    public Author updateAuthor(Long id) {
-        AuthorEntity author = authorRepository.findById(id).get();
-        return Author.toModel(authorRepository.save(author));
+    public void updateAuthor(Long id, AuthorEntity author) throws AuthorNotFoundException {
+        Optional<AuthorEntity> authorDB = authorRepository.findById(id);
+        if (authorDB.isEmpty()) {
+            LOG.error("Author not found. id = " + id);
+            throw new AuthorNotFoundException("Author not found");
+        }
+        if (author.getCategory() == null) {
+            author.setCategory(authorDB.get().getCategory());
+        }
+        author.setId(id);
+        authorRepository.save(author);
+        LOG.info("Author updated successfully! id = " + id);
     }
 }

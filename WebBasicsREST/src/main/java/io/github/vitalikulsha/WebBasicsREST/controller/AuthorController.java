@@ -3,12 +3,9 @@ package io.github.vitalikulsha.WebBasicsREST.controller;
 import io.github.vitalikulsha.WebBasicsREST.entity.AuthorEntity;
 import io.github.vitalikulsha.WebBasicsREST.exception.AuthorNotFoundException;
 import io.github.vitalikulsha.WebBasicsREST.exception.CategoryNotFoundException;
-import io.github.vitalikulsha.WebBasicsREST.model.Author;
-import io.github.vitalikulsha.WebBasicsREST.model.Category;
 import io.github.vitalikulsha.WebBasicsREST.service.AuthorService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -60,10 +57,14 @@ public class AuthorController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity updateAuthor(@PathVariable Long id) {
+    public ResponseEntity updateAuthor(@PathVariable Long id, @RequestBody AuthorEntity author) {
         try {
-            return ResponseEntity.ok(authorService.updateAuthor(id));
+            authorService.updateAuthor(id, author);
+            return ResponseEntity.ok("Author updated successfully!");
+        } catch (AuthorNotFoundException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {
+            LOG.error(e);
             return ResponseEntity.badRequest().body("Something went wrong...");
         }
     }

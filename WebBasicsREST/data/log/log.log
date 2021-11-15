@@ -15,3 +15,18 @@
 2021-11-15 18:42:12 ERROR [http-nio-8080-exec-10]: Author not found. id = 5
 2021-11-15 18:42:16 INFO  [http-nio-8080-exec-2]: Author received successfully! id = 4
 2021-11-15 18:56:00 INFO  [http-nio-8080-exec-1]: All authors received successfully!
+2021-11-15 19:12:36 INFO  [http-nio-8080-exec-1]: All authors received successfully!
+2021-11-15 19:12:50 INFO  [http-nio-8080-exec-3]: Author updated successfully! id = 1
+2021-11-15 19:12:55 INFO  [http-nio-8080-exec-4]: All authors received successfully!
+2021-11-15 19:13:44 INFO  [http-nio-8080-exec-5]: Author updated successfully! id = 2
+2021-11-15 19:13:51 INFO  [http-nio-8080-exec-6]: All categories received successfully!
+2021-11-15 19:15:27 INFO  [http-nio-8080-exec-1]: Author updated successfully! id = 4
+2021-11-15 19:15:32 ERROR [http-nio-8080-exec-3]: java.lang.NullPointerException
+2021-11-15 19:15:37 ERROR [http-nio-8080-exec-5]: java.lang.NullPointerException
+2021-11-15 19:15:46 INFO  [http-nio-8080-exec-7]: All categories received successfully!
+2021-11-15 19:16:02 INFO  [http-nio-8080-exec-8]: Author received successfully! id = 4
+2021-11-15 19:16:02 ERROR [http-nio-8080-exec-8]: java.lang.NullPointerException
+2021-11-15 19:17:19 INFO  [http-nio-8080-exec-2]: Author received successfully! id = 4
+2021-11-15 19:17:19 ERROR [http-nio-8080-exec-2]: java.lang.NullPointerException
+2021-11-15 19:18:08 INFO  [http-nio-8080-exec-4]: Author updated successfully! id = 4
+2021-11-15 19:18:13 INFO  [http-nio-8080-exec-5]: All categories received successfully!
