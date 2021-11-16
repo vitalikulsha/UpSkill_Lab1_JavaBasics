@@ -54,35 +54,45 @@ The "Author" object supports the following operations:
 <img src="data/img/addCategory.png" width="900">
 <img src="data/img/addCategory-already-exists.png" width="900">
 
-## Getting a category by id from the database
+### Getting a category by id from the database
 <img src="data/img/getCategoryById-without-authors.png" width="900">
 
-## Getting a category by title from the database
+### Getting a category by title from the database
 <img src="data/img/getCategoryByTitle.png" width="900">
 <img src="data/img/getCategoryByTitle-not-found.png" width="900">
 
-## Getting all categories from the database
+### Getting all categories from the database
 <img src="data/img/getAllCategories-without-authors.png" width="900">
 <img src="data/img/getAllCategories-with-authors.png" width="900">
 <img src="data/img/getAllCategories-not-found.png" width="900">
 
-## Category update
+### Category update
 <img src="data/img/updateCategory-ok.png" width="900">
 <img src="data/img/updateCategory-get.png" width="900">
 <img src="data/img/updateCategory-not-found.png" width="900">
 
-## Cascading category deletion
+### Cascading category deletion
 <img src="data/img/deleteCategory-ok.png" width="900">
 <img src="data/img/deleteCategory-get.png" width="900">
 
-## Adding an author to the database by category id
+### Adding an author to the database by category id
 <img src="data/img/addAuthor.png" width="900">
 <img src="data/img/addAuthor-category-not-found.png" width="900">
 
-## Getting author by id from the database
+### Getting author by id from the database
 <img src="data/img/getAuthorById.png" width="900">
 <img src="data/img/addAuthor-not-found.png" width="900">
 
-## Getting all authors from the database
+### Getting all authors from the database
 <img src="data/img/getAllAuthors.png" width="900">
 <img src="data/img/getAllAuthors-not-found.png" width="900">
+
+### Author update;
+<img src="data/img/updateAuthor-ok.png" width="900">
+<img src="data/img/updateAuthor-get.png" width="900">
+<img src="data/img/updateAuthor-not-found.png" width="900">
+
+### Deleting an author
+<img src="data/img/deleteAuthor-ok.png" width="900">
+<img src="data/img/deleteAuthor-get.png" width="900">
+<img src="data/img/deleteAuthor-not-found.png" width="900">
