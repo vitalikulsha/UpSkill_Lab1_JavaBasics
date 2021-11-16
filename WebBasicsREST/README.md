@@ -25,3 +25,8 @@ Then follow the steps described below.
 * Describe, what operations with these functions must the system support.
 * Design REST API including collections, filters, pagination, etc.
 * Show or send a mentor the following results: Entities & Operations description, REST API description.
+
+## Solution
+
+The system contains two objects: category and author. The category object has fields for id, title, and author list. The "author" object contains fields for the id, author's first and last name, book and category. Tables are linked by category id.
+
