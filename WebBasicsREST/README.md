@@ -28,5 +28,5 @@ Then follow the steps described below.
 
 ## Solution
 
-The system contains two objects: category and author. The category object has fields for id, title, and author list. The "author" object contains fields for the id, author's first and last name, book and category. Tables are linked by category id.
+The "Library" system contains two objects: category and author. The category object has fields for id, title, and author list. The "author" object contains fields for the id, author's first and last name, book and category. Tables are linked by category id.
 
