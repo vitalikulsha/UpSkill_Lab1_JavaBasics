@@ -87,7 +87,7 @@ The "Author" object supports the following operations:
 <img src="data/img/getAllAuthors.png" width="900">
 <img src="data/img/getAllAuthors-not-found.png" width="900">
 
-### Author update;
+### Author update
 <img src="data/img/updateAuthor-ok.png" width="900">
 <img src="data/img/updateAuthor-get.png" width="900">
 <img src="data/img/updateAuthor-not-found.png" width="900">
