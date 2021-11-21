@@ -33,22 +33,21 @@ and look at VisualGC interface to monitor heap state.
 
 # Solution
 
-[https://gitlab.com/efimchick-training-tasks/message-registry-load-test](
-Message Registry Load Test)
+## [Message Registry Load Test](https://gitlab.com/efimchick-training-tasks/message-registry-load-tes)
 
-Run the project as a Spring Boot application with the given parameters
+## Run the project as a Spring Boot application with the given parameters
 <img src="img/IDEA-option-run.png" width="900">
 
-Connect to the application process via VisualVM
+## Connect to the application process via VisualVM
 <img src="img/VM-03.png" width="900">
 <img src="img/VM-04.png" width="900">
 
-Setup and run a test plan in JMeter to load endpoints of the application
+## Setup and run a test plan in JMeter to load endpoints of the application
 <img src="img/JMeter-thread-group-5000.png" width="900">
 <img src="img/JMeter-HTTP-request-GET.png" width="900">
 <img src="img/JMeter-HTTP-request-POST.png" width="900">
 
-Monitor heap state via VisualVM and wait until heap will stuck. Then make a heap dump.
+## Monitor heap state via VisualVM and wait until heap will stuck. Then make a heap dump.
 <img src="img/VM-07-1000.png" width="900">
 <img src="img/VM-08-dump.png" width="900">
 
