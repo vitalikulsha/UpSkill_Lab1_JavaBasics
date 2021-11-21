@@ -33,6 +33,9 @@ and look at VisualGC interface to monitor heap state.
 
 # Solution
 
+[https://gitlab.com/efimchick-training-tasks/message-registry-load-test](
+Message Registry Load Test)
+
 Run the project as a Spring Boot application with the given parameters
 <img src="img/IDEA-option-run.png" width="900">
 
@@ -48,3 +51,15 @@ Setup and run a test plan in JMeter to load endpoints of the application
 Monitor heap state via VisualVM and wait until heap will stuck. Then make a heap dump.
 <img src="img/VM-07-1000.png" width="900">
 <img src="img/VM-08-dump.png" width="900">
+
+## Results of work at JMeter
+<img src="img/JMeter-summary-report.png" width="900">
+<img src="img/JMeter-GET-ok.png" width="900">
+<img src="img/JMeter-GET-nok.png" width="900">
+<img src="img/JMeter-POST.png" width="900">
+
+## Analyzing a heap dump using MAT
+<img src="img/MAT-Leak-Suspects.png" width="900">
+<img src="img/MAT-Top-Consumers.png" width="900">
+<img src="img/MAT-Class-Histogram.png" width="900">
+<img src="img/MAT-Problev-Suspects.png" width="900">
