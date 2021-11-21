@@ -33,7 +33,9 @@ and look at VisualGC interface to monitor heap state.
 
 # Solution
 
-## [Message Registry Load Test](https://gitlab.com/efimchick-training-tasks/message-registry-load-tes)
+### [Message Registry Load Test](https://gitlab.com/efimchick-training-tasks/message-registry-load-tes)
+
+### [Application results](file)
 
 ## Run the project as a Spring Boot application with the given parameters
 <img src="img/IDEA-option-run.png" width="900">
