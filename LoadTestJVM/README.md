@@ -32,3 +32,6 @@ and look at VisualGC interface to monitor heap state.
 1. Suggest a solution to discovered problems.
 
 # Solution
+
+I run the project as a Spring Boot application with the given parameters
+<img src="img/IDEA-option-run.png" width="900">
