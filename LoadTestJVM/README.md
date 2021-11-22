@@ -33,7 +33,7 @@ and look at VisualGC interface to monitor heap state.
 
 # Solution
 
-### [Message Registry Load Test](https://gitlab.com/efimchick-training-tasks/message-registry-load-tes)
+### [Message Registry Load Test](https://gitlab.com/vitalikulsha/message-registry-load-test)
 
 ### [Application results](file)
 
