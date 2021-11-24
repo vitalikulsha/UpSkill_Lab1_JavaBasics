@@ -19,64 +19,30 @@ public class AuthorController {
     private AuthorService authorService;
 
     @PostMapping
-    public ResponseEntity<?> addAuthor(@RequestBody AuthorEntity author, @RequestParam Long categoryId) {
-        try {
-            authorService.addAuthor(author, categoryId);
-            return ResponseEntity.ok("Category added successfully!");
-        } catch (CategoryNotFoundException e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
-        } catch (Exception e) {
-            return ResponseEntity.badRequest().body("Something went wrong...");
-        }
+    public ResponseEntity<?> addAuthor(@RequestBody AuthorEntity author, @RequestParam Long categoryId) throws CategoryNotFoundException {
+        authorService.addAuthor(author, categoryId);
+        return ResponseEntity.ok("Author added successfully!");
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> getAuthorById(@PathVariable Long id) {
-        try {
-            return ResponseEntity.ok(authorService.getAuthorById(id));
-        } catch (AuthorNotFoundException e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
-        } catch (Exception e) {
-            LOG.error(e);
-            return ResponseEntity.badRequest().body("Something went wrong...");
-        }
+    public ResponseEntity<?> getAuthorById(@PathVariable Long id) throws AuthorNotFoundException {
+        return ResponseEntity.ok(authorService.getAuthorById(id));
     }
 
     @GetMapping("/all")
-    public ResponseEntity<?> getAllAuthors() {
-        try {
-            return ResponseEntity.ok(authorService.getAllAuthors());
-        } catch (AuthorNotFoundException e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
-        } catch (Exception e) {
-            LOG.error(e);
-            return ResponseEntity.badRequest().body("Something went wrong...");
-        }
+    public ResponseEntity<?> getAllAuthors() throws AuthorNotFoundException {
+        return ResponseEntity.ok(authorService.getAllAuthors());
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<?> updateAuthor(@PathVariable Long id, @RequestBody AuthorEntity author) {
-        try {
-            long updId = authorService.updateAuthor(id, author);
-            return ResponseEntity.ok("Author #" + updId + " updated successfully!");
-        } catch (AuthorNotFoundException e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
-        } catch (Exception e) {
-            LOG.error(e);
-            return ResponseEntity.badRequest().body("Something went wrong...");
-        }
+    public ResponseEntity<?> updateAuthor(@PathVariable Long id, @RequestBody AuthorEntity author) throws AuthorNotFoundException {
+        long updId = authorService.updateAuthor(id, author);
+        return ResponseEntity.ok("Author #" + updId + " updated successfully!");
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> deleteAuthor(@PathVariable Long id) {
-        try {
-            long delId = authorService.deleteAuthor(id);
-            return ResponseEntity.ok("Author #" + delId + " deleted successfully!");
-        } catch (AuthorNotFoundException e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
-        } catch (Exception e) {
-            LOG.error(e);
-            return ResponseEntity.badRequest().body("Something went wrong...");
-        }
+    public ResponseEntity<?> deleteAuthor(@PathVariable Long id) throws AuthorNotFoundException {
+        long delId = authorService.deleteAuthor(id);
+        return ResponseEntity.ok("Author #" + delId + " deleted successfully!");
     }
 }
