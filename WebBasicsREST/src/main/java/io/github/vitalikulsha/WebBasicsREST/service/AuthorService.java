@@ -4,6 +4,7 @@ import io.github.vitalikulsha.WebBasicsREST.entity.AuthorEntity;
 import io.github.vitalikulsha.WebBasicsREST.entity.CategoryEntity;
 import io.github.vitalikulsha.WebBasicsREST.exception.AuthorNotFoundException;
 import io.github.vitalikulsha.WebBasicsREST.exception.CategoryNotFoundException;
+import io.github.vitalikulsha.WebBasicsREST.mapper.AuthorMapper;
 import io.github.vitalikulsha.WebBasicsREST.model.Author;
 import io.github.vitalikulsha.WebBasicsREST.repository.AuthorRepository;
 import io.github.vitalikulsha.WebBasicsREST.repository.CategoryRepository;
@@ -24,6 +25,8 @@ public class AuthorService {
     private AuthorRepository authorRepository;
     @Autowired
     private CategoryRepository categoryRepository;
+    @Autowired
+    private AuthorMapper authorMapper;
 
     public void addAuthor(AuthorEntity author, Long categoryId) throws CategoryNotFoundException {
         Optional<CategoryEntity> category = categoryRepository.findById(categoryId);
@@ -37,9 +40,9 @@ public class AuthorService {
     }
 
     public Author getAuthorById(Long id) throws AuthorNotFoundException {
-        Optional<AuthorEntity> author = getAuthorFromDB(id);
+        Optional<AuthorEntity> author = getAuthor(id);
         LOG.info("Author received successfully! id = " + id);
-        return Author.toModel(author.get());
+        return authorMapper.toAuthor(author.get());
     }
 
     public List<Author> getAllAuthors() throws AuthorNotFoundException {
@@ -49,13 +52,13 @@ public class AuthorService {
             throw new AuthorNotFoundException("No authors found.");
         }
         List<Author> authors = new ArrayList<>();
-        authorList.forEach(a -> authors.add(Author.toModel(a)));
+        authorList.forEach(a -> authors.add(authorMapper.toAuthor(a)));
         LOG.info("All authors received successfully!");
         return authors;
     }
 
     public Long updateAuthor(Long id, AuthorEntity author) throws AuthorNotFoundException {
-        Optional<AuthorEntity> authorDB = getAuthorFromDB(id);
+        Optional<AuthorEntity> authorDB = getAuthor(id);
         if (author.getCategory() == null) {
             author.setCategory(authorDB.get().getCategory());
         }
@@ -67,13 +70,13 @@ public class AuthorService {
 
 
     public Long deleteAuthor(Long id) throws AuthorNotFoundException {
-        Optional<AuthorEntity> authorDB = getAuthorFromDB(id);
+        Optional<AuthorEntity> authorDB = getAuthor(id);
         authorRepository.deleteById(id);
         LOG.info("Author deleted successfully! id = " + id);
         return id;
     }
 
-    private Optional<AuthorEntity> getAuthorFromDB(Long id) throws AuthorNotFoundException {
+    private Optional<AuthorEntity> getAuthor(Long id) throws AuthorNotFoundException {
         Optional<AuthorEntity> authorDB = authorRepository.findById(id);
         if (authorDB.isEmpty()) {
             LOG.error("Author not found. id = " + id);

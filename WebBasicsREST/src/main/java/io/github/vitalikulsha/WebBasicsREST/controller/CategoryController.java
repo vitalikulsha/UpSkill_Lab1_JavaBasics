@@ -7,13 +7,10 @@ import io.github.vitalikulsha.WebBasicsREST.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.apache.log4j.Logger;
 
 @RestController
 @RequestMapping("/categories")
 public class CategoryController {
-
-    private final static Logger LOG = Logger.getLogger(CategoryController.class);
 
     @Autowired
     private CategoryService categoryService;

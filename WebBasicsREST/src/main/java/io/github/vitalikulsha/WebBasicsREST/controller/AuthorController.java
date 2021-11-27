@@ -4,7 +4,6 @@ import io.github.vitalikulsha.WebBasicsREST.entity.AuthorEntity;
 import io.github.vitalikulsha.WebBasicsREST.exception.AuthorNotFoundException;
 import io.github.vitalikulsha.WebBasicsREST.exception.CategoryNotFoundException;
 import io.github.vitalikulsha.WebBasicsREST.service.AuthorService;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,8 +11,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/authors")
 public class AuthorController {
-
-    private final static Logger LOG = Logger.getLogger(AuthorController.class);
 
     @Autowired
     private AuthorService authorService;

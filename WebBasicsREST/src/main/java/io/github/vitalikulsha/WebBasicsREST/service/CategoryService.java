@@ -3,6 +3,7 @@ package io.github.vitalikulsha.WebBasicsREST.service;
 import io.github.vitalikulsha.WebBasicsREST.entity.CategoryEntity;
 import io.github.vitalikulsha.WebBasicsREST.exception.CategoryAlreadyExistsException;
 import io.github.vitalikulsha.WebBasicsREST.exception.CategoryNotFoundException;
+import io.github.vitalikulsha.WebBasicsREST.mapper.CategoryMapper;
 import io.github.vitalikulsha.WebBasicsREST.model.Category;
 import io.github.vitalikulsha.WebBasicsREST.repository.CategoryRepository;
 import org.apache.log4j.Logger;
@@ -18,6 +19,8 @@ public class CategoryService {
 
     @Autowired
     private CategoryRepository categoryRepository;
+    @Autowired
+    private CategoryMapper categoryMapper;
 
     public void addCategory(CategoryEntity category) throws CategoryAlreadyExistsException {
         if (categoryRepository.findByTitle(category.getTitle()) != null) {
@@ -31,7 +34,7 @@ public class CategoryService {
     public Category getCategoryById(Long id) throws CategoryNotFoundException {
         verifyCategoryExists(id);
         LOG.info("Category received successfully! id = " + id);
-        return Category.toModel(categoryRepository.findById(id).get());
+        return categoryMapper.toCategory(categoryRepository.findById(id).get());
     }
 
     public Category getCategoryByTitle(String title) throws CategoryNotFoundException {
@@ -41,7 +44,7 @@ public class CategoryService {
             throw new CategoryNotFoundException("Category not found");
         }
         LOG.info("Category received successfully! title = " + title);
-        return Category.toModel(category);
+        return categoryMapper.toCategory(category);
     }
 
     public List<Category> getAllCategories() throws CategoryNotFoundException {
@@ -51,7 +54,7 @@ public class CategoryService {
             throw new CategoryNotFoundException("No categories found.");
         }
         List<Category> categories = new ArrayList<>();
-        categoryList.forEach(c -> categories.add(Category.toModel(c)));
+        categoryList.forEach(c -> categories.add(categoryMapper.toCategory(c)));
         LOG.info("All categories received successfully!");
         return categories;
     }

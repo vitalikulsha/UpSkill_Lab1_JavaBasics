@@ -1,23 +1,11 @@
 package io.github.vitalikulsha.WebBasicsREST.model;
 
-import io.github.vitalikulsha.WebBasicsREST.entity.AuthorEntity;
-
 public class Author {
     private Long id;
     private String firstName;
     private String lastName;
     private String book;
     private String categoryTitle;
-
-    public static Author toModel(AuthorEntity entity) {
-        Author model = new Author();
-        model.setId(entity.getId());
-        model.setFirstName(entity.getFirstName());
-        model.setLastName(entity.getLastName());
-        model.setBook(entity.getBook());
-        model.setCategoryTitle(entity.getCategory().getTitle());
-        return model;
-    }
 
     public Author() {
     }
