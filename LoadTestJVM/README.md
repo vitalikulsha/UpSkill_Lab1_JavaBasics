@@ -52,6 +52,7 @@ and look at VisualGC interface to monitor heap state.
 ## Monitor heap state via VisualVM and wait until heap will stuck. Then make a heap dump.
 <img src="img/VM-07-1000.png" width="900">
 <img src="img/VM-08-dump.png" width="900">
+<img src="img/IDEA-message-run.png" width="900">
 
 ## Results of work at JMeter
 <img src="img/JMeter-summary-report.png" width="900">
