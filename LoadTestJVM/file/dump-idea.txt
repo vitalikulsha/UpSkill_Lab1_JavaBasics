@@ -1,0 +1,762 @@
+"C:\Program Files\Java\jdk-14.0.2\bin\java.exe" -Xms25m -Xmx50m -verbose:gc -XX:HeapDumpPath=e:/temp/java_pid.hprof "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.1\lib\idea_rt.jar=51935:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.1\bin" -Dfile.encoding=UTF-8 -classpath E:\Java\EPAM\AutoCode\message-registry-load-test\target\classes;C:\Users\kulsh\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.3.3.RELEASE\spring-boot-starter-web-2.3.3.RELEASE.jar;C:\Users\kulsh\.m2\repository\org\springframework\boot\spring-boot-starter\2.3.3.RELEASE\spring-boot-starter-2.3.3.RELEASE.jar;C:\Users\kulsh\.m2\repository\org\springframework\boot\spring-boot\2.3.3.RELEASE\spring-boot-2.3.3.RELEASE.jar;C:\Users\kulsh\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.3.3.RELEASE\spring-boot-autoconfigure-2.3.3.RELEASE.jar;C:\Users\kulsh\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.3.3.RELEASE\spring-boot-starter-logging-2.3.3.RELEASE.jar;C:\Users\kulsh\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\kulsh\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\kulsh\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;C:\Users\kulsh\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\kulsh\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\kulsh\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\kulsh\.m2\repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar;C:\Users\kulsh\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.3.3.RELEASE\spring-boot-starter-json-2.3.3.RELEASE.jar;C:\Users\kulsh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.2\jackson-databind-2.11.2.jar;C:\Users\kulsh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.2\jackson-annotations-2.11.2.jar;C:\Users\kulsh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.2\jackson-core-2.11.2.jar;C:\Users\kulsh\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.2\jackson-datatype-jdk8-2.11.2.jar;C:\Users\kulsh\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.2\jackson-datatype-jsr310-2.11.2.jar;C:\Users\kulsh\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.2\jackson-module-parameter-names-2.11.2.jar;C:\Users\kulsh\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.3.3.RELEASE\spring-boot-starter-tomcat-2.3.3.RELEASE.jar;C:\Users\kulsh\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.37\tomcat-embed-core-9.0.37.jar;C:\Users\kulsh\.m2\repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;C:\Users\kulsh\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.37\tomcat-embed-websocket-9.0.37.jar;C:\Users\kulsh\.m2\repository\org\springframework\spring-web\5.2.8.RELEASE\spring-web-5.2.8.RELEASE.jar;C:\Users\kulsh\.m2\repository\org\springframework\spring-beans\5.2.8.RELEASE\spring-beans-5.2.8.RELEASE.jar;C:\Users\kulsh\.m2\repository\org\springframework\spring-webmvc\5.2.8.RELEASE\spring-webmvc-5.2.8.RELEASE.jar;C:\Users\kulsh\.m2\repository\org\springframework\spring-aop\5.2.8.RELEASE\spring-aop-5.2.8.RELEASE.jar;C:\Users\kulsh\.m2\repository\org\springframework\spring-context\5.2.8.RELEASE\spring-context-5.2.8.RELEASE.jar;C:\Users\kulsh\.m2\repository\org\springframework\spring-expression\5.2.8.RELEASE\spring-expression-5.2.8.RELEASE.jar;C:\Users\kulsh\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\kulsh\.m2\repository\org\springframework\spring-core\5.2.8.RELEASE\spring-core-5.2.8.RELEASE.jar;C:\Users\kulsh\.m2\repository\org\springframework\spring-jcl\5.2.8.RELEASE\spring-jcl-5.2.8.RELEASE.jar com.epam.rd.messageregistry.MessageRegistryApplication
+[0.063s][info][gc] Using G1
+[0.167s][info][gc] Periodic GC disabled
+[1.399s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 11M->3M(26M) 13.678ms
+[2.390s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 11M->4M(26M) 9.150ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.3.RELEASE)
+
+[3.163s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 12M->4M(26M) 6.851ms
+[3.488s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 13M->5M(26M) 5.096ms
+2021-11-20 19:41:28.572  INFO 20300 --- [           main] c.e.r.m.MessageRegistryApplication       : Starting MessageRegistryApplication on DESKTOP-6C3FQ45 with PID 20300 (E:\Java\EPAM\AutoCode\message-registry-load-test\target\classes started by kulsh in E:\Java\EPAM\AutoCode\message-registry-load-test)
+2021-11-20 19:41:28.610  INFO 20300 --- [           main] c.e.r.m.MessageRegistryApplication       : No active profile set, falling back to default profiles: default
+[4.087s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 16M->5M(26M) 4.913ms
+[4.669s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 16M->6M(26M) 5.767ms
+[5.973s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 17M->7M(26M) 7.128ms
+[7.289s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 18M->7M(26M) 10.293ms
+[7.846s][info][gc] GC(8) Pause Young (Concurrent Start) (Metadata GC Threshold) 12M->8M(26M) 15.081ms
+[7.846s][info][gc] GC(9) Concurrent Cycle
+[7.890s][info][gc] GC(9) Pause Remark 8M->8M(26M) 6.134ms
+[7.908s][info][gc] GC(9) Pause Cleanup 8M->8M(26M) 0.122ms
+[7.914s][info][gc] GC(9) Concurrent Cycle 67.437ms
+[8.851s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 18M->8M(26M) 9.676ms
+[10.162s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 18M->9M(26M) 10.232ms
+2021-11-20 19:41:34.984  INFO 20300 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-20 19:41:35.022  INFO 20300 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-20 19:41:35.022  INFO 20300 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-11-20 19:41:35.555  INFO 20300 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-20 19:41:35.556  INFO 20300 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6476 ms
+[10.940s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 18M->10M(26M) 5.439ms
+2021-11-20 19:41:36.286  INFO 20300 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+[11.643s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 19M->11M(26M) 6.332ms
+2021-11-20 19:41:37.544  INFO 20300 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-20 19:41:37.648  INFO 20300 --- [           main] c.e.r.m.MessageRegistryApplication       : Started MessageRegistryApplication in 10.959 seconds (JVM running for 12.837)
+[16.599s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 19M->12M(26M) 7.969ms
+[22.450s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 19M->16M(26M) 10.695ms
+[23.065s][info][gc] GC(16) Pause Young (Concurrent Start) (G1 Evacuation Pause) 18M->18M(26M) 6.294ms
+[23.065s][info][gc] GC(17) Concurrent Cycle
+[23.534s][info][gc] GC(18) Pause Young (Normal) (G1 Evacuation Pause) 19M->19M(26M) 3.351ms
+[23.690s][info][gc] GC(19) Pause Young (Normal) (G1 Evacuation Pause) 20M->20M(26M) 13.271ms
+[23.824s][info][gc] GC(20) Pause Young (Normal) (G1 Evacuation Pause) 21M->21M(26M) 2.487ms
+[25.047s][info][gc] GC(21) Pause Young (Normal) (G1 Evacuation Pause) 22M->22M(26M) 3.378ms
+[25.120s][info][gc] GC(22) Pause Young (Normal) (G1 Evacuation Pause) 23M->23M(26M) 4.253ms
+[25.134s][info][gc] GC(23) Pause Young (Normal) (G1 Evacuation Pause) 24M->24M(27M) 3.385ms
+[25.144s][info][gc] GC(17) Pause Remark 24M->24M(44M) 5.014ms
+[25.166s][info][gc] GC(24) Pause Young (Normal) (G1 Evacuation Pause) 25M->25M(44M) 3.806ms
+[25.183s][info][gc] GC(17) Pause Cleanup 25M->25M(44M) 0.104ms
+[25.193s][info][gc] GC(17) Concurrent Cycle 2127.751ms
+[25.260s][info][gc] GC(25) Pause Young (Normal) (G1 Evacuation Pause) 29M->28M(44M) 5.587ms
+2021-11-20 19:41:50.034  INFO 20300 --- [nio-8080-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-20 19:41:50.083  INFO 20300 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-20 19:41:50.165  INFO 20300 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 81 ms
+[25.456s][info][gc] GC(26) Pause Young (Concurrent Start) (G1 Evacuation Pause) 31M->30M(44M) 6.925ms
+[25.456s][info][gc] GC(27) Concurrent Cycle
+[25.520s][info][gc] GC(28) Pause Young (Normal) (G1 Evacuation Pause) 32M->32M(44M) 6.725ms
+[25.569s][info][gc] GC(27) Pause Remark 32M->32M(50M) 17.105ms
+[25.772s][info][gc] GC(29) Pause Young (Normal) (G1 Evacuation Pause) 33M->33M(50M) 19.433ms
+[25.874s][info][gc] GC(27) Pause Cleanup 34M->34M(50M) 0.128ms
+[25.891s][info][gc] GC(27) Concurrent Cycle 435.161ms
+[26.036s][info][gc] GC(30) Pause Young (Normal) (G1 Evacuation Pause) 36M->34M(50M) 5.998ms
+[26.195s][info][gc] GC(31) Pause Young (Concurrent Start) (G1 Evacuation Pause) 37M->37M(50M) 7.043ms
+[26.195s][info][gc] GC(32) Concurrent Cycle
+[26.262s][info][gc] GC(33) Pause Young (Normal) (G1 Evacuation Pause) 38M->38M(50M) 4.499ms
+[26.383s][info][gc] GC(32) Pause Remark 39M->39M(50M) 10.773ms
+[26.418s][info][gc] GC(34) Pause Young (Normal) (G1 Evacuation Pause) 39M->38M(50M) 6.260ms
+[26.446s][info][gc] GC(32) Pause Cleanup 38M->38M(50M) 0.126ms
+[26.449s][info][gc] GC(32) Concurrent Cycle 254.350ms
+[26.477s][info][gc] GC(35) Pause Young (Prepare Mixed) (G1 Evacuation Pause) 39M->39M(50M) 4.714ms
+[26.604s][info][gc] GC(36) Pause Young (Mixed) (G1 Evacuation Pause) 40M->37M(50M) 11.198ms
+[26.820s][info][gc] GC(37) Pause Young (Concurrent Start) (G1 Evacuation Pause) 38M->37M(50M) 5.684ms
+[26.820s][info][gc] GC(38) Concurrent Cycle
+[27.033s][info][gc] GC(38) Pause Remark 38M->38M(50M) 10.084ms
+[27.142s][info][gc] GC(38) Pause Cleanup 38M->38M(50M) 0.175ms
+[27.180s][info][gc] GC(38) Concurrent Cycle 360.067ms
+[27.243s][info][gc] GC(39) Pause Young (Normal) (G1 Evacuation Pause) 39M->37M(50M) 5.338ms
+[27.460s][info][gc] GC(40) Pause Young (Concurrent Start) (G1 Evacuation Pause) 39M->37M(50M) 5.436ms
+[27.460s][info][gc] GC(41) Concurrent Cycle
+[27.574s][info][gc] GC(41) Pause Remark 38M->38M(50M) 5.441ms
+[27.630s][info][gc] GC(41) Pause Cleanup 39M->39M(50M) 0.149ms
+[27.656s][info][gc] GC(41) Concurrent Cycle 195.324ms
+[27.776s][info][gc] GC(42) Pause Young (Normal) (G1 Evacuation Pause) 39M->38M(50M) 5.392ms
+[27.902s][info][gc] GC(43) Pause Young (Concurrent Start) (G1 Evacuation Pause) 40M->38M(50M) 6.032ms
+[27.902s][info][gc] GC(44) Concurrent Cycle
+[28.051s][info][gc] GC(44) Pause Remark 39M->39M(50M) 18.136ms
+[28.203s][info][gc] GC(44) Pause Cleanup 41M->41M(50M) 0.142ms
+[28.220s][info][gc] GC(44) Concurrent Cycle 317.889ms
+[28.227s][info][gc] GC(45) Pause Young (Normal) (G1 Evacuation Pause) 41M->39M(50M) 5.814ms
+[28.333s][info][gc] GC(46) Pause Young (Concurrent Start) (G1 Evacuation Pause) 41M->40M(50M) 6.655ms
+[28.334s][info][gc] GC(47) Concurrent Cycle
+[28.418s][info][gc] GC(48) Pause Young (Normal) (G1 Evacuation Pause) 41M->40M(50M) 5.883ms
+[28.439s][info][gc] GC(47) Pause Remark 41M->41M(50M) 11.052ms
+[28.468s][info][gc] GC(49) Pause Young (Normal) (G1 Evacuation Pause) 41M->41M(50M) 4.395ms
+2021-11-20 19:41:53.287  WARN 20300 --- [o-8080-exec-145] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+2021-11-20 19:41:53.292  WARN 20300 --- [o-8080-exec-148] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+2021-11-20 19:41:53.296  WARN 20300 --- [io-8080-exec-13] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+2021-11-20 19:41:53.298  WARN 20300 --- [io-8080-exec-79] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+[28.491s][info][gc] GC(47) Pause Cleanup 42M->42M(50M) 0.126ms
+2021-11-20 19:41:53.300  WARN 20300 --- [io-8080-exec-75] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+[29.215s][info][gc] GC(50) Pause Young (Prepare Mixed) (G1 Evacuation Pause) 42M->42M(50M) 4.839ms
+[29.215s][info][gc] GC(47) Concurrent Cycle 881.258ms
+[30.632s][info][gc] GC(51) Pause Young (Mixed) (G1 Evacuation Pause) 43M->41M(50M) 24.879ms
+[31.302s][info][gc] GC(52) Pause Young (Concurrent Start) (G1 Evacuation Pause) 42M->41M(50M) 18.741ms
+[31.302s][info][gc] GC(53) Concurrent Cycle
+[31.327s][info][gc] GC(54) Pause Young (Normal) (G1 Evacuation Pause) 42M->42M(50M) 3.725ms
+[31.407s][info][gc] GC(53) Pause Remark 43M->43M(50M) 11.004ms
+2021-11-20 19:41:56.218  WARN 20300 --- [o-8080-exec-134] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+2021-11-20 19:41:56.221  WARN 20300 --- [o-8080-exec-135] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+[31.458s][info][gc] GC(55) Pause Young (Normal) (G1 Evacuation Pause) 43M->43M(50M) 8.120ms
+2021-11-20 19:41:56.312  WARN 20300 --- [o-8080-exec-160] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+[31.512s][info][gc] GC(56) Pause Young (Normal) (G1 Evacuation Pause) 44M->44M(50M) 4.570ms
+2021-11-20 19:41:56.337  WARN 20300 --- [o-8080-exec-195] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+[31.534s][info][gc] GC(57) Pause Young (Normal) (G1 Evacuation Pause) 45M->45M(50M) 4.436ms
+[31.570s][info][gc] GC(58) Pause Young (Normal) (G1 Evacuation Pause) 46M->46M(50M) 16.226ms
+[31.634s][info][gc] GC(59) Pause Young (Normal) (G1 Evacuation Pause) 47M->47M(50M) 4.774ms
+2021-11-20 19:41:56.449  WARN 20300 --- [o-8080-exec-142] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+2021-11-20 19:41:56.456  WARN 20300 --- [o-8080-exec-130] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+[31.661s][info][gc] GC(53) Pause Cleanup 47M->47M(50M) 0.170ms
+[31.688s][info][gc] GC(53) Concurrent Cycle 385.915ms
+2021-11-20 19:41:56.506  WARN 20300 --- [o-8080-exec-143] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+[31.709s][info][gc] GC(60) To-space exhausted
+[31.709s][info][gc] GC(60) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 4.999ms
+2021-11-20 19:41:56.525  WARN 20300 --- [io-8080-exec-68] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+[31.755s][info][gc] GC(61) To-space exhausted
+[31.755s][info][gc] GC(61) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 18.949ms
+[31.755s][info][gc] GC(62) Concurrent Cycle
+[31.946s][info][gc] GC(63) Pause Full (G1 Evacuation Pause) 49M->44M(50M) 191.472ms
+[31.984s][info][gc] GC(62) Concurrent Cycle 229.132ms
+[32.114s][info][gc] GC(64) Pause Young (Normal) (G1 Evacuation Pause) 46M->46M(50M) 4.096ms
+[32.161s][info][gc] GC(65) To-space exhausted
+[32.161s][info][gc] GC(65) Pause Young (Concurrent Start) (G1 Evacuation Pause) 47M->47M(50M) 5.501ms
+[32.162s][info][gc] GC(66) Concurrent Cycle
+2021-11-20 19:41:57.126  WARN 20300 --- [o-8080-exec-136] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+[32.618s][info][gc] GC(67) To-space exhausted
+[32.618s][info][gc] GC(67) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 6.156ms
+[32.747s][info][gc] GC(68) Pause Full (G1 Evacuation Pause) 48M->47M(50M) 128.838ms
+[32.824s][info][gc] GC(69) To-space exhausted
+[32.824s][info][gc] GC(69) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 5.507ms
+[32.947s][info][gc] GC(70) Pause Full (G1 Evacuation Pause) 49M->48M(50M) 123.216ms
+2021-11-20 19:41:57.778  WARN 20300 --- [o-8080-exec-174] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+2021-11-20 19:41:57.822  WARN 20300 --- [io-8080-exec-83] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+2021-11-20 19:41:57.823  WARN 20300 --- [o-8080-exec-126] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: [no message for java.util.ConcurrentModificationException]; nested exception is com.fasterxml.jackson.databind.JsonMappingException: [no message for java.util.ConcurrentModificationException]]
+[33.035s][info][gc] GC(71) To-space exhausted
+[33.036s][info][gc] GC(71) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 4.829ms
+[33.144s][info][gc] GC(72) Pause Full (G1 Evacuation Pause) 49M->48M(50M) 108.108ms
+[33.281s][info][gc] GC(73) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 136.689ms
+[33.289s][info][gc] GC(74) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 4.784ms
+[33.397s][info][gc] GC(75) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 107.256ms
+[33.527s][info][gc] GC(76) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 129.934ms
+[33.534s][info][gc] GC(77) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.845ms
+[33.642s][info][gc] GC(78) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 107.661ms
+[33.788s][info][gc] GC(79) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 145.678ms
+[33.795s][info][gc] GC(66) Pause Remark 48M->48M(50M) 0.009ms
+[33.796s][info][gc] GC(66) Concurrent Cycle 1634.053ms
+[33.802s][info][gc] GC(80) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.969ms
+[33.929s][info][gc] GC(81) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 125.946ms
+[34.056s][info][gc] GC(82) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 126.558ms
+[34.066s][info][gc] GC(83) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 5.502ms
+[34.066s][info][gc] GC(85) Concurrent Cycle
+[34.169s][info][gc] GC(84) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 102.933ms
+[34.296s][info][gc] GC(86) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 126.700ms
+[34.300s][info][gc] GC(85) Concurrent Cycle 233.886ms
+[34.306s][info][gc] GC(87) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.861ms
+[34.418s][info][gc] GC(88) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 111.110ms
+[34.547s][info][gc] GC(89) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 128.635ms
+[34.561s][info][gc] GC(90) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 10.277ms
+[34.561s][info][gc] GC(92) Concurrent Cycle
+[34.661s][info][gc] GC(91) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 99.920ms
+[34.786s][info][gc] GC(93) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 124.794ms
+[34.787s][info][gc] GC(92) Concurrent Cycle 226.126ms
+[34.794s][info][gc] GC(94) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.567ms
+[34.914s][info][gc] GC(95) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 120.547ms
+[35.047s][info][gc] GC(96) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 132.469ms
+[35.056s][info][gc] GC(97) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.360ms
+[35.056s][info][gc] GC(99) Concurrent Cycle
+[35.158s][info][gc] GC(98) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 101.847ms
+[35.292s][info][gc] GC(100) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 133.168ms
+[35.292s][info][gc] GC(99) Concurrent Cycle 236.231ms
+[35.297s][info][gc] GC(101) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.064ms
+[35.402s][info][gc] GC(102) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 104.825ms
+[35.563s][info][gc] GC(103) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 160.561ms
+[35.571s][info][gc] GC(104) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.502ms
+[35.571s][info][gc] GC(106) Concurrent Cycle
+[35.674s][info][gc] GC(105) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 102.450ms
+[35.808s][info][gc] GC(107) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 133.619ms
+[35.809s][info][gc] GC(106) Concurrent Cycle 237.289ms
+[35.813s][info][gc] GC(108) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.895ms
+[35.913s][info][gc] GC(109) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 99.313ms
+[36.039s][info][gc] GC(110) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 125.965ms
+[36.063s][info][gc] GC(111) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 9.942ms
+[36.064s][info][gc] GC(113) Concurrent Cycle
+[36.160s][info][gc] GC(112) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 96.651ms
+[36.292s][info][gc] GC(114) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 130.942ms
+[36.292s][info][gc] GC(113) Concurrent Cycle 228.811ms
+[36.302s][info][gc] GC(115) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 8.226ms
+[36.450s][info][gc] GC(116) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 147.054ms
+[36.579s][info][gc] GC(117) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 128.883ms
+[36.596s][info][gc] GC(118) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.676ms
+[36.596s][info][gc] GC(120) Concurrent Cycle
+[36.696s][info][gc] GC(119) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 100.395ms
+[36.829s][info][gc] GC(121) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 131.822ms
+[36.829s][info][gc] GC(120) Concurrent Cycle 233.431ms
+[36.833s][info][gc] GC(122) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.933ms
+[36.939s][info][gc] GC(123) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 104.920ms
+[37.068s][info][gc] GC(124) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 128.772ms
+[37.074s][info][gc] GC(125) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.661ms
+[37.074s][info][gc] GC(127) Concurrent Cycle
+[37.174s][info][gc] GC(126) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 99.000ms
+[37.302s][info][gc] GC(128) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 127.846ms
+[37.302s][info][gc] GC(127) Concurrent Cycle 228.015ms
+[37.307s][info][gc] GC(129) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.030ms
+[37.413s][info][gc] GC(130) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 105.685ms
+[37.543s][info][gc] GC(131) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 129.350ms
+[37.550s][info][gc] GC(132) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 5.308ms
+[37.550s][info][gc] GC(134) Concurrent Cycle
+[37.651s][info][gc] GC(133) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 100.466ms
+[37.651s][info][gc] GC(134) Concurrent Cycle 101.220ms
+[37.718s][info][gc] GC(135) To-space exhausted
+[37.718s][info][gc] GC(135) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 6.881ms
+[37.849s][info][gc] GC(136) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 130.507ms
+[37.980s][info][gc] GC(137) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 130.489ms
+[37.990s][info][gc] GC(138) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.688ms
+[37.990s][info][gc] GC(140) Concurrent Cycle
+[38.109s][info][gc] GC(139) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 119.218ms
+[38.238s][info][gc] GC(141) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 128.565ms
+[38.239s][info][gc] GC(140) Concurrent Cycle 249.100ms
+[38.248s][info][gc] GC(142) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 5.364ms
+[38.357s][info][gc] GC(143) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 108.396ms
+[38.500s][info][gc] GC(144) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 142.269ms
+[38.508s][info][gc] GC(145) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.356ms
+[38.508s][info][gc] GC(147) Concurrent Cycle
+[38.612s][info][gc] GC(146) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 104.170ms
+[38.739s][info][gc] GC(148) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 125.932ms
+[38.740s][info][gc] GC(147) Concurrent Cycle 231.558ms
+[38.745s][info][gc] GC(149) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 2.895ms
+[38.838s][info][gc] GC(150) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 93.035ms
+[38.957s][info][gc] GC(151) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 118.033ms
+[38.967s][info][gc] GC(152) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 5.658ms
+[38.967s][info][gc] GC(154) Concurrent Cycle
+[39.067s][info][gc] GC(153) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 99.038ms
+[39.198s][info][gc] GC(155) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 130.670ms
+[39.207s][info][gc] GC(156) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 4.034ms
+[39.314s][info][gc] GC(157) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 107.068ms
+[39.445s][info][gc] GC(158) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 130.017ms
+[39.445s][info][gc] GC(154) Concurrent Cycle 477.699ms
+[39.452s][info][gc] GC(159) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 3.174ms
+[39.549s][info][gc] GC(160) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 96.687ms
+[39.684s][info][gc] GC(161) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 134.422ms
+[39.717s][info][gc] GC(162) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 5.568ms
+[39.717s][info][gc] GC(164) Concurrent Cycle
+[39.819s][info][gc] GC(163) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 102.208ms
+[39.951s][info][gc] GC(165) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 130.702ms
+[39.951s][info][gc] GC(164) Concurrent Cycle 234.148ms
+[39.957s][info][gc] GC(166) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 2.992ms
+[40.054s][info][gc] GC(167) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 97.635ms
+[40.181s][info][gc] GC(168) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 125.817ms
+[40.188s][info][gc] GC(169) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.767ms
+[40.188s][info][gc] GC(171) Concurrent Cycle
+[40.301s][info][gc] GC(170) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 113.227ms
+[40.439s][info][gc] GC(172) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 137.461ms
+[40.440s][info][gc] GC(171) Concurrent Cycle 252.044ms
+[40.445s][info][gc] GC(173) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 3.409ms
+[40.538s][info][gc] GC(174) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 92.707ms
+[40.660s][info][gc] GC(175) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 121.919ms
+[40.671s][info][gc] GC(176) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.868ms
+[40.671s][info][gc] GC(178) Concurrent Cycle
+[40.780s][info][gc] GC(177) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 108.046ms
+[40.934s][info][gc] GC(179) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 153.928ms
+[40.935s][info][gc] GC(178) Concurrent Cycle 263.451ms
+[40.954s][info][gc] GC(180) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 11.838ms
+[41.059s][info][gc] GC(181) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 104.785ms
+[41.183s][info][gc] GC(182) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 122.654ms
+[41.189s][info][gc] GC(183) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.506ms
+[41.189s][info][gc] GC(185) Concurrent Cycle
+[41.282s][info][gc] GC(184) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 93.014ms
+[41.485s][info][gc] GC(186) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 201.348ms
+[41.497s][info][gc] GC(185) Concurrent Cycle 307.752ms
+[41.503s][info][gc] GC(187) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 4.428ms
+[41.608s][info][gc] GC(188) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 104.505ms
+[41.729s][info][gc] GC(189) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 120.533ms
+[41.739s][info][gc] GC(190) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 7.502ms
+[41.739s][info][gc] GC(192) Concurrent Cycle
+[41.839s][info][gc] GC(191) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 100.053ms
+[41.976s][info][gc] GC(193) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 136.382ms
+[41.976s][info][gc] GC(192) Concurrent Cycle 237.568ms
+[41.981s][info][gc] GC(194) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 2.896ms
+[42.088s][info][gc] GC(195) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 107.193ms
+[42.221s][info][gc] GC(196) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 132.142ms
+[42.228s][info][gc] GC(197) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.726ms
+[42.228s][info][gc] GC(199) Concurrent Cycle
+[42.327s][info][gc] GC(198) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 98.995ms
+[42.455s][info][gc] GC(200) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 127.357ms
+[42.455s][info][gc] GC(199) Concurrent Cycle 227.708ms
+[42.461s][info][gc] GC(201) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 3.726ms
+[42.568s][info][gc] GC(202) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 107.582ms
+[42.736s][info][gc] GC(203) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 167.573ms
+[42.744s][info][gc] GC(204) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 5.688ms
+[42.744s][info][gc] GC(206) Concurrent Cycle
+[42.851s][info][gc] GC(205) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 106.360ms
+[42.981s][info][gc] GC(207) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 129.916ms
+[42.982s][info][gc] GC(206) Concurrent Cycle 237.484ms
+[42.989s][info][gc] GC(208) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 5.152ms
+[43.088s][info][gc] GC(209) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 98.764ms
+[43.216s][info][gc] GC(210) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 126.983ms
+[43.222s][info][gc] GC(211) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.521ms
+[43.222s][info][gc] GC(213) Concurrent Cycle
+[43.370s][info][gc] GC(212) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 148.349ms
+[43.525s][info][gc] GC(214) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 153.797ms
+[43.525s][info][gc] GC(213) Concurrent Cycle 303.239ms
+[43.530s][info][gc] GC(215) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 3.001ms
+[43.633s][info][gc] GC(216) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 102.886ms
+[43.764s][info][gc] GC(217) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 130.401ms
+[43.771s][info][gc] GC(218) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.526ms
+[43.771s][info][gc] GC(220) Concurrent Cycle
+[43.897s][info][gc] GC(219) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 125.775ms
+[44.067s][info][gc] GC(221) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 170.140ms
+[44.068s][info][gc] GC(220) Concurrent Cycle 297.065ms
+[44.072s][info][gc] GC(222) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 2.989ms
+[44.174s][info][gc] GC(223) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 101.760ms
+[44.304s][info][gc] GC(224) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 129.698ms
+[44.311s][info][gc] GC(225) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.486ms
+[44.311s][info][gc] GC(227) Concurrent Cycle
+[44.415s][info][gc] GC(226) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 103.844ms
+[44.550s][info][gc] GC(228) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 134.924ms
+[44.551s][info][gc] GC(227) Concurrent Cycle 239.924ms
+[44.574s][info][gc] GC(229) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 22.112ms
+[44.687s][info][gc] GC(230) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 112.121ms
+[44.827s][info][gc] GC(231) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 139.165ms
+[44.833s][info][gc] GC(232) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.536ms
+[44.833s][info][gc] GC(234) Concurrent Cycle
+[44.943s][info][gc] GC(233) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 110.283ms
+[45.082s][info][gc] GC(235) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 138.482ms
+[45.083s][info][gc] GC(234) Concurrent Cycle 249.924ms
+[45.088s][info][gc] GC(236) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 3.111ms
+[45.209s][info][gc] GC(237) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 119.934ms
+[45.359s][info][gc] GC(238) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 149.787ms
+[45.369s][info][gc] GC(239) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.950ms
+[45.369s][info][gc] GC(241) Concurrent Cycle
+[45.468s][info][gc] GC(240) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 98.531ms
+[45.597s][info][gc] GC(242) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 128.571ms
+[45.598s][info][gc] GC(241) Concurrent Cycle 228.314ms
+[45.602s][info][gc] GC(243) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 3.309ms
+[45.694s][info][gc] GC(244) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 91.570ms
+[45.835s][info][gc] GC(245) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 140.904ms
+[45.844s][info][gc] GC(246) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 6.874ms
+[45.844s][info][gc] GC(248) Concurrent Cycle
+[45.950s][info][gc] GC(247) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 105.951ms
+[46.075s][info][gc] GC(249) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 124.185ms
+[46.075s][info][gc] GC(248) Concurrent Cycle 231.361ms
+[46.081s][info][gc] GC(250) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 4.617ms
+[46.171s][info][gc] GC(251) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 89.288ms
+[46.309s][info][gc] GC(252) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 136.977ms
+[46.320s][info][gc] GC(253) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.810ms
+[46.320s][info][gc] GC(255) Concurrent Cycle
+[46.429s][info][gc] GC(254) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 109.542ms
+[46.614s][info][gc] GC(256) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 183.545ms
+[46.614s][info][gc] GC(255) Concurrent Cycle 294.273ms
+[46.620s][info][gc] GC(257) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 4.492ms
+[46.727s][info][gc] GC(258) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 106.341ms
+[46.862s][info][gc] GC(259) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 135.081ms
+[46.870s][info][gc] GC(260) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.888ms
+[46.871s][info][gc] GC(261) Concurrent Cycle
+[46.993s][info][gc] GC(262) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 121.878ms
+[47.133s][info][gc] GC(263) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 139.704ms
+[47.133s][info][gc] GC(261) Concurrent Cycle 262.827ms
+[47.138s][info][gc] GC(264) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 2.970ms
+[47.244s][info][gc] GC(265) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 105.621ms
+[47.373s][info][gc] GC(266) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 128.890ms
+[47.380s][info][gc] GC(267) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.962ms
+[47.380s][info][gc] GC(269) Concurrent Cycle
+[47.481s][info][gc] GC(268) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 100.755ms
+[47.606s][info][gc] GC(270) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 125.107ms
+[47.607s][info][gc] GC(269) Concurrent Cycle 227.034ms
+[47.612s][info][gc] GC(271) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 3.522ms
+[47.706s][info][gc] GC(272) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 94.277ms
+[47.829s][info][gc] GC(273) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 122.618ms
+[47.836s][info][gc] GC(274) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.472ms
+[47.836s][info][gc] GC(276) Concurrent Cycle
+[47.930s][info][gc] GC(275) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 94.351ms
+[48.063s][info][gc] GC(277) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 132.692ms
+[48.064s][info][gc] GC(276) Concurrent Cycle 228.207ms
+[48.068s][info][gc] GC(278) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 2.903ms
+[48.162s][info][gc] GC(279) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 93.224ms
+[48.283s][info][gc] GC(280) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 120.539ms
+[48.289s][info][gc] GC(281) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.363ms
+[48.289s][info][gc] GC(283) Concurrent Cycle
+[48.395s][info][gc] GC(282) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 105.607ms
+[48.514s][info][gc] GC(284) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 119.145ms
+[48.515s][info][gc] GC(283) Concurrent Cycle 225.920ms
+[48.519s][info][gc] GC(285) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 2.977ms
+[48.611s][info][gc] GC(286) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 91.570ms
+[48.734s][info][gc] GC(287) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 122.640ms
+[48.745s][info][gc] GC(288) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 8.541ms
+[48.745s][info][gc] GC(290) Concurrent Cycle
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "http-nio-8080-ClientPoller"
+[48.864s][info][gc] GC(289) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 118.985ms
+[48.990s][info][gc] GC(291) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 125.568ms
+[48.990s][info][gc] GC(290) Concurrent Cycle 245.684ms
+[48.995s][info][gc] GC(292) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 2.927ms
+[49.088s][info][gc] GC(293) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 93.008ms
+[49.211s][info][gc] GC(294) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 121.925ms
+[49.217s][info][gc] GC(295) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 5.082ms
+[49.217s][info][gc] GC(297) Concurrent Cycle
+[49.322s][info][gc] GC(296) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 104.486ms
+[49.451s][info][gc] GC(298) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 128.677ms
+[49.452s][info][gc] GC(297) Concurrent Cycle 234.341ms
+[49.456s][info][gc] GC(299) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 2.880ms
+[49.555s][info][gc] GC(300) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 99.155ms
+[49.685s][info][gc] GC(301) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 129.546ms
+[49.696s][info][gc] GC(302) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 5.516ms
+[49.696s][info][gc] GC(304) Concurrent Cycle
+[49.803s][info][gc] GC(303) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 106.351ms
+[49.932s][info][gc] GC(305) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 129.019ms
+[49.933s][info][gc] GC(304) Concurrent Cycle 236.467ms
+[49.937s][info][gc] GC(306) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 3.018ms
+[50.044s][info][gc] GC(307) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 106.157ms
+[50.172s][info][gc] GC(308) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 127.730ms
+[50.179s][info][gc] GC(309) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.855ms
+[50.180s][info][gc] GC(311) Concurrent Cycle
+[50.278s][info][gc] GC(310) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 98.516ms
+[50.408s][info][gc] GC(312) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 128.976ms
+[50.408s][info][gc] GC(311) Concurrent Cycle 228.630ms
+[50.420s][info][gc] GC(313) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 2.935ms
+[50.527s][info][gc] GC(314) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 107.156ms
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "Catalina-utility-2"
+[50.658s][info][gc] GC(315) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 130.115ms
+[50.665s][info][gc] GC(316) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.944ms
+[50.665s][info][gc] GC(318) Concurrent Cycle
+[50.768s][info][gc] GC(317) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 103.159ms
+[50.898s][info][gc] GC(319) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 129.393ms
+[50.899s][info][gc] GC(318) Concurrent Cycle 233.677ms
+[50.903s][info][gc] GC(320) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 2.936ms
+[51.008s][info][gc] GC(321) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 104.655ms
+[51.137s][info][gc] GC(322) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 128.088ms
+[51.143s][info][gc] GC(323) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.465ms
+[51.143s][info][gc] GC(325) Concurrent Cycle
+[51.250s][info][gc] GC(324) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 106.758ms
+[51.384s][info][gc] GC(326) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 132.965ms
+[51.384s][info][gc] GC(325) Concurrent Cycle 241.100ms
+[51.394s][info][gc] GC(327) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 2.930ms
+[51.515s][info][gc] GC(328) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 119.949ms
+[51.691s][info][gc] GC(329) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 176.352ms
+[51.706s][info][gc] GC(330) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 5.895ms
+[51.706s][info][gc] GC(332) Concurrent Cycle
+[51.808s][info][gc] GC(331) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 101.823ms
+[51.941s][info][gc] GC(333) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 131.796ms
+[51.941s][info][gc] GC(332) Concurrent Cycle 234.766ms
+[51.946s][info][gc] GC(334) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 3.026ms
+[52.046s][info][gc] GC(335) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 99.787ms
+[52.181s][info][gc] GC(336) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 134.501ms
+[52.190s][info][gc] GC(337) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 5.339ms
+[52.190s][info][gc] GC(339) Concurrent Cycle
+[52.299s][info][gc] GC(338) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 108.441ms
+[52.431s][info][gc] GC(340) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 131.865ms
+[52.432s][info][gc] GC(339) Concurrent Cycle 241.513ms
+[52.436s][info][gc] GC(341) Pause Young (Normal) (G1 Evacuation Pause) 49M->49M(50M) 3.000ms
+[52.535s][info][gc] GC(342) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 98.282ms
+[52.660s][info][gc] GC(343) Pause Full (G1 Evacuation Pause) 49M->49M(50M) 125.283ms
+[52.667s][info][gc] GC(344) Pause Young (Concurrent Start) (G1 Evacuation Pause) 49M->49M(50M) 4.477ms
+[52.667s][info][gc] GC(346) Concurrent Cycle
+[52.771s][info][gc] GC(345) Pause Full (G1 Evacuation Pause) 49M->48M(50M) 103.793ms
+[52.899s][info][gc] GC(347) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 127.822ms
+[52.899s][info][gc] GC(346) Concurrent Cycle 232.743ms
+[52.904s][info][gc] GC(348) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.876ms
+[53.001s][info][gc] GC(349) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 97.640ms
+[53.124s][info][gc] GC(350) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 121.961ms
+[53.130s][info][gc] GC(351) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.385ms
+[53.130s][info][gc] GC(353) Concurrent Cycle
+[53.233s][info][gc] GC(352) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 102.442ms
+[53.368s][info][gc] GC(354) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 134.646ms
+[53.369s][info][gc] GC(353) Concurrent Cycle 238.291ms
+[53.373s][info][gc] GC(355) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.215ms
+[53.475s][info][gc] GC(356) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 102.029ms
+[53.600s][info][gc] GC(357) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 124.598ms
+[53.610s][info][gc] GC(358) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 8.463ms
+[53.611s][info][gc] GC(360) Concurrent Cycle
+[53.716s][info][gc] GC(359) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 105.010ms
+[53.859s][info][gc] GC(361) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 142.959ms
+[53.860s][info][gc] GC(360) Concurrent Cycle 249.141ms
+[53.864s][info][gc] GC(362) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.062ms
+[53.974s][info][gc] GC(363) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 109.645ms
+[54.116s][info][gc] GC(364) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 141.061ms
+[54.122s][info][gc] GC(365) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.699ms
+[54.122s][info][gc] GC(367) Concurrent Cycle
+[54.222s][info][gc] GC(366) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 99.591ms
+[54.347s][info][gc] GC(368) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 125.014ms
+[54.348s][info][gc] GC(367) Concurrent Cycle 225.748ms
+[54.352s][info][gc] GC(369) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.980ms
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "http-nio-8080-BlockPoller"
+[54.455s][info][gc] GC(370) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 102.638ms
+[54.603s][info][gc] GC(371) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 146.694ms
+[54.612s][info][gc] GC(372) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 7.439ms
+[54.612s][info][gc] GC(374) Concurrent Cycle
+[54.724s][info][gc] GC(373) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 112.305ms
+[54.849s][info][gc] GC(375) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 124.026ms
+[54.849s][info][gc] GC(374) Concurrent Cycle 237.573ms
+[54.854s][info][gc] GC(376) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.895ms
+[54.954s][info][gc] GC(377) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 99.882ms
+[55.122s][info][gc] GC(378) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 167.233ms
+[55.209s][info][gc] GC(379) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.514ms
+[55.209s][info][gc] GC(381) Concurrent Cycle
+[55.319s][info][gc] GC(380) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 110.037ms
+[55.456s][info][gc] GC(382) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 135.986ms
+[55.464s][info][gc] GC(381) Concurrent Cycle 254.782ms
+[55.468s][info][gc] GC(383) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.943ms
+[55.596s][info][gc] GC(384) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 127.283ms
+[55.739s][info][gc] GC(385) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 142.701ms
+[55.745s][info][gc] GC(386) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.407ms
+[55.745s][info][gc] GC(388) Concurrent Cycle
+[55.852s][info][gc] GC(387) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 106.091ms
+[55.979s][info][gc] GC(389) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 126.594ms
+[55.979s][info][gc] GC(388) Concurrent Cycle 233.785ms
+[55.983s][info][gc] GC(390) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.901ms
+[56.083s][info][gc] GC(391) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 99.306ms
+[56.218s][info][gc] GC(392) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 134.447ms
+[56.242s][info][gc] GC(393) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 7.581ms
+[56.243s][info][gc] GC(395) Concurrent Cycle
+[56.370s][info][gc] GC(394) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 127.585ms
+[56.505s][info][gc] GC(396) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 134.421ms
+[56.506s][info][gc] GC(395) Concurrent Cycle 263.134ms
+[56.514s][info][gc] GC(397) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.325ms
+[56.654s][info][gc] GC(398) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 139.613ms
+[56.794s][info][gc] GC(399) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 138.724ms
+[56.809s][info][gc] GC(400) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.751ms
+[56.809s][info][gc] GC(402) Concurrent Cycle
+[56.910s][info][gc] GC(401) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 101.150ms
+[57.048s][info][gc] GC(403) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 137.617ms
+[57.048s][info][gc] GC(402) Concurrent Cycle 239.908ms
+[57.178s][info][gc] GC(404) Pause Full (Heap Dump Initiated GC) 48M->48M(50M) 128.284ms
+[58.868s][info][gc] GC(405) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.839ms
+[58.869s][info][gc] GC(407) Concurrent Cycle
+[58.974s][info][gc] GC(406) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 105.519ms
+[59.106s][info][gc] GC(408) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 131.272ms
+[59.106s][info][gc] GC(407) Concurrent Cycle 237.940ms
+[59.111s][info][gc] GC(409) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.117ms
+[59.251s][info][gc] GC(410) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 139.879ms
+[59.398s][info][gc] GC(411) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 146.465ms
+[59.405s][info][gc] GC(412) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.520ms
+[59.405s][info][gc] GC(414) Concurrent Cycle
+[59.547s][info][gc] GC(413) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 141.775ms
+[59.699s][info][gc] GC(415) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 151.148ms
+[59.699s][info][gc] GC(414) Concurrent Cycle 294.224ms
+[59.704s][info][gc] GC(416) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.988ms
+[59.809s][info][gc] GC(417) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 105.337ms
+[59.957s][info][gc] GC(418) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 147.153ms
+[59.967s][info][gc] GC(419) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 5.499ms
+[59.967s][info][gc] GC(421) Concurrent Cycle
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "http-nio-8080-exec-173"
+[60.088s][info][gc] GC(420) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 120.876ms
+[60.226s][info][gc] GC(422) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 136.735ms
+[60.226s][info][gc] GC(421) Concurrent Cycle 259.036ms
+[60.233s][info][gc] GC(423) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.890ms
+[60.334s][info][gc] GC(424) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 99.977ms
+[60.466s][info][gc] GC(425) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 131.799ms
+[60.473s][info][gc] GC(426) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.484ms
+[60.473s][info][gc] GC(428) Concurrent Cycle
+[60.583s][info][gc] GC(427) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 109.472ms
+[60.720s][info][gc] GC(429) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 136.604ms
+[60.720s][info][gc] GC(428) Concurrent Cycle 247.291ms
+[60.724s][info][gc] GC(430) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.857ms
+[60.823s][info][gc] GC(431) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 98.292ms
+[60.983s][info][gc] GC(432) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 159.876ms
+[61.010s][info][gc] GC(433) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 5.464ms
+[61.010s][info][gc] GC(435) Concurrent Cycle
+[61.113s][info][gc] GC(434) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 103.181ms
+[61.252s][info][gc] GC(436) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 138.090ms
+[61.253s][info][gc] GC(435) Concurrent Cycle 242.510ms
+[61.258s][info][gc] GC(437) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.875ms
+[61.377s][info][gc] GC(438) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 118.408ms
+[61.503s][info][gc] GC(439) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 126.270ms
+[61.515s][info][gc] GC(440) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 9.255ms
+[61.515s][info][gc] GC(442) Concurrent Cycle
+[61.626s][info][gc] GC(441) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 110.457ms
+[61.820s][info][gc] GC(443) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 192.109ms
+[61.823s][info][gc] GC(442) Concurrent Cycle 307.456ms
+[61.831s][info][gc] GC(444) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.649ms
+[61.947s][info][gc] GC(445) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 116.188ms
+[62.093s][info][gc] GC(446) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 144.917ms
+[62.104s][info][gc] GC(447) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 9.446ms
+[62.104s][info][gc] GC(449) Concurrent Cycle
+[62.217s][info][gc] GC(448) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 112.721ms
+[62.362s][info][gc] GC(450) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 143.927ms
+[62.362s][info][gc] GC(449) Concurrent Cycle 257.915ms
+[62.367s][info][gc] GC(451) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.646ms
+[62.483s][info][gc] GC(452) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 115.742ms
+[62.633s][info][gc] GC(453) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 149.556ms
+[62.641s][info][gc] GC(454) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 5.293ms
+[62.641s][info][gc] GC(456) Concurrent Cycle
+[62.759s][info][gc] GC(455) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 118.237ms
+[62.884s][info][gc] GC(457) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 124.369ms
+[62.884s][info][gc] GC(456) Concurrent Cycle 243.636ms
+[62.900s][info][gc] GC(458) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 14.129ms
+[63.038s][info][gc] GC(459) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 138.117ms
+[63.177s][info][gc] GC(460) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 138.587ms
+[63.189s][info][gc] GC(461) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.684ms
+[63.189s][info][gc] GC(463) Concurrent Cycle
+[63.310s][info][gc] GC(462) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 117.232ms
+[63.471s][info][gc] GC(464) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 159.735ms
+[63.471s][info][gc] GC(463) Concurrent Cycle 282.536ms
+[63.485s][info][gc] GC(465) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 11.606ms
+[63.633s][info][gc] GC(466) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 147.275ms
+[64.132s][info][gc] GC(467) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 497.967ms
+[64.154s][info][gc] GC(468) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 9.398ms
+[64.154s][info][gc] GC(470) Concurrent Cycle
+[64.386s][info][gc] GC(469) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 231.967ms
+[64.807s][info][gc] GC(471) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 421.179ms
+[64.815s][info][gc] GC(470) Concurrent Cycle 660.967ms
+[64.835s][info][gc] GC(472) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 8.646ms
+[65.053s][info][gc] GC(473) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 217.470ms
+[65.397s][info][gc] GC(474) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 343.070ms
+[65.478s][info][gc] GC(475) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 18.748ms
+[65.479s][info][gc] GC(477) Concurrent Cycle
+[65.640s][info][gc] GC(476) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 161.281ms
+[65.835s][info][gc] GC(478) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 194.848ms
+[65.836s][info][gc] GC(477) Concurrent Cycle 357.027ms
+[65.844s][info][gc] GC(479) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 5.056ms
+[66.207s][info][gc] GC(480) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 362.964ms
+[66.456s][info][gc] GC(481) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 248.452ms
+[66.468s][info][gc] GC(482) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 5.980ms
+[66.468s][info][gc] GC(484) Concurrent Cycle
+[66.582s][info][gc] GC(483) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 113.656ms
+[66.771s][info][gc] GC(485) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 188.237ms
+[66.771s][info][gc] GC(484) Concurrent Cycle 303.183ms
+[66.778s][info][gc] GC(486) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 4.459ms
+[66.941s][info][gc] GC(487) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 162.862ms
+[67.094s][info][gc] GC(488) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 152.160ms
+[67.105s][info][gc] GC(489) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 7.480ms
+[67.105s][info][gc] GC(491) Concurrent Cycle
+[67.218s][info][gc] GC(490) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 112.041ms
+[67.365s][info][gc] GC(492) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 146.567ms
+[67.366s][info][gc] GC(491) Concurrent Cycle 260.300ms
+[67.372s][info][gc] GC(493) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 4.535ms
+[67.480s][info][gc] GC(494) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 108.138ms
+[67.625s][info][gc] GC(495) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 144.263ms
+[67.634s][info][gc] GC(496) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 6.514ms
+[67.634s][info][gc] GC(498) Concurrent Cycle
+[67.756s][info][gc] GC(497) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 120.888ms
+[67.919s][info][gc] GC(499) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 163.023ms
+[67.920s][info][gc] GC(498) Concurrent Cycle 285.312ms
+[67.929s][info][gc] GC(500) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 6.145ms
+[68.047s][info][gc] GC(501) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 118.360ms
+[68.199s][info][gc] GC(502) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 150.825ms
+[68.206s][info][gc] GC(503) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 5.520ms
+[68.206s][info][gc] GC(505) Concurrent Cycle
+[68.314s][info][gc] GC(504) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 107.781ms
+[68.446s][info][gc] GC(506) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 131.352ms
+[68.447s][info][gc] GC(505) Concurrent Cycle 240.445ms
+[68.453s][info][gc] GC(507) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.601ms
+[68.560s][info][gc] GC(508) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 106.880ms
+[68.702s][info][gc] GC(509) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 141.267ms
+[68.709s][info][gc] GC(510) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.885ms
+[68.709s][info][gc] GC(512) Concurrent Cycle
+[68.820s][info][gc] GC(511) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 110.563ms
+[68.955s][info][gc] GC(513) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 134.513ms
+[68.955s][info][gc] GC(512) Concurrent Cycle 246.311ms
+[68.961s][info][gc] GC(514) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.068ms
+[69.066s][info][gc] GC(515) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 103.858ms
+[69.239s][info][gc] GC(516) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 172.841ms
+[69.252s][info][gc] GC(517) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.624ms
+[69.252s][info][gc] GC(519) Concurrent Cycle
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "RMI TCP Connection(idle)"
+[69.363s][info][gc] GC(518) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 109.959ms
+[69.505s][info][gc] GC(520) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 141.841ms
+[69.505s][info][gc] GC(519) Concurrent Cycle 253.145ms
+[69.511s][info][gc] GC(521) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.529ms
+[69.622s][info][gc] GC(522) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 111.351ms
+[69.768s][info][gc] GC(523) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 145.366ms
+[69.776s][info][gc] GC(524) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.790ms
+[69.776s][info][gc] GC(526) Concurrent Cycle
+[69.889s][info][gc] GC(525) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 113.447ms
+[70.036s][info][gc] GC(527) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 145.606ms
+[70.036s][info][gc] GC(526) Concurrent Cycle 260.400ms
+[70.041s][info][gc] GC(528) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.900ms
+[70.144s][info][gc] GC(529) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 102.745ms
+[70.288s][info][gc] GC(530) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 143.806ms
+[70.298s][info][gc] GC(531) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 7.393ms
+[70.298s][info][gc] GC(533) Concurrent Cycle
+[70.416s][info][gc] GC(532) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 117.879ms
+[70.560s][info][gc] GC(534) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 143.361ms
+[70.560s][info][gc] GC(533) Concurrent Cycle 262.683ms
+[70.565s][info][gc] GC(535) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.355ms
+[70.671s][info][gc] GC(536) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 105.382ms
+[70.815s][info][gc] GC(537) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 143.066ms
+[70.822s][info][gc] GC(538) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.754ms
+[70.822s][info][gc] GC(540) Concurrent Cycle
+Java HotSpot(TM) 64-Bit Server VM warning: Exception java.lang.OutOfMemoryError occurred dispatching signal UNKNOWN to handler- the VM may need to be forcibly terminated
+[70.953s][info][gc] GC(539) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 130.722ms
+[71.095s][info][gc] GC(541) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 141.898ms
+[71.096s][info][gc] GC(540) Concurrent Cycle 273.994ms
+[71.103s][info][gc] GC(542) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 4.913ms
+[71.227s][info][gc] GC(543) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 123.661ms
+[71.369s][info][gc] GC(544) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 141.925ms
+[71.376s][info][gc] GC(545) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.606ms
+[71.376s][info][gc] GC(547) Concurrent Cycle
+[71.485s][info][gc] GC(546) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 108.464ms
+[71.630s][info][gc] GC(548) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 144.697ms
+[71.630s][info][gc] GC(547) Concurrent Cycle 254.435ms
+[71.636s][info][gc] GC(549) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.659ms
+[71.744s][info][gc] GC(550) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 107.490ms
+[71.931s][info][gc] GC(551) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 187.017ms
+[71.940s][info][gc] GC(552) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 6.138ms
+[71.940s][info][gc] GC(554) Concurrent Cycle
+[72.048s][info][gc] GC(553) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 107.708ms
+[72.183s][info][gc] GC(555) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 135.044ms
+[72.184s][info][gc] GC(554) Concurrent Cycle 244.160ms
+[72.190s][info][gc] GC(556) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 4.148ms
+[72.302s][info][gc] GC(557) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 111.790ms
+[72.452s][info][gc] GC(558) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 149.595ms
+[72.462s][info][gc] GC(559) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 5.168ms
+[72.462s][info][gc] GC(561) Concurrent Cycle
+[72.577s][info][gc] GC(560) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 114.772ms
+[72.728s][info][gc] GC(562) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 149.714ms
+[72.728s][info][gc] GC(561) Concurrent Cycle 266.297ms
+[72.736s][info][gc] GC(563) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 6.043ms
+[72.854s][info][gc] GC(564) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 117.296ms
+[73.004s][info][gc] GC(565) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 150.105ms
+[73.016s][info][gc] GC(566) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 9.137ms
+[73.017s][info][gc] GC(568) Concurrent Cycle
+[73.129s][info][gc] GC(567) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 112.697ms
+[73.271s][info][gc] GC(569) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 141.217ms
+[73.272s][info][gc] GC(568) Concurrent Cycle 254.903ms
+[73.279s][info][gc] GC(570) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 5.204ms
+[73.389s][info][gc] GC(571) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 109.799ms
+[73.534s][info][gc] GC(572) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 143.803ms
+[73.540s][info][gc] GC(573) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.588ms
+[73.540s][info][gc] GC(574) Concurrent Cycle
+[73.649s][info][gc] GC(574) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 108.259ms
+[73.777s][info][gc] GC(575) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 127.582ms
+[73.777s][info][gc] GC(574) Concurrent Cycle 236.956ms
+[73.782s][info][gc] GC(576) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 2.904ms
+[73.885s][info][gc] GC(577) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 102.836ms
+[74.012s][info][gc] GC(578) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 126.587ms
+[74.018s][info][gc] GC(579) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.404ms
+[74.018s][info][gc] GC(581) Concurrent Cycle
+[74.118s][info][gc] GC(580) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 99.942ms
+[74.243s][info][gc] GC(582) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 123.819ms
+[74.243s][info][gc] GC(581) Concurrent Cycle 225.064ms
+[74.248s][info][gc] GC(583) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 3.491ms
+[74.352s][info][gc] GC(584) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 102.912ms
+[74.475s][info][gc] GC(585) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 122.615ms
+[74.482s][info][gc] GC(586) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 5.070ms
+[74.482s][info][gc] GC(588) Concurrent Cycle
+[74.575s][info][gc] GC(587) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 93.425ms
+[74.696s][info][gc] GC(589) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 120.014ms
+[74.696s][info][gc] GC(588) Concurrent Cycle 214.561ms
+[74.702s][info][gc] GC(590) Pause Young (Normal) (G1 Evacuation Pause) 48M->48M(50M) 4.433ms
+[74.798s][info][gc] GC(591) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 95.132ms
+[74.919s][info][gc] GC(592) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 121.114ms
+[74.926s][info][gc] GC(593) Pause Young (Concurrent Start) (G1 Evacuation Pause) 48M->48M(50M) 4.963ms
+[74.926s][info][gc] GC(595) Concurrent Cycle
+[75.026s][info][gc] GC(594) Pause Full (G1 Evacuation Pause) 48M->48M(50M) 99.402ms
+
+Process finished with exit code -1
